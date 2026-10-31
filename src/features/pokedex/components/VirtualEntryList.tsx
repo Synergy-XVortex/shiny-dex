@@ -10,6 +10,12 @@ interface VirtualEntryListProps {
   mode: ViewMode;
   onToggle: (entry: PokedexEntry) => void;
   scrollElementRef: RefObject<HTMLElement | null>;
+  /**
+   * Identifies what is listed (screen, Pokédex, filters). The scroll position
+   * is remembered per key, so a new selection starts at the top while coming
+   * back from a detail page returns to where the user was.
+   */
+  scrollKey: string;
 }
 
 const GRID_MIN_TILE = 80;
@@ -21,14 +27,15 @@ const GRID_LABEL_AND_GAP = 30;
  * Scroll offset of each view, kept for the session so coming back from a
  * detail page lands where the user left the list.
  */
-const savedOffsets: Partial<Record<ViewMode, number>> = {};
+const savedOffsets = new Map<string, number>();
 
 /**
  * Renders only the rows near the viewport: 1 220 entries with images would
  * otherwise make scrolling sluggish on a phone. Grid rows hold as many tiles
  * as fit the available width (4 on a phone, more on a tablet or PC).
  */
-export function VirtualEntryList({ entries, statuses, mode, onToggle, scrollElementRef }: VirtualEntryListProps) {
+export function VirtualEntryList({ entries, statuses, mode, onToggle, scrollElementRef, scrollKey }: VirtualEntryListProps) {
+  const offsetKey = `${scrollKey}|${mode}`;
   const containerRef = useRef<HTMLDivElement>(null);
   const [width, setWidth] = useState(358);
   const [scrollMargin, setScrollMargin] = useState(0);
@@ -57,7 +64,7 @@ export function VirtualEntryList({ entries, statuses, mode, onToggle, scrollElem
     estimateSize: () => rowHeight,
     overscan: 6,
     scrollMargin,
-    initialOffset: () => savedOffsets[mode] ?? 0,
+    initialOffset: () => savedOffsets.get(offsetKey) ?? 0,
     // jsdom and the very first paint have no layout yet; assume a phone viewport.
     initialRect: { width: 390, height: 844 },
   });
@@ -68,16 +75,16 @@ export function VirtualEntryList({ entries, statuses, mode, onToggle, scrollElem
   }, [virtualizer, rowHeight]);
 
   const saveOffset = useCallback(() => {
-    savedOffsets[mode] = scrollElementRef.current?.scrollTop ?? 0;
-  }, [mode, scrollElementRef]);
+    savedOffsets.set(offsetKey, scrollElementRef.current?.scrollTop ?? 0);
+  }, [offsetKey, scrollElementRef]);
 
   useLayoutEffect(() => {
     const element = scrollElementRef.current;
     if (!element) return;
-    element.scrollTop = savedOffsets[mode] ?? 0;
+    element.scrollTop = savedOffsets.get(offsetKey) ?? 0;
     element.addEventListener('scroll', saveOffset, { passive: true });
     return () => element.removeEventListener('scroll', saveOffset);
-  }, [mode, saveOffset, scrollElementRef]);
+  }, [offsetKey, saveOffset, scrollElementRef]);
 
   const Item = mode === 'grid' ? PokemonTile : PokemonCard;
 

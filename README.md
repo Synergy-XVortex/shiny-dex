@@ -82,4 +82,4 @@ Le travail se fait sur une branche par sujet (`feature/…`, `fix/…`), fusionn
 
 ## Avancement
 
-Étapes 1 à 3 sur 6 : socle technique, PWA, import des données, et liste (cartes et grille), fiche détail et changement de statut enregistré localement (IndexedDB).
+Étapes 1 à 4 sur 6 : socle technique, PWA, import des données, liste et fiche détail avec statuts locaux, sélecteur de Pokédex, filtres, recherche et statistiques.
