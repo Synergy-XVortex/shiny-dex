@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { useSpriteCacheWarmup } from '../features/offline/useSpriteCache';
 import { StatusProvider } from '../features/pokedex/StatusProvider';
 import { ThemeProvider } from '../features/theme/ThemeProvider';
 import { PokedexPage } from '../pages/PokedexPage';
@@ -14,6 +15,8 @@ import {
 import { AppLayout } from './AppLayout';
 
 export function App() {
+  useSpriteCacheWarmup();
+
   return (
     <ThemeProvider>
       <StatusProvider>

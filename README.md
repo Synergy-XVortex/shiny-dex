@@ -73,6 +73,13 @@ Règles notables (détaillées dans `scripts/import/resolve.ts`) :
 
 Netlify lit `netlify.toml` : build avec `npm run build`, publication de `dist/`, redirection de toutes les routes vers `index.html`, et en-têtes de cache adaptés au service worker.
 
+Le travail se fait sur une branche par sujet (`feature/…`, `fix/…`), fusionnée dans `main` par pull request. Chaque fusion dans `main` déclenche un déploiement en production.
+
+## Hors ligne
+
+- **Coque de l'app** (≈ 760 ko) : précachée par le service worker. Une nouvelle version s'installe en quelques secondes et prend la main immédiatement (`skipWaiting`, `clientsClaim`) ; la page se recharge alors d'elle-même.
+- **Sprites** (≈ 26 Mo) : volontairement hors du précache, sinon chaque mise à jour attendrait leur téléchargement. Ils sont servis en « cache d'abord » depuis le cache `shiny-dex-sprites-v1`, que `src/features/offline/spriteCache.ts` remplit en arrière-plan quelques secondes après le lancement (sauf si le mode économie de données est actif). L'avancement est affiché dans Réglages.
+
 ## Avancement
 
 Étapes 1 à 3 sur 6 : socle technique, PWA, import des données, et liste (cartes et grille), fiche détail et changement de statut enregistré localement (IndexedDB).
