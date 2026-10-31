@@ -22,6 +22,8 @@
   --color-shiny: #d9a400;
   --color-shiny-soft: #fff1c2;
   --color-shiny-ink: #6e5600;
+  /* Accent on top of the inverse surface (undo toast action). */
+  --color-on-inverse-accent: #f2c94c;
   /* The app mark keeps its dark tile in both themes, like the home-screen icon. */
   --color-brand-tile: #1b1d22;
   --color-brand-sparkle: #f2c94c;
@@ -40,6 +42,32 @@
   --color-shiny: #f2c94c;
   --color-shiny-soft: #4a3f17;
   --color-shiny-ink: #f2c94c;
+  --color-on-inverse-accent: #7a5c00;
+}
+
+/* Type-tinted surfaces. The variables are set inline per entry by
+   entryPaletteStyle() (src/features/pokedex/typePalette.ts). */
+@utility type-surface {
+  background-color: var(--type-bg);
+  color: var(--type-ink);
+  [data-theme='dark'] & {
+    background-color: var(--type-bg-dark);
+    color: var(--type-ink-dark);
+  }
+}
+
+@utility type-pill {
+  background-color: var(--type-pill);
+  [data-theme='dark'] & {
+    background-color: var(--type-pill-dark);
+  }
+}
+
+@utility type-sprite-well {
+  background-color: var(--type-sprite);
+  [data-theme='dark'] & {
+    background-color: var(--type-sprite-dark);
+  }
 }
 
 @layer base {

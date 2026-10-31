@@ -39,12 +39,20 @@ export default defineConfig({
         ],
       },
       workbox: {
-        globPatterns: ['**/*.{js,css,html,svg,png,woff2}'],
+        // Sprites are part of the precache so the whole Pokédex works offline
+        // (~26 MB, downloaded once in the background after installation; on
+        // updates only changed files are fetched again).
+        globPatterns: ['**/*.{js,css,html,svg,png,woff2,webp}'],
         // Client-side routes (/stats, /vitrine…) must resolve to the app shell offline.
         navigateFallback: '/index.html',
       },
     }),
   ],
+  build: {
+    // The bundled Pokédex reference data (src/data/pokedex.json, ~200 kB raw)
+    // accounts for most of the main chunk; it is needed on first paint anyway.
+    chunkSizeWarningLimit: 800,
+  },
   test: {
     environment: 'jsdom',
     setupFiles: ['./src/test/setup.ts'],

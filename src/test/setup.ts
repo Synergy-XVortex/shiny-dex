@@ -1,11 +1,27 @@
 import '@testing-library/jest-dom/vitest';
+import 'fake-indexeddb/auto';
 import { cleanup } from '@testing-library/react';
 import { afterEach, vi } from 'vitest';
+import { db } from '../features/pokedex/statusDb';
 
-afterEach(() => {
+afterEach(async () => {
   cleanup();
   localStorage.clear();
+  await db.statuses.clear();
 });
+
+// jsdom has no layout engine: ResizeObserver is missing and elements measure 0.
+class ResizeObserverStub {
+  observe() {}
+  unobserve() {}
+  disconnect() {}
+}
+globalThis.ResizeObserver ??= ResizeObserverStub as unknown as typeof ResizeObserver;
+
+// The virtualized list reads its viewport from clientWidth/clientHeight; give
+// every element a phone-sized box so it renders the first rows.
+Object.defineProperty(HTMLElement.prototype, 'clientWidth', { configurable: true, get: () => 390 });
+Object.defineProperty(HTMLElement.prototype, 'clientHeight', { configurable: true, get: () => 844 });
 
 // jsdom does not implement matchMedia; default to a light-mode device.
 // Individual tests override it to simulate a dark-mode phone.

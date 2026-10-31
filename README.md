@@ -75,4 +75,4 @@ Netlify lit `netlify.toml` : build avec `npm run build`, publication de `dist/`,
 
 ## Avancement
 
-Étapes 1 et 2 sur 6 : socle technique, thèmes, navigation, PWA, et import des données de référence avec les sprites. Les écrans affichent un emplacement indiquant l'étape où leur contenu arrive. Le détail est dans le cahier des charges.
+Étapes 1 à 3 sur 6 : socle technique, PWA, import des données, et liste (cartes et grille), fiche détail et changement de statut enregistré localement (IndexedDB).

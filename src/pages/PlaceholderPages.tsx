@@ -7,15 +7,6 @@ import { UpcomingFeature } from '../components/UpcomingFeature';
  * is replaced by its real implementation when that step is delivered.
  */
 
-export function PokedexPage() {
-  return (
-    <>
-      <PageHeader title="Shiny Dex" />
-      <UpcomingFeature step={3} description="La liste en cartes et en grille, avec le changement de statut d'un tap." />
-    </>
-  );
-}
-
 export function StatsPage() {
   return (
     <>
