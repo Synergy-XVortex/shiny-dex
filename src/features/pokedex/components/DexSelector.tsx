@@ -41,7 +41,7 @@ export function DexSelector({ open, onClose, selected, onSelect, statuses }: Dex
 
   return (
     <BottomSheet open={open} onClose={onClose} title="Choisir un Pokédex">
-      <div className="flex flex-col gap-5 overflow-y-auto">
+      <div className="flex flex-col gap-5">
         <button
           type="button"
           aria-pressed={selected === global.id}
@@ -54,7 +54,7 @@ export function DexSelector({ open, onClose, selected, onSelect, statuses }: Dex
             <span className="text-[17px] font-extrabold">{global.label}</span>
             <span className="text-xs font-medium opacity-75">Toutes les générations et toutes les formes</span>
           </span>
-          <span className="text-on-inverse-accent text-[15px] font-extrabold">
+          <span className="text-on-inverse-accent shrink-0 text-[15px] font-extrabold whitespace-nowrap">
             {globalProgress?.obtained} / {globalProgress?.total}
           </span>
         </button>
