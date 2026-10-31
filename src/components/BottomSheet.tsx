@@ -115,8 +115,10 @@ export function BottomSheet({ open, onClose, title, actions, expandable = false,
         </div>
       </div>
       {/* Content is mounted only while open, so it is not computed or
-          found by assistive technology when the sheet is closed. */}
-      <div className="flex min-h-0 flex-1 flex-col overflow-y-auto overscroll-contain px-5 pb-[calc(env(safe-area-inset-bottom)+20px)]">
+          found by assistive technology when the sheet is closed. This is the
+          only scrolling element: its padding leaves room for the selection
+          rings of the content, which a scroll container would otherwise clip. */}
+      <div className="flex min-h-0 flex-1 flex-col overflow-y-auto overscroll-contain px-5 pt-1 pb-[calc(env(safe-area-inset-bottom)+20px)]">
         {open && children}
       </div>
     </dialog>
