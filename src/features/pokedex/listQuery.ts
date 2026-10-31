@@ -15,9 +15,10 @@ export interface DexDefinition {
   includes: (entry: PokedexEntry) => boolean;
 }
 
-const ROMAN = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX'];
+const ROMAN = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII'];
 
-export const GENERATION_NUMBERS = ROMAN.map((_, index) => index + 1);
+/** Generations of the bundled data; the catalog adds later ones when species are added. */
+export const BUNDLED_GENERATIONS: readonly number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 export function romanGeneration(generation: number): string {
   return ROMAN[generation - 1] ?? String(generation);
@@ -33,33 +34,39 @@ const FORM_DEXES: ReadonlyArray<[Exclude<EntryCategory, 'national'>, string]> = 
 ];
 
 /**
- * Generation Pokédexes hold the national entries of that generation only,
- * like the Sheet's generation tabs; forms have their own Pokédexes.
+ * Every Pokédex of a catalog, in display order: global, one per generation,
+ * then one per form category. Generation Pokédexes hold the national entries
+ * of that generation only, like the Sheet's generation tabs; forms have their
+ * own Pokédexes.
  */
-export const DEXES: readonly DexDefinition[] = [
-  { id: 'global', label: 'Pokédex global', shortLabel: 'Global', includes: () => true },
-  ...GENERATION_NUMBERS.map<DexDefinition>((generation) => ({
-    id: `gen-${generation}`,
-    label: `Génération ${romanGeneration(generation)}`,
-    shortLabel: `Gén. ${romanGeneration(generation)}`,
-    includes: (entry) => entry.category === 'national' && entry.generation === generation,
-  })),
-  ...FORM_DEXES.map<DexDefinition>(([category, label]) => ({
-    id: category,
-    label: `Formes ${label}`,
-    shortLabel: label,
-    includes: (entry) => entry.category === category,
-  })),
-];
-
-const DEX_BY_ID = new Map(DEXES.map((dex) => [dex.id, dex]));
-
-export function getDex(id: DexId): DexDefinition {
-  return DEX_BY_ID.get(id) ?? DEXES[0];
+export function buildDexes(generations: readonly number[]): DexDefinition[] {
+  return [
+    { id: 'global', label: 'Pokédex global', shortLabel: 'Global', includes: () => true },
+    ...generations.map<DexDefinition>((generation) => ({
+      id: `gen-${generation}`,
+      label: `Génération ${romanGeneration(generation)}`,
+      shortLabel: `Gén. ${romanGeneration(generation)}`,
+      includes: (entry) => entry.category === 'national' && entry.generation === generation,
+    })),
+    ...FORM_DEXES.map<DexDefinition>(([category, label]) => ({
+      id: category,
+      label: `Formes ${label}`,
+      shortLabel: label,
+      includes: (entry) => entry.category === category,
+    })),
+  ];
 }
 
+/** The requested Pokédex, or the global one when it does not exist (yet) in this catalog. */
+export function findDex(dexes: readonly DexDefinition[], id: DexId): DexDefinition {
+  return dexes.find((dex) => dex.id === id) ?? dexes[0];
+}
+
+const FORM_DEX_IDS = new Set<string>(FORM_DEXES.map(([category]) => category));
+
+/** Validates a stored selection; generation numbers are checked against the catalog by findDex. */
 export function isDexId(value: unknown): value is DexId {
-  return typeof value === 'string' && DEX_BY_ID.has(value as DexId);
+  return typeof value === 'string' && (value === 'global' || /^gen-\d+$/.test(value) || FORM_DEX_IDS.has(value));
 }
 
 /**

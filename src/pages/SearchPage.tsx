@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 import { useLayoutScrollElement } from '../app/layoutContext';
 import { SearchIcon } from '../components/icons';
-import { ENTRIES } from '../features/pokedex/catalog';
+import { useCatalog } from '../features/pokedex/catalogContext';
 import { VirtualEntryList } from '../features/pokedex/components/VirtualEntryList';
 import { searchEntries } from '../features/pokedex/listQuery';
 import { useListQuery } from '../features/pokedex/listQueryContext';
@@ -17,7 +17,8 @@ export function SearchPage() {
   const { statuses } = useStatuses();
   const { search, setSearch } = useListQuery();
   const handleToggle = useStatusToggle();
-  const results = useMemo(() => searchEntries(ENTRIES, search), [search]);
+  const { entries } = useCatalog();
+  const results = useMemo(() => searchEntries(entries, search), [entries, search]);
 
   return (
     <>

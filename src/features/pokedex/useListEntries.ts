@@ -1,6 +1,7 @@
 import { useCallback, useMemo } from 'react';
-import { ENTRIES, toggledStatus } from './catalog';
-import { applyFilters, getDex, type DexId, type ListFilters } from './listQuery';
+import { toggledStatus } from './catalog';
+import { useCatalog } from './catalogContext';
+import { applyFilters, type DexId, type ListFilters } from './listQuery';
 import { useListQuery } from './listQueryContext';
 import type { PokedexEntry, ShinyStatus } from './model';
 import { useStatuses } from './statusContext';
@@ -12,10 +13,11 @@ export function useListEntries(): {
 } {
   const { dexId, filters } = useListQuery();
   const { statuses } = useStatuses();
+  const { entries, getDex } = useCatalog();
   return useMemo(() => {
-    const dexEntries = ENTRIES.filter(getDex(dexId).includes);
+    const dexEntries = entries.filter(getDex(dexId).includes);
     return { dexEntries, visibleEntries: statuses ? applyFilters(dexEntries, statuses, filters) : dexEntries };
-  }, [dexId, filters, statuses]);
+  }, [entries, getDex, dexId, filters, statuses]);
 }
 
 /** One-tap toggle shared by every list. */

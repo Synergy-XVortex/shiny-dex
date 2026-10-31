@@ -1,11 +1,11 @@
 import { useLiveQuery } from 'dexie-react-hooks';
 import { useCallback, useEffect, useMemo, useState, type ReactNode } from 'react';
-import { ENTRIES, INITIAL_STATUSES } from './catalog';
+import { BUNDLED_ENTRIES, INITIAL_STATUSES } from './catalog';
 import type { PokedexEntry, ShinyStatus } from './model';
 import { StatusContext, type StatusChange, type StatusContextValue } from './statusContext';
 import { db as defaultDatabase, seedMissingStatuses, writeStatus, type ShinyDexDatabase } from './statusDb';
 
-const ENTRY_IDS = ENTRIES.map((entry) => entry.id);
+const ENTRY_IDS = BUNDLED_ENTRIES.map((entry) => entry.id);
 
 interface StatusProviderProps {
   children: ReactNode;

@@ -94,6 +94,18 @@ L'app reste « local d'abord » : chaque statut est écrit dans IndexedDB, puis 
 
 Mise en service : exécuter la migration, se connecter une première fois, ajouter son identifiant à `editors` (`insert into public.editors (user_id) select id from auth.users where email = '…';`), puis désactiver les inscriptions dans Supabase.
 
+## Vitrine publique
+
+`/vitrine` montre la collection telle qu'elle est enregistrée en ligne, sans connexion : avancement global, barres par génération et par forme, grille des shiny obtenus et des « à farm ». La page lit Supabase en anonyme (lecture publique des tables `shiny_statuses` et `added_entries`) et n'utilise ni IndexedDB, ni synchronisation, ni téléchargement des sprites en arrière-plan.
+
+## Nouveaux Pokémon
+
+- **Détection** : une fois par jour, quand le propriétaire est connecté et synchronisé, l'app compare le nombre d'espèces de PokéAPI à son plus grand numéro. Un bandeau « N nouveaux Pokémon détectés · Ajouter » apparaît en haut du Pokédex ; Réglages permet aussi une vérification manuelle.
+- **Ajout** : toutes les espèces manquantes sont lues sur PokéAPI avant tout enregistrement (pas d'ajout partiel), puis enregistrées dans `added_entries` (`supabase/migrations/0002_added_entries.sql`) et localement, avec le statut « À farm ».
+- **Complément** : un nom français, une catégorie ou un sprite HOME absent est récupéré lors des vérifications suivantes.
+- **Affichage** : le catalogue (`buildCatalog` dans `src/features/pokedex/catalog.ts`) ajoute ces espèces après les données embarquées, avec une génération supplémentaire si besoin. Leurs sprites viennent du dépôt GitHub de PokéAPI et sont mis en cache au premier affichage.
+- Seules les nouvelles espèces sont détectées, pas les nouvelles formes régionales. Un futur import (`npm run import:build`) peut les intégrer aux données embarquées ; la copie embarquée prend alors le dessus.
+
 ## Avancement
 
-Étapes 1 à 5 sur 6 : socle technique, PWA, import des données, liste et fiche détail, sélecteur de Pokédex, filtres, recherche, statistiques, connexion et synchronisation entre appareils.
+Étapes 1 à 6 sur 6 : socle technique, PWA, import des données, liste et fiche détail, sélecteur de Pokédex, filtres, recherche, statistiques, connexion et synchronisation, vitrine publique et ajout des nouveaux Pokémon.

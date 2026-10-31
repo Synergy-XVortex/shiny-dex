@@ -5,7 +5,9 @@ import { CardsViewIcon, FilterIcon, GridViewIcon } from '../components/icons';
 import { countStatuses } from '../features/pokedex/catalog';
 import { DexSelector } from '../features/pokedex/components/DexSelector';
 import { VirtualEntryList } from '../features/pokedex/components/VirtualEntryList';
-import { countActiveFilters, getDex } from '../features/pokedex/listQuery';
+import { NewSpeciesBanner } from '../features/newPokemon/NewSpeciesBanner';
+import { useCatalog } from '../features/pokedex/catalogContext';
+import { countActiveFilters } from '../features/pokedex/listQuery';
 import { useListQuery } from '../features/pokedex/listQueryContext';
 import { useStatuses } from '../features/pokedex/statusContext';
 import { listSelectionKey, useListEntries, useStatusToggle } from '../features/pokedex/useListEntries';
@@ -25,7 +27,7 @@ export function PokedexPage() {
   const [mode, setMode] = useViewMode();
   const [selectorOpen, setSelectorOpen] = useState(false);
 
-  const dex = getDex(dexId);
+  const dex = useCatalog().getDex(dexId);
   const activeFilters = countActiveFilters(filters);
   // Progress describes the selected Pokédex as a whole, filters or not.
   const counts = useMemo(() => (statuses ? countStatuses(dexEntries, statuses) : null), [dexEntries, statuses]);
@@ -82,6 +84,7 @@ export function PokedexPage() {
             </div>
           </div>
         </div>
+        <NewSpeciesBanner />
         {activeFilters > 0 && (
           <div className="flex items-center gap-2 text-sm">
             <Link

@@ -2,9 +2,10 @@ import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { PageHeader } from '../components/PageHeader';
 import { LockIcon } from '../components/icons';
-import { ENTRIES, countStatuses, formatDexNumber, getEntry, type StatusCounts } from '../features/pokedex/catalog';
+import { countStatuses, formatDexNumber, type StatusCounts } from '../features/pokedex/catalog';
+import { useCatalog } from '../features/pokedex/catalogContext';
 import { Sprite } from '../features/pokedex/components/Sprite';
-import { DEXES, pickRandomToFarm } from '../features/pokedex/listQuery';
+import { pickRandomToFarm, type DexDefinition } from '../features/pokedex/listQuery';
 import type { ShinyStatus } from '../features/pokedex/model';
 import { useStatuses } from '../features/pokedex/statusContext';
 import { entryPaletteStyle, typeLabel } from '../features/pokedex/typePalette';
@@ -13,13 +14,12 @@ const percentOf = (counts: StatusCounts) => Math.round((counts.obtained / Math.m
 
 export function StatsPage() {
   const { statuses } = useStatuses();
+  const { entries, dexes } = useCatalog();
 
   const rows = useMemo(
     () =>
-      statuses
-        ? DEXES.map((dex) => ({ dex, counts: countStatuses(ENTRIES.filter(dex.includes), statuses) }))
-        : [],
-    [statuses],
+      statuses ? dexes.map((dex) => ({ dex, counts: countStatuses(entries.filter(dex.includes), statuses) })) : [],
+    [entries, dexes, statuses],
   );
 
   if (!statuses || rows.length === 0) {
@@ -72,8 +72,9 @@ export function StatsPage() {
  * marking it as obtained keeps it displayed until the user asks for another.
  */
 function RandomDraw({ statuses }: { statuses: ReadonlyMap<string, ShinyStatus> }) {
-  const [drawnId, setDrawnId] = useState(() => pickRandomToFarm(ENTRIES, statuses)?.id ?? null);
-  const drawAgain = () => setDrawnId(pickRandomToFarm(ENTRIES, statuses)?.id ?? null);
+  const { entries, getEntry } = useCatalog();
+  const [drawnId, setDrawnId] = useState(() => pickRandomToFarm(entries, statuses)?.id ?? null);
+  const drawAgain = () => setDrawnId(pickRandomToFarm(entries, statuses)?.id ?? null);
   const drawn = drawnId ? getEntry(drawnId) : undefined;
 
   return (
@@ -126,7 +127,7 @@ function Legend({ label, value, swatch }: { label: string; value: number; swatch
   );
 }
 
-function ProgressTable({ title, rows }: { title: string; rows: Array<{ dex: (typeof DEXES)[number]; counts: StatusCounts }> }) {
+function ProgressTable({ title, rows }: { title: string; rows: Array<{ dex: DexDefinition; counts: StatusCounts }> }) {
   return (
     <section className="bg-surface-raised border-line flex flex-col gap-2.5 rounded-3xl border px-[18px] py-4">
       <h2 className="text-ink-subtle mb-1 text-[13px] font-bold tracking-wider uppercase">{title}</h2>

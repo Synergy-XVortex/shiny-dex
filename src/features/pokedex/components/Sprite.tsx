@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { spriteUrl } from '../catalog';
+import { useCatalog } from '../catalogContext';
 import type { ShinyStatus } from '../model';
 
 interface SpriteProps {
@@ -19,10 +19,12 @@ interface SpriteProps {
  * show a neutral placeholder instead of a broken image.
  */
 export function Sprite({ id, variant, size, status, eager = false, className = '' }: SpriteProps) {
+  const { spriteSrc } = useCatalog();
+  const src = spriteSrc(id, variant);
   const [failed, setFailed] = useState(false);
   const greyscale = status === 'locked' ? 'grayscale opacity-80' : '';
 
-  if (failed) {
+  if (failed || src === null) {
     return (
       <span
         aria-hidden="true"
@@ -34,7 +36,7 @@ export function Sprite({ id, variant, size, status, eager = false, className = '
 
   return (
     <img
-      src={spriteUrl(id, variant)}
+      src={src}
       alt=""
       width={size}
       height={size}
