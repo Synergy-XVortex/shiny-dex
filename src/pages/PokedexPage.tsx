@@ -1,10 +1,14 @@
-import { useCallback, useMemo } from 'react';
+import { useMemo, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { useLayoutScrollElement } from '../app/layoutContext';
-import { CardsViewIcon, GridViewIcon } from '../components/icons';
-import { ENTRIES, countStatuses, toggledStatus } from '../features/pokedex/catalog';
+import { CardsViewIcon, FilterIcon, GridViewIcon } from '../components/icons';
+import { countStatuses } from '../features/pokedex/catalog';
+import { DexSelector } from '../features/pokedex/components/DexSelector';
 import { VirtualEntryList } from '../features/pokedex/components/VirtualEntryList';
-import type { PokedexEntry } from '../features/pokedex/model';
+import { countActiveFilters, getDex } from '../features/pokedex/listQuery';
+import { useListQuery } from '../features/pokedex/listQueryContext';
 import { useStatuses } from '../features/pokedex/statusContext';
+import { listSelectionKey, useListEntries, useStatusToggle } from '../features/pokedex/useListEntries';
 import { useViewMode, type ViewMode } from '../features/pokedex/useViewMode';
 
 const VIEW_OPTIONS: ReadonlyArray<{ mode: ViewMode; label: string; Icon: typeof CardsViewIcon }> = [
@@ -14,21 +18,18 @@ const VIEW_OPTIONS: ReadonlyArray<{ mode: ViewMode; label: string; Icon: typeof 
 
 export function PokedexPage() {
   const scrollElementRef = useLayoutScrollElement();
-  const { statuses, setStatus } = useStatuses();
+  const { statuses } = useStatuses();
+  const { dexId, setDexId, filters, resetFilters } = useListQuery();
+  const { dexEntries, visibleEntries } = useListEntries();
+  const handleToggle = useStatusToggle();
   const [mode, setMode] = useViewMode();
+  const [selectorOpen, setSelectorOpen] = useState(false);
 
-  // Step 4 narrows this list with the Pokédex selector, filters and search.
-  const entries = ENTRIES;
-  const counts = useMemo(() => (statuses ? countStatuses(entries, statuses) : null), [entries, statuses]);
-  const percent = counts ? Math.round((counts.obtained / counts.total) * 100) : 0;
-
-  const handleToggle = useCallback(
-    (entry: PokedexEntry) => {
-      const current = statuses?.get(entry.id) ?? 'to-farm';
-      void setStatus(entry, toggledStatus(current));
-    },
-    [statuses, setStatus],
-  );
+  const dex = getDex(dexId);
+  const activeFilters = countActiveFilters(filters);
+  // Progress describes the selected Pokédex as a whole, filters or not.
+  const counts = useMemo(() => (statuses ? countStatuses(dexEntries, statuses) : null), [dexEntries, statuses]);
+  const percent = counts ? Math.round((counts.obtained / Math.max(counts.total, 1)) * 100) : 0;
 
   return (
     <>
@@ -53,10 +54,18 @@ export function PokedexPage() {
           </div>
         </div>
         <div className="flex items-center gap-3">
-          <span className="bg-inverse text-on-inverse flex h-10 items-center rounded-full px-4 text-sm font-bold">
-            Pokédex global
-          </span>
-          <div className="flex flex-1 flex-col gap-1.5">
+          <button
+            type="button"
+            onClick={() => setSelectorOpen(true)}
+            aria-haspopup="dialog"
+            className="bg-inverse text-on-inverse flex h-10 shrink-0 cursor-pointer items-center gap-1.5 rounded-full pr-3 pl-4 text-sm font-bold"
+          >
+            {dex.label}
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="M6 9l6 6 6-6" />
+            </svg>
+          </button>
+          <div className="flex min-w-0 flex-1 flex-col gap-1.5">
             <div className="text-ink-muted flex justify-between text-xs font-semibold">
               <span>{counts ? `${counts.obtained} / ${counts.total}` : '…'}</span>
               <span>{percent} %</span>
@@ -73,18 +82,55 @@ export function PokedexPage() {
             </div>
           </div>
         </div>
+        {activeFilters > 0 && (
+          <div className="flex items-center gap-2 text-sm">
+            <Link
+              to="/filtres"
+              className="bg-shiny-soft text-shiny-ink flex h-9 items-center gap-1.5 rounded-full px-3 font-bold"
+            >
+              <FilterIcon width={16} height={16} />
+              {activeFilters} filtre{activeFilters > 1 ? 's' : ''} · {visibleEntries.length} résultat
+              {visibleEntries.length > 1 ? 's' : ''}
+            </Link>
+            <button type="button" onClick={resetFilters} className="text-ink-muted h-9 cursor-pointer px-2 font-semibold underline">
+              Effacer
+            </button>
+          </div>
+        )}
       </header>
 
-      {statuses ? (
+      {!statuses ? (
+        <p className="text-ink-subtle px-5 py-10 text-center text-sm">Chargement de ta collection…</p>
+      ) : visibleEntries.length === 0 ? (
+        <div className="flex flex-col items-center gap-3 px-6 py-12 text-center">
+          <p className="text-ink-muted text-sm">Aucun Pokémon ne correspond à ces filtres dans ce Pokédex.</p>
+          <button
+            type="button"
+            onClick={resetFilters}
+            className="bg-inverse text-on-inverse h-11 cursor-pointer rounded-2xl px-5 text-sm font-bold"
+          >
+            Effacer les filtres
+          </button>
+        </div>
+      ) : (
         <VirtualEntryList
-          entries={entries}
+          entries={visibleEntries}
           statuses={statuses}
           mode={mode}
           onToggle={handleToggle}
           scrollElementRef={scrollElementRef}
+          scrollKey={`pokedex|${listSelectionKey(dexId, filters)}`}
         />
-      ) : (
-        <p className="text-ink-subtle px-5 py-10 text-center text-sm">Chargement de ta collection…</p>
+      )}
+
+      {statuses && (
+        <DexSelector
+          open={selectorOpen}
+          onClose={() => setSelectorOpen(false)}
+          selected={dexId}
+          onSelect={setDexId}
+          statuses={statuses}
+        />
       )}
     </>
   );

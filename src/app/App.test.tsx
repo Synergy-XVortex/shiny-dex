@@ -98,3 +98,63 @@ describe('Detail page', () => {
     expect(screen.getByRole('heading', { name: 'Page introuvable' })).toBeInTheDocument();
   });
 });
+
+describe('Navigation in the collection', () => {
+  beforeEach(() => {
+    window.history.pushState({}, '', '/');
+  });
+
+  it('switches to a generation Pokédex from the selector', async () => {
+    const user = userEvent.setup();
+    render(<App />);
+    await screen.findByRole('link', { name: 'Bulbizarre' });
+
+    await user.click(screen.getByRole('button', { name: /Pokédex global/ }));
+    await user.click(screen.getByRole('button', { name: /^Génération V,/ }));
+
+    expect(await screen.findByRole('link', { name: 'Victini' })).toBeInTheDocument();
+    expect(screen.queryByRole('link', { name: 'Bulbizarre' })).not.toBeInTheDocument();
+    expect(screen.getByText('117 / 156')).toBeInTheDocument();
+    expect(localStorage.getItem('shinydex.dex')).toBe('gen-5');
+  });
+
+  it('applies filters and shows how many entries match', async () => {
+    const user = userEvent.setup();
+    render(<App />);
+    await screen.findByRole('link', { name: 'Bulbizarre' });
+
+    await user.click(screen.getByRole('link', { name: 'Filtres' }));
+    await user.click(screen.getByRole('button', { name: 'Shiny lock' }));
+    await user.click(screen.getByRole('button', { name: 'Afficher 25 résultats' }));
+
+    expect(await screen.findByRole('link', { name: '1 filtre · 25 résultats' })).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: 'Victini' })).toBeInTheDocument();
+
+    await user.click(screen.getByRole('button', { name: 'Effacer' }));
+    expect(await screen.findByRole('link', { name: 'Bulbizarre' })).toBeInTheDocument();
+  });
+
+  it('finds an entry by name without accents or by number', async () => {
+    const user = userEvent.setup();
+    render(<App />);
+    await user.click(screen.getByRole('link', { name: 'Recherche' }));
+
+    await user.type(screen.getByRole('searchbox', { name: 'Nom ou numéro' }), 'pecha');
+    expect(await screen.findByRole('link', { name: 'Pêchaminus' })).toBeInTheDocument();
+
+    await user.clear(screen.getByRole('searchbox', { name: 'Nom ou numéro' }));
+    await user.type(screen.getByRole('searchbox', { name: 'Nom ou numéro' }), '#025');
+    expect(await screen.findByRole('link', { name: 'Pikachu' })).toBeInTheDocument();
+    expect(screen.getByText('1 résultat')).toBeInTheDocument();
+  });
+
+  it('shows statistics per generation and a Pokémon to farm', async () => {
+    const user = userEvent.setup();
+    render(<App />);
+    await user.click(screen.getByRole('link', { name: 'Stats' }));
+
+    expect(await screen.findByText('1033 / 1220 entrées')).toBeInTheDocument();
+    expect(screen.getByRole('progressbar', { name: 'Génération V' })).toHaveAttribute('aria-valuenow', '75');
+    expect(screen.getByText('Prochain à farm')).toBeInTheDocument();
+  });
+});

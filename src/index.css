@@ -56,6 +56,16 @@
   }
 }
 
+/* Inverted type colours, for a selected type chip. */
+@utility type-surface-strong {
+  background-color: var(--type-ink);
+  color: var(--type-bg);
+  [data-theme='dark'] & {
+    background-color: var(--type-ink-dark);
+    color: var(--type-bg-dark);
+  }
+}
+
 @utility type-pill {
   background-color: var(--type-pill);
   [data-theme='dark'] & {
