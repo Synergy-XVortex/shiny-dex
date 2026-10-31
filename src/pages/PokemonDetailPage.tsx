@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { Link, useNavigate, useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
+import { useGoBack } from '../app/useGoBack';
 import { ChevronLeftIcon, ChevronRightIcon, SparkleMark } from '../components/icons';
 import { STATUS_LABELS, formatDexNumber } from '../features/pokedex/catalog';
 import { useCatalog } from '../features/pokedex/catalogContext';
@@ -19,20 +20,12 @@ export function PokemonDetailPage() {
 }
 
 function PokemonDetail({ entry }: { entry: PokedexEntry }) {
-  const navigate = useNavigate();
+  const goBack = useGoBack();
   const { statuses, setStatus } = useStatuses();
   const status: ShinyStatus = statuses?.get(entry.id) ?? 'to-farm';
   const [variantChoice, setVariantChoice] = useState<'normal' | 'shiny' | null>(null);
   const variant = variantChoice ?? (status === 'obtained' ? 'shiny' : 'normal');
   const { previous, next } = useCatalog().getNeighbours(entry.id);
-
-  // Back to wherever the user came from (keeps the list's scroll position);
-  // straight to the list when the page was opened directly.
-  const goBack = () => {
-    const historyIndex = (window.history.state as { idx?: number } | null)?.idx ?? 0;
-    if (historyIndex > 0) navigate(-1);
-    else navigate('/');
-  };
 
   return (
     <div style={entryPaletteStyle(entry.types[0], status)} className="mx-auto flex min-h-dvh max-w-3xl flex-col">

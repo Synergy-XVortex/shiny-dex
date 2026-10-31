@@ -94,6 +94,15 @@ L'app reste « local d'abord » : chaque statut est écrit dans IndexedDB, puis 
 
 Mise en service : exécuter la migration, se connecter une première fois, ajouter son identifiant à `editors` (`insert into public.editors (user_id) select id from auth.users where email = '…';`), puis désactiver les inscriptions dans Supabase.
 
+## Pokédex, recherche et filtres
+
+Tout se fait sur l'écran Pokédex, comme dans dataDex :
+
+- **Barre du bas** : Statistiques, Recherche, Réglages, et le bouton Filtres avec le nombre de filtres actifs. Statistiques et Réglages s'ouvrent en pages secondaires avec un bouton retour.
+- **Recherche** : la loupe ouvre un champ en haut de la liste ; la recherche (nom FR ou EN, numéro) se combine avec le Pokédex choisi et les filtres, et garde l'ordre du Pokédex.
+- **Panneau Filtres** (`FilterPanel`) : il glisse du bas et la liste reste visible derrière ; la poignée l'agrandit ou le réduit, et un glissement vers le bas le ferme. Chaque tap s'applique aussitôt. On y trouve aussi le choix cartes / grille et le raccourci « Tous / Masquer les obtenus ».
+- **Garder ou masquer** : un tap sur un filtre ne garde que ces Pokémon ; un appui long (clic droit ou Maj + clic sur PC) les masque. Un type masqué cache tout Pokémon qui l'a, même en second type. Le modèle est dans `listQuery.ts` (`FilterGroup`, `tapFilter`, `longPressFilter`).
+
 ## Vitrine publique
 
 `/vitrine` montre la collection telle qu'elle est enregistrée en ligne, sans connexion : avancement global, barres par génération et par forme, grille des shiny obtenus et des « à farm ». La page lit Supabase en anonyme (lecture publique des tables `shiny_statuses` et `added_entries`) et n'utilise ni IndexedDB, ni synchronisation, ni téléchargement des sprites en arrière-plan.

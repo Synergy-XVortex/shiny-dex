@@ -2,20 +2,26 @@ import { render, screen, waitFor, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { beforeEach, describe, expect, it } from 'vitest';
 import { App } from './App';
-import { NAVIGATION_ITEMS } from './navigation';
 
 describe('App shell', () => {
   beforeEach(() => {
     window.history.pushState({}, '', '/');
   });
 
-  it('shows every navigation entry and marks the current page', () => {
+  it('shows the Pokédex bar, and a way back from the secondary pages', async () => {
+    const user = userEvent.setup();
     render(<App />);
-    const nav = screen.getByRole('navigation', { name: 'Navigation principale' });
-    for (const item of NAVIGATION_ITEMS) {
-      expect(within(nav).getByRole('link', { name: item.label })).toBeInTheDocument();
+    const bar = screen.getByRole('navigation', { name: 'Outils du Pokédex' });
+    for (const name of ['Statistiques', 'Réglages']) {
+      expect(within(bar).getByRole('link', { name })).toBeInTheDocument();
     }
-    expect(within(nav).getByRole('link', { name: 'Pokédex' })).toHaveAttribute('aria-current', 'page');
+    expect(within(bar).getByRole('button', { name: 'Recherche' })).toBeInTheDocument();
+    expect(within(bar).getByRole('button', { name: 'Filtres' })).toBeInTheDocument();
+
+    await user.click(within(bar).getByRole('link', { name: 'Réglages' }));
+    expect(screen.queryByRole('navigation', { name: 'Outils du Pokédex' })).not.toBeInTheDocument();
+    await user.click(screen.getByRole('button', { name: 'Retour au Pokédex' }));
+    expect(await screen.findByRole('navigation', { name: 'Outils du Pokédex' })).toBeInTheDocument();
   });
 
   it('switches the theme from the settings page and remembers it', async () => {
@@ -34,7 +40,7 @@ describe('App shell', () => {
     window.history.pushState({}, '', '/vitrine');
     render(<App />);
     expect(screen.getByRole('heading', { name: 'La collection de X-Vortex' })).toBeInTheDocument();
-    expect(screen.queryByRole('navigation', { name: 'Navigation principale' })).not.toBeInTheDocument();
+    expect(screen.queryByRole('navigation', { name: 'Outils du Pokédex' })).not.toBeInTheDocument();
   });
 });
 
@@ -67,12 +73,14 @@ describe('Pokédex list', () => {
     expect(screen.getByText('1033 / 1220')).toBeInTheDocument();
   });
 
-  it('remembers the grid view', async () => {
+  it('remembers the grid view chosen in the filter panel', async () => {
     const user = userEvent.setup();
     render(<App />);
-    await user.click(screen.getByRole('button', { name: 'Vue grille' }));
-    expect(screen.getByRole('button', { name: 'Vue grille' })).toHaveAttribute('aria-pressed', 'true');
+    await user.click(screen.getByRole('button', { name: 'Filtres' }));
+    await user.click(screen.getByRole('radio', { name: 'Grille' }));
+    expect(screen.getByRole('radio', { name: 'Grille' })).toBeChecked();
     expect(localStorage.getItem('shinydex.view')).toBe('grid');
+    await user.click(screen.getByRole('button', { name: 'Fermer' }));
     expect(await screen.findByRole('link', { name: 'Bulbizarre #0001' })).toBeInTheDocument();
   });
 });
@@ -118,40 +126,66 @@ describe('Navigation in the collection', () => {
     expect(localStorage.getItem('shinydex.dex')).toBe('gen-5');
   });
 
-  it('applies filters and shows how many entries match', async () => {
+  it('applies filters from the panel, live, and clears them', async () => {
     const user = userEvent.setup();
     render(<App />);
     await screen.findByRole('link', { name: 'Bulbizarre' });
 
-    await user.click(screen.getByRole('link', { name: 'Filtres' }));
+    await user.click(screen.getByRole('button', { name: 'Filtres' }));
     await user.click(screen.getByRole('button', { name: 'Shiny lock' }));
-    await user.click(screen.getByRole('button', { name: 'Afficher 25 résultats' }));
+    expect(screen.getByRole('button', { name: 'Shiny lock' })).toHaveAttribute('aria-pressed', 'true');
+    expect(within(screen.getByRole('dialog', { name: 'Filtres' })).getByText('25 résultats')).toBeInTheDocument();
+    await user.click(screen.getByRole('button', { name: 'Fermer' }));
 
-    expect(await screen.findByRole('link', { name: '1 filtre · 25 résultats' })).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: 'Filtres, 1 actif' })).toBeInTheDocument();
+    expect(await screen.findByRole('button', { name: '1 filtre · 25 résultats' })).toBeInTheDocument();
     expect(screen.getByRole('link', { name: 'Victini' })).toBeInTheDocument();
 
-    await user.click(screen.getByRole('button', { name: 'Effacer' }));
+    await user.click(screen.getByRole('button', { name: 'Effacer les filtres' }));
     expect(await screen.findByRole('link', { name: 'Bulbizarre' })).toBeInTheDocument();
   });
 
-  it('finds an entry by name without accents or by number', async () => {
+  it('hides a group with a long press (right click on a PC)', async () => {
     const user = userEvent.setup();
     render(<App />);
-    await user.click(screen.getByRole('link', { name: 'Recherche' }));
+    await screen.findByRole('link', { name: 'Bulbizarre' });
 
-    await user.type(screen.getByRole('searchbox', { name: 'Nom ou numéro' }), 'pecha');
+    await user.click(screen.getByRole('button', { name: 'Filtres' }));
+    await user.pointer({ keys: '[MouseRight]', target: screen.getByRole('button', { name: 'Obtenu' }) });
+
+    expect(screen.getByRole('button', { name: 'Obtenu (masqué)' })).toHaveAttribute('aria-pressed', 'false');
+    expect(screen.getByRole('radio', { name: 'Masquer les obtenus' })).toBeChecked();
+    expect(within(screen.getByRole('dialog', { name: 'Filtres' })).getByText('187 résultats')).toBeInTheDocument();
+
+    await user.click(screen.getByRole('radio', { name: 'Tous' }));
+    expect(screen.getByRole('button', { name: 'Obtenu' })).toBeInTheDocument();
+  });
+
+  it('searches inside the selected Pokédex, without accents or by number', async () => {
+    const user = userEvent.setup();
+    render(<App />);
+    await screen.findByRole('link', { name: 'Bulbizarre' });
+    await user.click(screen.getByRole('button', { name: 'Recherche' }));
+
+    const field = screen.getByRole('searchbox', { name: 'Rechercher dans ce Pokédex' });
+    await user.type(field, 'pecha');
     expect(await screen.findByRole('link', { name: 'Pêchaminus' })).toBeInTheDocument();
+    expect(screen.queryByRole('link', { name: 'Bulbizarre' })).not.toBeInTheDocument();
 
-    await user.clear(screen.getByRole('searchbox', { name: 'Nom ou numéro' }));
-    await user.type(screen.getByRole('searchbox', { name: 'Nom ou numéro' }), '#025');
+    await user.clear(field);
+    await user.type(field, '#025');
     expect(await screen.findByRole('link', { name: 'Pikachu' })).toBeInTheDocument();
     expect(screen.getByText('1 résultat')).toBeInTheDocument();
+
+    await user.click(screen.getByRole('button', { name: 'Fermer la recherche' }));
+    expect(screen.queryByRole('searchbox')).not.toBeInTheDocument();
+    expect(await screen.findByRole('link', { name: 'Bulbizarre' })).toBeInTheDocument();
   });
 
   it('shows statistics per generation and a Pokémon to farm', async () => {
     const user = userEvent.setup();
     render(<App />);
-    await user.click(screen.getByRole('link', { name: 'Stats' }));
+    await user.click(screen.getByRole('link', { name: 'Statistiques' }));
 
     expect(await screen.findByText('1033 / 1220 entrées')).toBeInTheDocument();
     expect(screen.getByRole('progressbar', { name: 'Génération V' })).toHaveAttribute('aria-valuenow', '75');
