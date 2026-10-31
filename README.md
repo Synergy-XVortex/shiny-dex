@@ -80,6 +80,20 @@ Le travail se fait sur une branche par sujet (`feature/…`, `fix/…`), fusionn
 - **Coque de l'app** (≈ 760 ko) : précachée par le service worker. Une nouvelle version s'installe en quelques secondes et prend la main immédiatement (`skipWaiting`, `clientsClaim`) ; la page se recharge alors d'elle-même.
 - **Sprites** (≈ 26 Mo) : volontairement hors du précache, sinon chaque mise à jour attendrait leur téléchargement. Ils sont servis en « cache d'abord » depuis le cache `shiny-dex-sprites-v1`, que `src/features/offline/spriteCache.ts` remplit en arrière-plan quelques secondes après le lancement (sauf si le mode économie de données est actif). L'avancement est affiché dans Réglages.
 
+## Synchronisation (Supabase)
+
+L'app reste « local d'abord » : chaque statut est écrit dans IndexedDB, puis envoyé au serveur quand c'est possible.
+
+- **Schéma** : `supabase/migrations/0001_shiny_statuses.sql`, à exécuter une fois dans l'éditeur SQL du projet. Table `shiny_statuses` lisible par tous (pour la vitrine), modifiable seulement par les comptes listés dans `editors`, via la fonction `push_statuses`.
+- **Écritures** : chaque modification locale va aussi dans la file `pendingChanges`. `src/features/sync/syncEngine.ts` l'envoie par lots ; en cas de conflit, la modification la plus récente (`updatedAt`) l'emporte.
+- **Lectures** : les changements des autres appareils sont récupérés par curseur sur `synced_at` (horloge du serveur), donc sans dépendre de l'heure des téléphones.
+- **Premier appareil** : si le serveur est vide, l'appareil connecté y envoie tous ses statuts (import du Sheet compris).
+- **Déclencheurs** : connexion, modification locale (après 1,5 s), retour du réseau, retour au premier plan, et toutes les 2 minutes.
+- **Connexion** : code ou lien reçu par e-mail (Réglages → Compte et synchronisation). La déconnexion conserve les données locales.
+- **Configuration** : `VITE_SUPABASE_URL` et `VITE_SUPABASE_PUBLISHABLE_KEY` (`.env.production`, voir `.env.example`). Ces valeurs sont publiques par conception ; la sécurité repose sur les règles RLS. Sans elles, l'app fonctionne hors synchronisation.
+
+Mise en service : exécuter la migration, se connecter une première fois, ajouter son identifiant à `editors` (`insert into public.editors (user_id) select id from auth.users where email = '…';`), puis désactiver les inscriptions dans Supabase.
+
 ## Avancement
 
-Étapes 1 à 4 sur 6 : socle technique, PWA, import des données, liste et fiche détail avec statuts locaux, sélecteur de Pokédex, filtres, recherche et statistiques.
+Étapes 1 à 5 sur 6 : socle technique, PWA, import des données, liste et fiche détail, sélecteur de Pokédex, filtres, recherche, statistiques, connexion et synchronisation entre appareils.

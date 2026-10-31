@@ -3,8 +3,8 @@ import type { ShinyStatus, StatusMap } from './model';
 
 /**
  * Local source of truth for statuses, kept in IndexedDB so the app works
- * offline. Step 5 adds a synchronisation queue on top of this table; every
- * write already records `updatedAt` so the most recent change can win.
+ * offline. Every change is also queued in `pendingChanges` until the sync
+ * engine (src/features/sync) has stored it online.
  */
 export interface StatusRecord {
   id: string;
@@ -13,14 +13,37 @@ export interface StatusRecord {
   updatedAt: number;
 }
 
+/** A local change not yet confirmed by the server. Same shape as the status it carries. */
+export type PendingChange = StatusRecord;
+
+/** Small key/value store for sync bookkeeping (pull cursor, last sync time…). */
+export interface MetaRecord {
+  key: string;
+  value: string | number | boolean;
+}
+
 export class ShinyDexDatabase extends Dexie {
   statuses!: EntityTable<StatusRecord, 'id'>;
+  pendingChanges!: EntityTable<PendingChange, 'id'>;
+  meta!: EntityTable<MetaRecord, 'key'>;
 
   constructor(name = 'shiny-dex') {
     super(name);
     this.version(1).stores({
       statuses: 'id',
     });
+    this.version(2)
+      .stores({
+        statuses: 'id',
+        pendingChanges: 'id',
+        meta: 'key',
+      })
+      .upgrade(async (transaction) => {
+        // Changes made before synchronisation existed (steps 3 and 4) must
+        // still reach the server: queue every status the user has touched.
+        const touched = await transaction.table<StatusRecord>('statuses').where('id').notEqual('').toArray();
+        await transaction.table<PendingChange>('pendingChanges').bulkPut(touched.filter((record) => record.updatedAt > 0));
+      });
   }
 }
 
@@ -48,6 +71,11 @@ export async function seedMissingStatuses(
   });
 }
 
+/** Records a change made on this device and queues it for synchronisation, atomically. */
 export async function writeStatus(database: ShinyDexDatabase, id: string, status: ShinyStatus): Promise<void> {
-  await database.statuses.put({ id, status, updatedAt: Date.now() });
+  const record: StatusRecord = { id, status, updatedAt: Date.now() };
+  await database.transaction('rw', database.statuses, database.pendingChanges, async () => {
+    await database.statuses.put(record);
+    await database.pendingChanges.put(record);
+  });
 }
