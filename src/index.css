@@ -1,0 +1,56 @@
+@import '@fontsource-variable/plus-jakarta-sans';
+@import 'tailwindcss';
+
+/* Dark mode follows the data-theme attribute set by the theme system, not the
+   media query directly, so the user's explicit choice always wins. */
+@custom-variant dark (&:where([data-theme='dark'], [data-theme='dark'] *));
+
+/* Semantic colour tokens. Components use these names (bg-surface, text-ink…)
+   and never raw hex values, so each theme is defined in exactly one place. */
+@theme {
+  --font-sans: 'Plus Jakarta Sans Variable', system-ui, sans-serif;
+
+  --color-surface: #f5f6f8;
+  --color-surface-raised: #ffffff;
+  --color-surface-sunken: #e8eaee;
+  --color-line: #e4e6eb;
+  --color-ink: #1b1d22;
+  --color-ink-muted: #4a4f5c;
+  --color-ink-subtle: #5b6070;
+  --color-inverse: #1b1d22;
+  --color-on-inverse: #ffffff;
+  --color-shiny: #d9a400;
+  --color-shiny-soft: #fff1c2;
+  --color-shiny-ink: #6e5600;
+  /* The app mark keeps its dark tile in both themes, like the home-screen icon. */
+  --color-brand-tile: #1b1d22;
+  --color-brand-sparkle: #f2c94c;
+}
+
+[data-theme='dark'] {
+  --color-surface: #111317;
+  --color-surface-raised: #1a1c21;
+  --color-surface-sunken: #23262d;
+  --color-line: #2a2d33;
+  --color-ink: #f2f3f5;
+  --color-ink-muted: #b4b9c4;
+  --color-ink-subtle: #a3a8b4;
+  --color-inverse: #f2f3f5;
+  --color-on-inverse: #111317;
+  --color-shiny: #f2c94c;
+  --color-shiny-soft: #4a3f17;
+  --color-shiny-ink: #f2c94c;
+}
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  body {
+    @apply bg-surface text-ink font-sans antialiased;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
