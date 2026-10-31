@@ -89,7 +89,7 @@ L'app reste « local d'abord » : chaque statut est écrit dans IndexedDB, puis 
 - **Lectures** : les changements des autres appareils sont récupérés par curseur sur `synced_at` (horloge du serveur), donc sans dépendre de l'heure des téléphones.
 - **Premier appareil** : si le serveur est vide, l'appareil connecté y envoie tous ses statuts (import du Sheet compris).
 - **Déclencheurs** : connexion, modification locale (après 1,5 s), retour du réseau, retour au premier plan, et toutes les 2 minutes.
-- **Connexion** : code ou lien reçu par e-mail (Réglages → Compte et synchronisation). La déconnexion conserve les données locales.
+- **Connexion** : lien reçu par e-mail (Réglages → Compte et synchronisation). Le champ « code » ne sert que si un serveur SMTP personnalisé permet de modifier le modèle d'e-mail pour y ajouter `{{ .Token }}`. Le SMTP intégré de Supabase limite l'envoi à quelques e-mails par heure. La déconnexion conserve les données locales.
 - **Configuration** : `VITE_SUPABASE_URL` et `VITE_SUPABASE_PUBLISHABLE_KEY` (`.env.production`, voir `.env.example`). Ces valeurs sont publiques par conception ; la sécurité repose sur les règles RLS. Sans elles, l'app fonctionne hors synchronisation.
 
 Mise en service : exécuter la migration, se connecter une première fois, ajouter son identifiant à `editors` (`insert into public.editors (user_id) select id from auth.users where email = '…';`), puis désactiver les inscriptions dans Supabase.

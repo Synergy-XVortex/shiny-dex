@@ -132,8 +132,8 @@ function SignInForm() {
   ) : (
     <form onSubmit={submitCode} className="flex flex-col gap-3">
       <p className="text-ink-muted text-sm">
-        Un e-mail a été envoyé à <span className="text-ink font-bold">{email}</span>. Saisis le code qu'il contient, ou
-        ouvre son lien sur cet appareil.
+        Un e-mail a été envoyé à <span className="text-ink font-bold">{email}</span>. Ouvre son lien sur cet appareil, ou
+        saisis ci-dessous le code s'il en contient un.
       </p>
       <label className="flex flex-col gap-1.5 text-sm font-semibold">
         Code reçu par e-mail
