@@ -1,4 +1,5 @@
 import { PageHeader } from '../components/PageHeader';
+import { OfflineStatus } from '../features/offline/OfflineStatus';
 import { ThemePicker } from '../features/theme/ThemePicker';
 
 export function SettingsPage() {
@@ -9,6 +10,9 @@ export function SettingsPage() {
         <section className="bg-surface-raised border-line rounded-3xl border p-4">
           <ThemePicker />
         </section>
+        <div className="bg-surface-raised border-line rounded-3xl border p-4">
+          <OfflineStatus />
+        </div>
         <section className="bg-surface-raised border-line text-ink-muted rounded-3xl border p-4 text-sm">
           <h2 className="text-ink-subtle mb-2 text-[13px] font-bold tracking-wider uppercase">Compte et synchronisation</h2>
           <p>La connexion et la synchronisation arrivent à l'étape 5.</p>
