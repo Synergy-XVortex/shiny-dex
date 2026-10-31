@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { useSpriteCacheWarmup } from '../features/offline/useSpriteCache';
 import { ListQueryProvider } from '../features/pokedex/ListQueryProvider';
 import { StatusProvider } from '../features/pokedex/StatusProvider';
+import { SyncProvider } from '../features/sync/SyncProvider';
 import { ThemeProvider } from '../features/theme/ThemeProvider';
 import { PokedexPage } from '../pages/PokedexPage';
 import { PokemonDetailPage } from '../pages/PokemonDetailPage';
@@ -18,22 +19,24 @@ export function App() {
   return (
     <ThemeProvider>
       <StatusProvider>
-        <ListQueryProvider>
-          <BrowserRouter>
-            <Routes>
-              <Route element={<AppLayout />}>
-                <Route index element={<PokedexPage />} />
-                <Route path="stats" element={<StatsPage />} />
-                <Route path="recherche" element={<SearchPage />} />
-                <Route path="filtres" element={<FiltersPage />} />
-                <Route path="reglages" element={<SettingsPage />} />
-              </Route>
-              <Route path="pokemon/:id" element={<PokemonDetailPage />} />
-              <Route path="vitrine" element={<ShowcasePage />} />
-              <Route path="*" element={<NotFoundPage />} />
-            </Routes>
-          </BrowserRouter>
-        </ListQueryProvider>
+        <SyncProvider>
+          <ListQueryProvider>
+            <BrowserRouter>
+              <Routes>
+                <Route element={<AppLayout />}>
+                  <Route index element={<PokedexPage />} />
+                  <Route path="stats" element={<StatsPage />} />
+                  <Route path="recherche" element={<SearchPage />} />
+                  <Route path="filtres" element={<FiltersPage />} />
+                  <Route path="reglages" element={<SettingsPage />} />
+                </Route>
+                <Route path="pokemon/:id" element={<PokemonDetailPage />} />
+                <Route path="vitrine" element={<ShowcasePage />} />
+                <Route path="*" element={<NotFoundPage />} />
+              </Routes>
+            </BrowserRouter>
+          </ListQueryProvider>
+        </SyncProvider>
       </StatusProvider>
     </ThemeProvider>
   );
