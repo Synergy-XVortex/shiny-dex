@@ -1,0 +1,195 @@
+{
+  "source": {
+    "spreadsheet": "Shiny Living Dex",
+    "spreadsheetId": "14zgiVrEq1io3lgKCHc0gOt9k-d3sb7qxHgN2Ae9BwQc",
+    "capturedAt": "2026-10-31",
+    "note": "National tabs list only rows whose status is not \"Oui\" (exceptions) and rows whose English code is not the species default (codeOverrides). Form tabs are copied row by row: [national number, French name, English code, status]."
+  },
+  "nationalTabs": [
+    { "name": "Première Génération", "generation": 1, "first": 1, "last": 151, "exceptions": {}, "codeOverrides": {} },
+    {
+      "name": "Deuxième Génération", "generation": 2, "first": 152, "last": 251,
+      "exceptions": { "165": "A farm", "166": "A farm", "201": "A farm", "213": "A farm", "243": "A farm", "245": "A farm", "249": "A farm" },
+      "codeOverrides": {}
+    },
+    {
+      "name": "Troisième Génération", "generation": 3, "first": 252, "last": 386,
+      "exceptions": {
+        "276": "A farm", "277": "A farm", "293": "A farm", "294": "A farm", "295": "A farm", "327": "A farm", "337": "A farm",
+        "338": "A farm", "345": "A farm", "347": "A farm", "348": "A farm", "360": "A farm", "367": "A farm", "368": "A farm",
+        "369": "A farm", "377": "A farm", "378": "A farm", "379": "A farm", "383": "A farm", "385": "A farm"
+      },
+      "codeOverrides": {}
+    },
+    {
+      "name": "Quatrième Génération", "generation": 4, "first": 387, "last": 493,
+      "exceptions": {
+        "412": "A farm", "413": "A farm", "480": "A farm", "481": "A farm", "482": "A farm", "486": "A farm", "488": "A farm",
+        "489": "A farm", "491": "A farm", "492": "A farm", "493": "A farm"
+      },
+      "codeOverrides": {}
+    },
+    {
+      "name": "Cinquième Génération", "generation": 5, "first": 494, "last": 649,
+      "exceptions": {
+        "494": "Shiny lock",
+        "506": "A farm", "507": "A farm", "508": "A farm", "519": "A farm", "520": "A farm", "521": "A farm", "527": "A farm",
+        "535": "A farm", "554": "A farm", "555": "A farm", "556": "A farm", "557": "A farm", "558": "A farm", "561": "A farm",
+        "564": "A farm", "565": "A farm", "566": "A farm", "567": "A farm", "574": "A farm", "588": "A farm", "592": "A farm",
+        "593": "A farm", "594": "A farm", "597": "A farm", "598": "A farm", "599": "A farm", "601": "A farm", "605": "A farm",
+        "606": "A farm", "616": "A farm", "617": "A farm", "626": "A farm", "632": "A farm", "641": "A farm", "642": "A farm",
+        "645": "A farm", "646": "A farm", "649": "A farm"
+      },
+      "codeOverrides": {}
+    },
+    {
+      "name": "Sixième Génération", "generation": 6, "first": 650, "last": 721,
+      "exceptions": { "716": "A farm", "719": "A farm", "720": "Shiny lock" },
+      "codeOverrides": {}
+    },
+    {
+      "name": "Septième Génération", "generation": 7, "first": 722, "last": 809,
+      "exceptions": {
+        "755": "A farm", "772": "A farm", "773": "A farm", "774": "A farm", "775": "A farm", "776": "A farm", "777": "A farm",
+        "781": "A farm", "789": "Shiny lock", "790": "Shiny lock", "792": "A farm", "793": "A farm", "794": "A farm",
+        "796": "A farm", "797": "A farm", "798": "A farm", "801": "Shiny lock", "802": "Shiny lock", "803": "A farm", "804": "A farm"
+      },
+      "codeOverrides": { "774": "Minior-core" }
+    },
+    {
+      "name": "Huitième Génération", "generation": 8, "first": 810, "last": 905,
+      "exceptions": {
+        "824": "A farm", "825": "A farm", "829": "A farm", "830": "A farm", "831": "A farm", "835": "A farm", "850": "A farm",
+        "864": "A farm", "880": "A farm", "881": "A farm", "882": "A farm", "883": "A farm", "891": "Shiny lock",
+        "892": "Shiny lock", "893": "Shiny lock", "894": "A farm", "895": "A farm", "896": "Shiny lock", "897": "Shiny lock",
+        "898": "Shiny lock"
+      },
+      "codeOverrides": {}
+    },
+    {
+      "name": "Neuvième Génération", "generation": 9, "first": 906, "last": 1025,
+      "exceptions": {
+        "1009": "Shiny lock", "1010": "Shiny lock", "1014": "Shiny lock", "1015": "Shiny lock", "1016": "Shiny lock",
+        "1017": "Shiny lock", "1020": "Shiny lock", "1021": "Shiny lock", "1022": "Shiny lock", "1023": "Shiny lock",
+        "1024": "Shiny lock", "1025": "Shiny lock"
+      },
+      "codeOverrides": { "916": "Oinkologne-Female", "1017": "Ogerpon-teal" }
+    }
+  ],
+  "formTabs": [
+    {
+      "name": "Formes Zarbi", "category": "unown",
+      "rows": [
+        [201, "Zarbi B", "Unown-B", "A farm"], [201, "Zarbi C", "Unown-C", "Oui"], [201, "Zarbi D", "Unown-D", "A farm"],
+        [201, "Zarbi E", "Unown-E", "Oui"], [201, "Zarbi F", "Unown-F", "Oui"], [201, "Zarbi G", "Unown-G", "A farm"],
+        [201, "Zarbi H", "Unown-H", "Oui"], [201, "Zarbi I", "Unown-I", "A farm"], [201, "Zarbi J", "Unown-J", "A farm"],
+        [201, "Zarbi K", "Unown-K", "A farm"], [201, "Zarbi L", "Unown-L", "A farm"], [201, "Zarbi M", "Unown-M", "Oui"],
+        [201, "Zarbi N", "Unown-N", "A farm"], [201, "Zarbi O", "Unown-O", "Oui"], [201, "Zarbi P", "Unown-P", "A farm"],
+        [201, "Zarbi Q", "Unown-Q", "Oui"], [201, "Zarbi R", "Unown-R", "Oui"], [201, "Zarbi S", "Unown-S", "A farm"],
+        [201, "Zarbi T", "Unown-T", "A farm"], [201, "Zarbi U", "Unown-U", "A farm"], [201, "Zarbi V", "Unown-V", "A farm"],
+        [201, "Zarbi W", "Unown-W", "A farm"], [201, "Zarbi X", "Unown-X", "A farm"], [201, "Zarbi Y", "Unown-Y", "A farm"],
+        [201, "Zarbi Z", "Unown-Z", "A farm"], [201, "Zarbi !", "Unown-Em", "A farm"], [201, "Zarbi ?", "Unown-Qm", "Oui"]
+      ]
+    },
+    {
+      "name": "Formes Alola", "category": "alola",
+      "rows": [
+        [19, "Rattata", "Rattata-Alolan", "A farm"], [20, "Rattatac", "Raticate-Alolan", "A farm"], [26, "Raichu", "Raichu-Alolan", "Oui"],
+        [27, "Sabelette", "Sandshrew-Alolan", "Oui"], [28, "Sablaireau", "Sandslash-Alolan", "Oui"], [37, "Goupix", "Vulpix-Alolan", "Oui"],
+        [38, "Feunard", "Ninetales-Alolan", "Oui"], [50, "Taupiqueur", "Diglett-Alolan", "A farm"], [51, "Triopikeur", "Dugtrio-Alolan", "Oui"],
+        [52, "Miaouss", "Meowth-Alolan", "Oui"], [53, "Persian", "Persian-Alolan", "Oui"], [74, "Racaillou", "Geodude-Alolan", "Oui"],
+        [75, "Gravalanch", "Graveler-Alolan", "Oui"], [76, "Grolem", "Golem-Alolan", "Oui"], [88, "Tadmorv", "Grimer-Alolan", "Oui"],
+        [89, "Grotadmorv", "Muk-Alolan", "Oui"], [103, "Noadkoko", "Exeggutor-Alolan", "Oui"], [105, "Ossatueur", "Marowak-Alolan", "Oui"]
+      ]
+    },
+    {
+      "name": "Formes de Galar", "category": "galar",
+      "rows": [
+        [52, "Miaouss", "Meowth-Galarian", "Oui"], [77, "Ponyta", "Ponyta-Galarian", "Oui"], [78, "Galopa", "Rapidash-Galarian", "Oui"],
+        [79, "Ramoloss", "Slowpoke-Galarian", "Oui"], [80, "Flagadoss", "Slowbro-Galarian", "Oui"], [83, "Canarticho", "Farfetchd-Galarian", "Oui"],
+        [110, "Smogogo", "Weezing-Galarian", "Oui"], [122, "M. Mime", "Mr-Mime-Galarian", "Oui"], [144, "Artikodin", "Articuno-Galarian", "Oui"],
+        [145, "Électhor", "Zapdos-Galarian", "Oui"], [146, "Sulfura", "Moltres-Galarian", "Oui"], [199, "Roigada", "Slowking-Galarian", "Oui"],
+        [222, "Corayon", "Corsola-Galarian", "A farm"], [263, "Zigzaton", "Zigzagoon-Galarian", "A farm"], [264, "Linéon", "Linoone-Galarian", "A farm"],
+        [554, "Darumarond", "Darumaka-Galarian", "A farm"], [555, "Darumacho", "Darmanitan-Galarian-Standard", "A farm"],
+        [562, "Tutafeh", "Yamask-Galarian", "Oui"], [618, "Limonde", "Stunfisk-Galarian", "Oui"]
+      ]
+    },
+    {
+      "name": "Formes Hisui", "category": "hisui",
+      "rows": [
+        [58, "Caninos", "Growlithe-Hisuian", "Oui"], [59, "Arcanin", "Arcanine-Hisuian", "Oui"], [100, "Voltorbe", "Voltorb-Hisuian", "Oui"],
+        [101, "Électrode", "Electrode-Hisuian", "Oui"], [157, "Typhlosion", "Typhlosion-Hisuian", "Oui"], [211, "Qwilfish", "Qwilfish-Hisuian", "Oui"],
+        [215, "Farfuret", "Sneasel-Hisuian", "Oui"], [503, "Clamiral", "Samurott-Hisuian", "Oui"], [549, "Fragilady", "Lilligant-Hisuian", "Oui"],
+        [570, "Zorua", "Zorua-Hisuian", "Oui"], [571, "Zoroark", "Zoroark-Hisuian", "Oui"], [628, "Gueriaigle", "Braviary-Hisuian", "Oui"],
+        [705, "Colimucus", "Sliggoo-Hisuian", "Oui"], [706, "Muplodocus", "Goodra-Hisuian", "Oui"], [713, "Séracrawl", "Avalugg-Hisuian", "Oui"],
+        [724, "Archéduc", "Decidueye-Hisuian", "Oui"]
+      ]
+    },
+    {
+      "name": "Formes de Paldea", "category": "paldea",
+      "rows": [
+        [194, "Axoloto", "Wooper-Paldean", "Oui"], [128, "Tauros", "Tauros-Paldean", "Oui"],
+        [128, "Tauros (Feu)", "Tauros-Paldean", "Oui"], [128, "Tauros (Eau)", "Tauros-Paldean", "Oui"]
+      ]
+    },
+    {
+      "name": "Formes Alternatives", "category": "alternate",
+      "rows": [
+        [412, "Cheniti Sable", "Burmy-Sandy", "A farm"], [412, "Cheniti Déchet", "Burmy-Trash", "A farm"],
+        [413, "Cheniselle Sable", "Wormadam-Sandy", "A farm"], [413, "Cheniselle Déchet", "Wormadam-Trash", "A farm"],
+        [415, "Apitrini Femelle", "Combee-f", "Oui"], [422, "Sancoki Orient", "Shellos-East", "Oui"], [423, "Tritosor Orient", "Gastrodon-East", "Oui"],
+        [449, "Hippopotas Mâle", "Hippopotas-F", "Oui"], [450, "Hippodocus Mâle", "Hippowdon-F", "Oui"],
+        [479, "Motisma Chaleur", "Rotom-Heat", "Oui"], [479, "Motisma Lavage", "Rotom-Wash", "Oui"], [479, "Motisma Froid", "Rotom-Frost", "Oui"],
+        [479, "Motisma Hélice", "Rotom-Fan", "Oui"], [479, "Motisma Tonte", "Rotom-Mow", "Oui"], [521, "Déflaisan Femelle", "Unfezant-F", "A farm"],
+        [550, "Bargantua Bleu", "Basculin-Blue-Striped", "Oui"], [550, "Bargantua Blanc", "Basculin-White-Striped", "Oui"],
+        [585, "Vivaldaim Été", "Deerling-Summer", "Oui"], [585, "Vivaldaim Automne", "Deerling-Autumn", "Oui"], [585, "Vivaldaim Hiver", "Deerling-Winter", "Oui"],
+        [586, "Haydaim Été", "Sawsbuck-Summer", "Oui"], [586, "Haydaim Automne", "Sawsbuck-Autumn", "Oui"], [586, "Haydaim Hiver", "Sawsbuck-Winter", "Oui"],
+        [592, "Viskuse Femelle", "Frillish-F", "A farm"], [593, "Moyade Femelle", "Jellicent-F", "A farm"],
+        [666, "Prismillon Blizzard", "Vivillon-Icy-Snow", "Oui"], [666, "Prismillon Banquise", "Vivillon-Polar", "Oui"],
+        [666, "Prismillon Glace", "Vivillon-Tundra", "Oui"], [666, "Prismillon Continent", "Vivillon-Continental", "Oui"],
+        [666, "Prismillon Verdure", "Vivillon-Garden", "Oui"], [666, "Prismillon Monarchie", "Vivillon-Elegant", "Oui"],
+        [666, "Prismillon Floraison", "Vivillon-Fancy", "Oui"], [666, "Prismillon Métropole", "Vivillon-Modern", "Oui"],
+        [666, "Prismillon Rivage", "Vivillon-Marine", "Oui"], [666, "Prismillon Archipel", "Vivillon-Archipelago", "Oui"],
+        [666, "Prismillon Sécheresse", "Vivillon-High-Plains", "Oui"], [666, "Prismillon Sable", "Vivillon-Sandstorm", "Oui"],
+        [666, "Prismillon Delta", "Vivillon-River", "Oui"], [666, "Prismillon Cyclone", "Vivillon-Monsoon", "Oui"],
+        [666, "Prismillon Mangrove", "Vivillon-Savanna", "Oui"], [666, "Prismillon Zénith", "Vivillon-Sun", "Oui"],
+        [666, "Prismillon Soleil Levant", "Vivillon-Ocean", "Oui"], [666, "Prismillon Jungle", "Vivillon-Jungle", "Oui"],
+        [666, "Prismillon Poké Ball", "Vivillon-Poke-Ball", "A farm"], [668, "Némelios Femelle", "Pyroar-F", "Oui"],
+        [669, "Flabébé Jaune", "Flabebe-Yellow", "Oui"], [669, "Flabébé Blanc", "Flabebe-White", "Oui"],
+        [669, "Flabébé Bleu", "Flabebe-Blue", "Oui"], [669, "Flabébé Orange", "Flabebe-Orange", "Oui"],
+        [670, "Floette Jaune", "Floette-Yellow", "Oui"], [670, "Floette Blanc", "Floette-White", "Oui"],
+        [670, "Floette Bleu", "Floette-Blue", "Oui"], [670, "Floette Orange", "Floette-Orange", "Oui"],
+        [670, "Floette Fleur Eternel", "Floette-Eternal-Flower", "A farm"],
+        [671, "Florges Jaune", "Florges-Yellow", "Oui"], [671, "Florges Blanc", "Florges-White", "Oui"],
+        [671, "Florges Bleu", "Florges-Blue", "Oui"], [671, "Florges Orange", "Florges-Orange", "Oui"],
+        [676, "Couafarel Cœur", "Furfrou-Heart", "Oui"], [676, "Couafarel Étoile", "Furfrou-Star", "Oui"],
+        [676, "Couafarel Diamant", "Furfrou-Diamond", "Oui"], [676, "Couafarel Demoiselle", "Furfrou-Debutante", "Oui"],
+        [676, "Couafarel Madame", "Furfrou-Matron", "Oui"], [676, "Couafarel Monsieur", "Furfrou-Dandy", "Oui"],
+        [676, "Couafarel Reine", "Furfrou-La-Reine", "Oui"], [676, "Couafarel Kabuki", "Furfrou-Kabuki", "Oui"],
+        [676, "Couafarel Pharaon", "Furfrou-Pharaoh", "Oui"], [678, "Mistigrix Femelle", "Meowstic-Female", "Oui"],
+        [710, "Pitrouille Petite", "Pumpkaboo-small", "A farm"], [710, "Pitrouille Grande", "Pumpkaboo-large", "A farm"],
+        [710, "Pitrouille Giga", "Pumpkaboo-super", "A farm"], [711, "Banshitrouye Petite", "Gourgeist-small", "A farm"],
+        [711, "Banshitrouye Grande", "Gourgeist-large", "A farm"], [711, "Banshitrouye Giga", "Gourgeist-super", "A farm"],
+        [741, "Plumeline Pom-Pom", "Oricorio-Pom-Pom", "Oui"], [741, "Plumeline Hula", "Oricorio-Pau", "Oui"],
+        [741, "Plumeline Buyō", "Oricorio-Sensu", "Oui"], [745, "Lougaroc Nocturne", "Lycanroc-Midnight", "Oui"],
+        [745, "Lougaroc Crépusculaire", "Lycanroc-Dusk", "Oui"],
+        [774, "Météno", "Minior-Orange-Core", "A farm"], [774, "Météno", "Minior-Yellow-Core", "A farm"],
+        [774, "Météno", "Minior-Green-Core", "A farm"], [774, "Météno", "Minior-Blue-Core", "Oui"],
+        [774, "Météno", "Minior-Indigo-Core", "A farm"], [774, "Météno", "Minior-Violet-Core", "A farm"],
+        [801, "Magearna Du Passé", "Magearna-Original", "A farm"], [849, "Salarsen Grave", "Toxtricity-Low-Key", "Oui"],
+        [854, "Théffroi Authentique", "Sinistea", "A farm"], [855, "Polthégeist Authentique", "Polteageist", "A farm"],
+        [869, "Charmilly Fleur", "Alcremie-flower", "Oui"], [869, "Charmilly Etoile", "Alcremie-star", "Oui"],
+        [869, "Charmilly Trèfle", "Alcremie-clover", "Oui"], [869, "Charmilly Baie", "Alcremie-berry", "Oui"],
+        [869, "Charmilly Ruban", "Alcremie-ribbon", "Oui"], [869, "Charmilly Coeur", "Alcremie-love", "Oui"],
+        [876, "Wimessir Femelle", "Indeedee-Female", "Oui"], [892, "Shifours Mille Poings", "Urshifu-Rapid-Strike", "A farm"],
+        [893, "Zarude Papa", "Zarude-Dada", "A farm"], [901, "Lune Vermeille", "Ursaluna-Bloodmoon", "Shiny lock"],
+        [902, "Paragruel Femelle", "Basculegion-Female", "A farm"], [916, "Fragroin Mâle", "Oinkologne", "Oui"],
+        [924, "Famignol Trois", "Maushold-Family3", "Oui"], [931, "Tapatoès Bleu", "Squawkabilly-Blue", "Oui"],
+        [931, "Tapatoès Jaune", "Squawkabilly-Yellow", "Oui"], [931, "Tapatoès Blanc", "Squawkabilly-White", "Oui"],
+        [978, "Nigirigon Affalée", "Tatsugiri-Droopy", "Oui"], [978, "Nigirigon Raide", "Tatsugiri-Stretchy", "Oui"],
+        [982, "Deusolourdo Triple", "Dudunsparce-Three-Segment", "A farm"], [999, "Mordudor Marche", "Gimmighoul-Roaming", "A farm"],
+        [1012, "Poltchageist Onéreuse", "Poltchageist", "Oui"], [1013, "Théffroyable Exceptionnelle", "Sinistcha", "Oui"]
+      ]
+    }
+  ]
+}

@@ -40,10 +40,39 @@ public/          Fichiers servis tels quels (icônes, favicon)
 - **vite-plugin-pwa** : manifeste, service worker et mise en cache de l'app pour un usage hors ligne. Mise à jour automatique au lancement suivant.
 - **Police auto-hébergée** (Plus Jakarta Sans via Fontsource) : disponible hors ligne, sans appel à Google Fonts.
 
+## Import des données
+
+Les données de référence ont été générées une fois depuis le Google Sheet « Shiny Living Dex » et PokéAPI. Elles sont versionnées : le build n'en dépend pas et aucune commande n'est à relancer pour développer.
+
+| Fichier | Contenu | Produit par |
+| --- | --- | --- |
+| `data/sheet-snapshot.json` | Copie du Sheet : exceptions de statut pour le Pokédex national, lignes complètes pour les onglets de formes | Relevé manuel du Sheet |
+| `data/sheet-summary.json` | Totaux de l'onglet « Avancement Pokedex », utilisés comme contrôle | Relevé manuel du Sheet |
+| `src/data/pokedex.json` | Les 1 220 entrées (numéro, noms FR/EN, catégorie, génération, types), dans l'ordre d'affichage | `npm run import:build` |
+| `src/data/initial-statuses.json` | Statut de départ de chaque entrée | `npm run import:build` |
+| `data/sprite-sources.json` | Fichier HOME utilisé pour chaque entrée | `npm run import:build` |
+| `data/import-report.md` | Contrôles et points à vérifier | `npm run import:build` |
+| `public/sprites/{normal,shiny}/<id>.webp` | Sprites HOME en WebP 256 px | `npm run import:sprites` |
+
+Pour régénérer :
+
+```bash
+npm run import:prepare   # télécharge les CSV PokéAPI et la liste des sprites depuis GitHub (.cache/)
+npm run import:build     # échoue si une ligne n'est pas reconnue ou si les totaux diffèrent du Sheet
+npm run import:sprites   # télécharge uniquement les sprites manquants (--force pour tout refaire)
+```
+
+Règles notables (détaillées dans `scripts/import/resolve.ts`) :
+
+- Les codes anglais du Sheet suivent la nomenclature de pokemondb (`Rattata-Alolan`) et sont convertis vers celle de PokéAPI (`rattata-alola`).
+- Les noms français du Pokédex national viennent de PokéAPI ; ceux des formes viennent du Sheet, complétés par le nom de forme PokéAPI quand plusieurs lignes d'un même onglet portent le même nom (les six « Météno »).
+- Les variantes femelles que PokéAPI ne modélise pas comme des formes (Apitrini, Hippopotas…) ont l'identifiant `<forme>-female` et le sprite du dossier `female/`.
+- Les corrections de numéros par rapport au Sheet sont listées dans `DEX_CORRECTIONS` (`scripts/import/build-reference.ts`) et dans le rapport.
+
 ## Déploiement
 
 Netlify lit `netlify.toml` : build avec `npm run build`, publication de `dist/`, redirection de toutes les routes vers `index.html`, et en-têtes de cache adaptés au service worker.
 
 ## Avancement
 
-Étape 1 sur 6 : socle technique, thèmes, navigation et PWA. Les écrans affichent un emplacement indiquant l'étape où leur contenu arrive. Le détail est dans le cahier des charges.
+Étapes 1 et 2 sur 6 : socle technique, thèmes, navigation, PWA, et import des données de référence avec les sprites. Les écrans affichent un emplacement indiquant l'étape où leur contenu arrive. Le détail est dans le cahier des charges.

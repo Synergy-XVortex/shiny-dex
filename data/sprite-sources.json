@@ -1,0 +1,6102 @@
+{
+  "bulbasaur": {
+    "normal": "1.png",
+    "shiny": "shiny/1.png",
+    "exact": true
+  },
+  "ivysaur": {
+    "normal": "2.png",
+    "shiny": "shiny/2.png",
+    "exact": true
+  },
+  "venusaur": {
+    "normal": "3.png",
+    "shiny": "shiny/3.png",
+    "exact": true
+  },
+  "charmander": {
+    "normal": "4.png",
+    "shiny": "shiny/4.png",
+    "exact": true
+  },
+  "charmeleon": {
+    "normal": "5.png",
+    "shiny": "shiny/5.png",
+    "exact": true
+  },
+  "charizard": {
+    "normal": "6.png",
+    "shiny": "shiny/6.png",
+    "exact": true
+  },
+  "squirtle": {
+    "normal": "7.png",
+    "shiny": "shiny/7.png",
+    "exact": true
+  },
+  "wartortle": {
+    "normal": "8.png",
+    "shiny": "shiny/8.png",
+    "exact": true
+  },
+  "blastoise": {
+    "normal": "9.png",
+    "shiny": "shiny/9.png",
+    "exact": true
+  },
+  "caterpie": {
+    "normal": "10.png",
+    "shiny": "shiny/10.png",
+    "exact": true
+  },
+  "metapod": {
+    "normal": "11.png",
+    "shiny": "shiny/11.png",
+    "exact": true
+  },
+  "butterfree": {
+    "normal": "12.png",
+    "shiny": "shiny/12.png",
+    "exact": true
+  },
+  "weedle": {
+    "normal": "13.png",
+    "shiny": "shiny/13.png",
+    "exact": true
+  },
+  "kakuna": {
+    "normal": "14.png",
+    "shiny": "shiny/14.png",
+    "exact": true
+  },
+  "beedrill": {
+    "normal": "15.png",
+    "shiny": "shiny/15.png",
+    "exact": true
+  },
+  "pidgey": {
+    "normal": "16.png",
+    "shiny": "shiny/16.png",
+    "exact": true
+  },
+  "pidgeotto": {
+    "normal": "17.png",
+    "shiny": "shiny/17.png",
+    "exact": true
+  },
+  "pidgeot": {
+    "normal": "18.png",
+    "shiny": "shiny/18.png",
+    "exact": true
+  },
+  "rattata": {
+    "normal": "19.png",
+    "shiny": "shiny/19.png",
+    "exact": true
+  },
+  "raticate": {
+    "normal": "20.png",
+    "shiny": "shiny/20.png",
+    "exact": true
+  },
+  "spearow": {
+    "normal": "21.png",
+    "shiny": "shiny/21.png",
+    "exact": true
+  },
+  "fearow": {
+    "normal": "22.png",
+    "shiny": "shiny/22.png",
+    "exact": true
+  },
+  "ekans": {
+    "normal": "23.png",
+    "shiny": "shiny/23.png",
+    "exact": true
+  },
+  "arbok": {
+    "normal": "24.png",
+    "shiny": "shiny/24.png",
+    "exact": true
+  },
+  "pikachu": {
+    "normal": "25.png",
+    "shiny": "shiny/25.png",
+    "exact": true
+  },
+  "raichu": {
+    "normal": "26.png",
+    "shiny": "shiny/26.png",
+    "exact": true
+  },
+  "sandshrew": {
+    "normal": "27.png",
+    "shiny": "shiny/27.png",
+    "exact": true
+  },
+  "sandslash": {
+    "normal": "28.png",
+    "shiny": "shiny/28.png",
+    "exact": true
+  },
+  "nidoran-f": {
+    "normal": "29.png",
+    "shiny": "shiny/29.png",
+    "exact": true
+  },
+  "nidorina": {
+    "normal": "30.png",
+    "shiny": "shiny/30.png",
+    "exact": true
+  },
+  "nidoqueen": {
+    "normal": "31.png",
+    "shiny": "shiny/31.png",
+    "exact": true
+  },
+  "nidoran-m": {
+    "normal": "32.png",
+    "shiny": "shiny/32.png",
+    "exact": true
+  },
+  "nidorino": {
+    "normal": "33.png",
+    "shiny": "shiny/33.png",
+    "exact": true
+  },
+  "nidoking": {
+    "normal": "34.png",
+    "shiny": "shiny/34.png",
+    "exact": true
+  },
+  "clefairy": {
+    "normal": "35.png",
+    "shiny": "shiny/35.png",
+    "exact": true
+  },
+  "clefable": {
+    "normal": "36.png",
+    "shiny": "shiny/36.png",
+    "exact": true
+  },
+  "vulpix": {
+    "normal": "37.png",
+    "shiny": "shiny/37.png",
+    "exact": true
+  },
+  "ninetales": {
+    "normal": "38.png",
+    "shiny": "shiny/38.png",
+    "exact": true
+  },
+  "jigglypuff": {
+    "normal": "39.png",
+    "shiny": "shiny/39.png",
+    "exact": true
+  },
+  "wigglytuff": {
+    "normal": "40.png",
+    "shiny": "shiny/40.png",
+    "exact": true
+  },
+  "zubat": {
+    "normal": "41.png",
+    "shiny": "shiny/41.png",
+    "exact": true
+  },
+  "golbat": {
+    "normal": "42.png",
+    "shiny": "shiny/42.png",
+    "exact": true
+  },
+  "oddish": {
+    "normal": "43.png",
+    "shiny": "shiny/43.png",
+    "exact": true
+  },
+  "gloom": {
+    "normal": "44.png",
+    "shiny": "shiny/44.png",
+    "exact": true
+  },
+  "vileplume": {
+    "normal": "45.png",
+    "shiny": "shiny/45.png",
+    "exact": true
+  },
+  "paras": {
+    "normal": "46.png",
+    "shiny": "shiny/46.png",
+    "exact": true
+  },
+  "parasect": {
+    "normal": "47.png",
+    "shiny": "shiny/47.png",
+    "exact": true
+  },
+  "venonat": {
+    "normal": "48.png",
+    "shiny": "shiny/48.png",
+    "exact": true
+  },
+  "venomoth": {
+    "normal": "49.png",
+    "shiny": "shiny/49.png",
+    "exact": true
+  },
+  "diglett": {
+    "normal": "50.png",
+    "shiny": "shiny/50.png",
+    "exact": true
+  },
+  "dugtrio": {
+    "normal": "51.png",
+    "shiny": "shiny/51.png",
+    "exact": true
+  },
+  "meowth": {
+    "normal": "52.png",
+    "shiny": "shiny/52.png",
+    "exact": true
+  },
+  "persian": {
+    "normal": "53.png",
+    "shiny": "shiny/53.png",
+    "exact": true
+  },
+  "psyduck": {
+    "normal": "54.png",
+    "shiny": "shiny/54.png",
+    "exact": true
+  },
+  "golduck": {
+    "normal": "55.png",
+    "shiny": "shiny/55.png",
+    "exact": true
+  },
+  "mankey": {
+    "normal": "56.png",
+    "shiny": "shiny/56.png",
+    "exact": true
+  },
+  "primeape": {
+    "normal": "57.png",
+    "shiny": "shiny/57.png",
+    "exact": true
+  },
+  "growlithe": {
+    "normal": "58.png",
+    "shiny": "shiny/58.png",
+    "exact": true
+  },
+  "arcanine": {
+    "normal": "59.png",
+    "shiny": "shiny/59.png",
+    "exact": true
+  },
+  "poliwag": {
+    "normal": "60.png",
+    "shiny": "shiny/60.png",
+    "exact": true
+  },
+  "poliwhirl": {
+    "normal": "61.png",
+    "shiny": "shiny/61.png",
+    "exact": true
+  },
+  "poliwrath": {
+    "normal": "62.png",
+    "shiny": "shiny/62.png",
+    "exact": true
+  },
+  "abra": {
+    "normal": "63.png",
+    "shiny": "shiny/63.png",
+    "exact": true
+  },
+  "kadabra": {
+    "normal": "64.png",
+    "shiny": "shiny/64.png",
+    "exact": true
+  },
+  "alakazam": {
+    "normal": "65.png",
+    "shiny": "shiny/65.png",
+    "exact": true
+  },
+  "machop": {
+    "normal": "66.png",
+    "shiny": "shiny/66.png",
+    "exact": true
+  },
+  "machoke": {
+    "normal": "67.png",
+    "shiny": "shiny/67.png",
+    "exact": true
+  },
+  "machamp": {
+    "normal": "68.png",
+    "shiny": "shiny/68.png",
+    "exact": true
+  },
+  "bellsprout": {
+    "normal": "69.png",
+    "shiny": "shiny/69.png",
+    "exact": true
+  },
+  "weepinbell": {
+    "normal": "70.png",
+    "shiny": "shiny/70.png",
+    "exact": true
+  },
+  "victreebel": {
+    "normal": "71.png",
+    "shiny": "shiny/71.png",
+    "exact": true
+  },
+  "tentacool": {
+    "normal": "72.png",
+    "shiny": "shiny/72.png",
+    "exact": true
+  },
+  "tentacruel": {
+    "normal": "73.png",
+    "shiny": "shiny/73.png",
+    "exact": true
+  },
+  "geodude": {
+    "normal": "74.png",
+    "shiny": "shiny/74.png",
+    "exact": true
+  },
+  "graveler": {
+    "normal": "75.png",
+    "shiny": "shiny/75.png",
+    "exact": true
+  },
+  "golem": {
+    "normal": "76.png",
+    "shiny": "shiny/76.png",
+    "exact": true
+  },
+  "ponyta": {
+    "normal": "77.png",
+    "shiny": "shiny/77.png",
+    "exact": true
+  },
+  "rapidash": {
+    "normal": "78.png",
+    "shiny": "shiny/78.png",
+    "exact": true
+  },
+  "slowpoke": {
+    "normal": "79.png",
+    "shiny": "shiny/79.png",
+    "exact": true
+  },
+  "slowbro": {
+    "normal": "80.png",
+    "shiny": "shiny/80.png",
+    "exact": true
+  },
+  "magnemite": {
+    "normal": "81.png",
+    "shiny": "shiny/81.png",
+    "exact": true
+  },
+  "magneton": {
+    "normal": "82.png",
+    "shiny": "shiny/82.png",
+    "exact": true
+  },
+  "farfetchd": {
+    "normal": "83.png",
+    "shiny": "shiny/83.png",
+    "exact": true
+  },
+  "doduo": {
+    "normal": "84.png",
+    "shiny": "shiny/84.png",
+    "exact": true
+  },
+  "dodrio": {
+    "normal": "85.png",
+    "shiny": "shiny/85.png",
+    "exact": true
+  },
+  "seel": {
+    "normal": "86.png",
+    "shiny": "shiny/86.png",
+    "exact": true
+  },
+  "dewgong": {
+    "normal": "87.png",
+    "shiny": "shiny/87.png",
+    "exact": true
+  },
+  "grimer": {
+    "normal": "88.png",
+    "shiny": "shiny/88.png",
+    "exact": true
+  },
+  "muk": {
+    "normal": "89.png",
+    "shiny": "shiny/89.png",
+    "exact": true
+  },
+  "shellder": {
+    "normal": "90.png",
+    "shiny": "shiny/90.png",
+    "exact": true
+  },
+  "cloyster": {
+    "normal": "91.png",
+    "shiny": "shiny/91.png",
+    "exact": true
+  },
+  "gastly": {
+    "normal": "92.png",
+    "shiny": "shiny/92.png",
+    "exact": true
+  },
+  "haunter": {
+    "normal": "93.png",
+    "shiny": "shiny/93.png",
+    "exact": true
+  },
+  "gengar": {
+    "normal": "94.png",
+    "shiny": "shiny/94.png",
+    "exact": true
+  },
+  "onix": {
+    "normal": "95.png",
+    "shiny": "shiny/95.png",
+    "exact": true
+  },
+  "drowzee": {
+    "normal": "96.png",
+    "shiny": "shiny/96.png",
+    "exact": true
+  },
+  "hypno": {
+    "normal": "97.png",
+    "shiny": "shiny/97.png",
+    "exact": true
+  },
+  "krabby": {
+    "normal": "98.png",
+    "shiny": "shiny/98.png",
+    "exact": true
+  },
+  "kingler": {
+    "normal": "99.png",
+    "shiny": "shiny/99.png",
+    "exact": true
+  },
+  "voltorb": {
+    "normal": "100.png",
+    "shiny": "shiny/100.png",
+    "exact": true
+  },
+  "electrode": {
+    "normal": "101.png",
+    "shiny": "shiny/101.png",
+    "exact": true
+  },
+  "exeggcute": {
+    "normal": "102.png",
+    "shiny": "shiny/102.png",
+    "exact": true
+  },
+  "exeggutor": {
+    "normal": "103.png",
+    "shiny": "shiny/103.png",
+    "exact": true
+  },
+  "cubone": {
+    "normal": "104.png",
+    "shiny": "shiny/104.png",
+    "exact": true
+  },
+  "marowak": {
+    "normal": "105.png",
+    "shiny": "shiny/105.png",
+    "exact": true
+  },
+  "hitmonlee": {
+    "normal": "106.png",
+    "shiny": "shiny/106.png",
+    "exact": true
+  },
+  "hitmonchan": {
+    "normal": "107.png",
+    "shiny": "shiny/107.png",
+    "exact": true
+  },
+  "lickitung": {
+    "normal": "108.png",
+    "shiny": "shiny/108.png",
+    "exact": true
+  },
+  "koffing": {
+    "normal": "109.png",
+    "shiny": "shiny/109.png",
+    "exact": true
+  },
+  "weezing": {
+    "normal": "110.png",
+    "shiny": "shiny/110.png",
+    "exact": true
+  },
+  "rhyhorn": {
+    "normal": "111.png",
+    "shiny": "shiny/111.png",
+    "exact": true
+  },
+  "rhydon": {
+    "normal": "112.png",
+    "shiny": "shiny/112.png",
+    "exact": true
+  },
+  "chansey": {
+    "normal": "113.png",
+    "shiny": "shiny/113.png",
+    "exact": true
+  },
+  "tangela": {
+    "normal": "114.png",
+    "shiny": "shiny/114.png",
+    "exact": true
+  },
+  "kangaskhan": {
+    "normal": "115.png",
+    "shiny": "shiny/115.png",
+    "exact": true
+  },
+  "horsea": {
+    "normal": "116.png",
+    "shiny": "shiny/116.png",
+    "exact": true
+  },
+  "seadra": {
+    "normal": "117.png",
+    "shiny": "shiny/117.png",
+    "exact": true
+  },
+  "goldeen": {
+    "normal": "118.png",
+    "shiny": "shiny/118.png",
+    "exact": true
+  },
+  "seaking": {
+    "normal": "119.png",
+    "shiny": "shiny/119.png",
+    "exact": true
+  },
+  "staryu": {
+    "normal": "120.png",
+    "shiny": "shiny/120.png",
+    "exact": true
+  },
+  "starmie": {
+    "normal": "121.png",
+    "shiny": "shiny/121.png",
+    "exact": true
+  },
+  "mr-mime": {
+    "normal": "122.png",
+    "shiny": "shiny/122.png",
+    "exact": true
+  },
+  "scyther": {
+    "normal": "123.png",
+    "shiny": "shiny/123.png",
+    "exact": true
+  },
+  "jynx": {
+    "normal": "124.png",
+    "shiny": "shiny/124.png",
+    "exact": true
+  },
+  "electabuzz": {
+    "normal": "125.png",
+    "shiny": "shiny/125.png",
+    "exact": true
+  },
+  "magmar": {
+    "normal": "126.png",
+    "shiny": "shiny/126.png",
+    "exact": true
+  },
+  "pinsir": {
+    "normal": "127.png",
+    "shiny": "shiny/127.png",
+    "exact": true
+  },
+  "tauros": {
+    "normal": "128.png",
+    "shiny": "shiny/128.png",
+    "exact": true
+  },
+  "magikarp": {
+    "normal": "129.png",
+    "shiny": "shiny/129.png",
+    "exact": true
+  },
+  "gyarados": {
+    "normal": "130.png",
+    "shiny": "shiny/130.png",
+    "exact": true
+  },
+  "lapras": {
+    "normal": "131.png",
+    "shiny": "shiny/131.png",
+    "exact": true
+  },
+  "ditto": {
+    "normal": "132.png",
+    "shiny": "shiny/132.png",
+    "exact": true
+  },
+  "eevee": {
+    "normal": "133.png",
+    "shiny": "shiny/133.png",
+    "exact": true
+  },
+  "vaporeon": {
+    "normal": "134.png",
+    "shiny": "shiny/134.png",
+    "exact": true
+  },
+  "jolteon": {
+    "normal": "135.png",
+    "shiny": "shiny/135.png",
+    "exact": true
+  },
+  "flareon": {
+    "normal": "136.png",
+    "shiny": "shiny/136.png",
+    "exact": true
+  },
+  "porygon": {
+    "normal": "137.png",
+    "shiny": "shiny/137.png",
+    "exact": true
+  },
+  "omanyte": {
+    "normal": "138.png",
+    "shiny": "shiny/138.png",
+    "exact": true
+  },
+  "omastar": {
+    "normal": "139.png",
+    "shiny": "shiny/139.png",
+    "exact": true
+  },
+  "kabuto": {
+    "normal": "140.png",
+    "shiny": "shiny/140.png",
+    "exact": true
+  },
+  "kabutops": {
+    "normal": "141.png",
+    "shiny": "shiny/141.png",
+    "exact": true
+  },
+  "aerodactyl": {
+    "normal": "142.png",
+    "shiny": "shiny/142.png",
+    "exact": true
+  },
+  "snorlax": {
+    "normal": "143.png",
+    "shiny": "shiny/143.png",
+    "exact": true
+  },
+  "articuno": {
+    "normal": "144.png",
+    "shiny": "shiny/144.png",
+    "exact": true
+  },
+  "zapdos": {
+    "normal": "145.png",
+    "shiny": "shiny/145.png",
+    "exact": true
+  },
+  "moltres": {
+    "normal": "146.png",
+    "shiny": "shiny/146.png",
+    "exact": true
+  },
+  "dratini": {
+    "normal": "147.png",
+    "shiny": "shiny/147.png",
+    "exact": true
+  },
+  "dragonair": {
+    "normal": "148.png",
+    "shiny": "shiny/148.png",
+    "exact": true
+  },
+  "dragonite": {
+    "normal": "149.png",
+    "shiny": "shiny/149.png",
+    "exact": true
+  },
+  "mewtwo": {
+    "normal": "150.png",
+    "shiny": "shiny/150.png",
+    "exact": true
+  },
+  "mew": {
+    "normal": "151.png",
+    "shiny": "shiny/151.png",
+    "exact": true
+  },
+  "chikorita": {
+    "normal": "152.png",
+    "shiny": "shiny/152.png",
+    "exact": true
+  },
+  "bayleef": {
+    "normal": "153.png",
+    "shiny": "shiny/153.png",
+    "exact": true
+  },
+  "meganium": {
+    "normal": "154.png",
+    "shiny": "shiny/154.png",
+    "exact": true
+  },
+  "cyndaquil": {
+    "normal": "155.png",
+    "shiny": "shiny/155.png",
+    "exact": true
+  },
+  "quilava": {
+    "normal": "156.png",
+    "shiny": "shiny/156.png",
+    "exact": true
+  },
+  "typhlosion": {
+    "normal": "157.png",
+    "shiny": "shiny/157.png",
+    "exact": true
+  },
+  "totodile": {
+    "normal": "158.png",
+    "shiny": "shiny/158.png",
+    "exact": true
+  },
+  "croconaw": {
+    "normal": "159.png",
+    "shiny": "shiny/159.png",
+    "exact": true
+  },
+  "feraligatr": {
+    "normal": "160.png",
+    "shiny": "shiny/160.png",
+    "exact": true
+  },
+  "sentret": {
+    "normal": "161.png",
+    "shiny": "shiny/161.png",
+    "exact": true
+  },
+  "furret": {
+    "normal": "162.png",
+    "shiny": "shiny/162.png",
+    "exact": true
+  },
+  "hoothoot": {
+    "normal": "163.png",
+    "shiny": "shiny/163.png",
+    "exact": true
+  },
+  "noctowl": {
+    "normal": "164.png",
+    "shiny": "shiny/164.png",
+    "exact": true
+  },
+  "ledyba": {
+    "normal": "165.png",
+    "shiny": "shiny/165.png",
+    "exact": true
+  },
+  "ledian": {
+    "normal": "166.png",
+    "shiny": "shiny/166.png",
+    "exact": true
+  },
+  "spinarak": {
+    "normal": "167.png",
+    "shiny": "shiny/167.png",
+    "exact": true
+  },
+  "ariados": {
+    "normal": "168.png",
+    "shiny": "shiny/168.png",
+    "exact": true
+  },
+  "crobat": {
+    "normal": "169.png",
+    "shiny": "shiny/169.png",
+    "exact": true
+  },
+  "chinchou": {
+    "normal": "170.png",
+    "shiny": "shiny/170.png",
+    "exact": true
+  },
+  "lanturn": {
+    "normal": "171.png",
+    "shiny": "shiny/171.png",
+    "exact": true
+  },
+  "pichu": {
+    "normal": "172.png",
+    "shiny": "shiny/172.png",
+    "exact": true
+  },
+  "cleffa": {
+    "normal": "173.png",
+    "shiny": "shiny/173.png",
+    "exact": true
+  },
+  "igglybuff": {
+    "normal": "174.png",
+    "shiny": "shiny/174.png",
+    "exact": true
+  },
+  "togepi": {
+    "normal": "175.png",
+    "shiny": "shiny/175.png",
+    "exact": true
+  },
+  "togetic": {
+    "normal": "176.png",
+    "shiny": "shiny/176.png",
+    "exact": true
+  },
+  "natu": {
+    "normal": "177.png",
+    "shiny": "shiny/177.png",
+    "exact": true
+  },
+  "xatu": {
+    "normal": "178.png",
+    "shiny": "shiny/178.png",
+    "exact": true
+  },
+  "mareep": {
+    "normal": "179.png",
+    "shiny": "shiny/179.png",
+    "exact": true
+  },
+  "flaaffy": {
+    "normal": "180.png",
+    "shiny": "shiny/180.png",
+    "exact": true
+  },
+  "ampharos": {
+    "normal": "181.png",
+    "shiny": "shiny/181.png",
+    "exact": true
+  },
+  "bellossom": {
+    "normal": "182.png",
+    "shiny": "shiny/182.png",
+    "exact": true
+  },
+  "marill": {
+    "normal": "183.png",
+    "shiny": "shiny/183.png",
+    "exact": true
+  },
+  "azumarill": {
+    "normal": "184.png",
+    "shiny": "shiny/184.png",
+    "exact": true
+  },
+  "sudowoodo": {
+    "normal": "185.png",
+    "shiny": "shiny/185.png",
+    "exact": true
+  },
+  "politoed": {
+    "normal": "186.png",
+    "shiny": "shiny/186.png",
+    "exact": true
+  },
+  "hoppip": {
+    "normal": "187.png",
+    "shiny": "shiny/187.png",
+    "exact": true
+  },
+  "skiploom": {
+    "normal": "188.png",
+    "shiny": "shiny/188.png",
+    "exact": true
+  },
+  "jumpluff": {
+    "normal": "189.png",
+    "shiny": "shiny/189.png",
+    "exact": true
+  },
+  "aipom": {
+    "normal": "190.png",
+    "shiny": "shiny/190.png",
+    "exact": true
+  },
+  "sunkern": {
+    "normal": "191.png",
+    "shiny": "shiny/191.png",
+    "exact": true
+  },
+  "sunflora": {
+    "normal": "192.png",
+    "shiny": "shiny/192.png",
+    "exact": true
+  },
+  "yanma": {
+    "normal": "193.png",
+    "shiny": "shiny/193.png",
+    "exact": true
+  },
+  "wooper": {
+    "normal": "194.png",
+    "shiny": "shiny/194.png",
+    "exact": true
+  },
+  "quagsire": {
+    "normal": "195.png",
+    "shiny": "shiny/195.png",
+    "exact": true
+  },
+  "espeon": {
+    "normal": "196.png",
+    "shiny": "shiny/196.png",
+    "exact": true
+  },
+  "umbreon": {
+    "normal": "197.png",
+    "shiny": "shiny/197.png",
+    "exact": true
+  },
+  "murkrow": {
+    "normal": "198.png",
+    "shiny": "shiny/198.png",
+    "exact": true
+  },
+  "slowking": {
+    "normal": "199.png",
+    "shiny": "shiny/199.png",
+    "exact": true
+  },
+  "misdreavus": {
+    "normal": "200.png",
+    "shiny": "shiny/200.png",
+    "exact": true
+  },
+  "unown-a": {
+    "normal": "201-a.png",
+    "shiny": "shiny/201-a.png",
+    "exact": true
+  },
+  "wobbuffet": {
+    "normal": "202.png",
+    "shiny": "shiny/202.png",
+    "exact": true
+  },
+  "girafarig": {
+    "normal": "203.png",
+    "shiny": "shiny/203.png",
+    "exact": true
+  },
+  "pineco": {
+    "normal": "204.png",
+    "shiny": "shiny/204.png",
+    "exact": true
+  },
+  "forretress": {
+    "normal": "205.png",
+    "shiny": "shiny/205.png",
+    "exact": true
+  },
+  "dunsparce": {
+    "normal": "206.png",
+    "shiny": "shiny/206.png",
+    "exact": true
+  },
+  "gligar": {
+    "normal": "207.png",
+    "shiny": "shiny/207.png",
+    "exact": true
+  },
+  "steelix": {
+    "normal": "208.png",
+    "shiny": "shiny/208.png",
+    "exact": true
+  },
+  "snubbull": {
+    "normal": "209.png",
+    "shiny": "shiny/209.png",
+    "exact": true
+  },
+  "granbull": {
+    "normal": "210.png",
+    "shiny": "shiny/210.png",
+    "exact": true
+  },
+  "qwilfish": {
+    "normal": "211.png",
+    "shiny": "shiny/211.png",
+    "exact": true
+  },
+  "scizor": {
+    "normal": "212.png",
+    "shiny": "shiny/212.png",
+    "exact": true
+  },
+  "shuckle": {
+    "normal": "213.png",
+    "shiny": "shiny/213.png",
+    "exact": true
+  },
+  "heracross": {
+    "normal": "214.png",
+    "shiny": "shiny/214.png",
+    "exact": true
+  },
+  "sneasel": {
+    "normal": "215.png",
+    "shiny": "shiny/215.png",
+    "exact": true
+  },
+  "teddiursa": {
+    "normal": "216.png",
+    "shiny": "shiny/216.png",
+    "exact": true
+  },
+  "ursaring": {
+    "normal": "217.png",
+    "shiny": "shiny/217.png",
+    "exact": true
+  },
+  "slugma": {
+    "normal": "218.png",
+    "shiny": "shiny/218.png",
+    "exact": true
+  },
+  "magcargo": {
+    "normal": "219.png",
+    "shiny": "shiny/219.png",
+    "exact": true
+  },
+  "swinub": {
+    "normal": "220.png",
+    "shiny": "shiny/220.png",
+    "exact": true
+  },
+  "piloswine": {
+    "normal": "221.png",
+    "shiny": "shiny/221.png",
+    "exact": true
+  },
+  "corsola": {
+    "normal": "222.png",
+    "shiny": "shiny/222.png",
+    "exact": true
+  },
+  "remoraid": {
+    "normal": "223.png",
+    "shiny": "shiny/223.png",
+    "exact": true
+  },
+  "octillery": {
+    "normal": "224.png",
+    "shiny": "shiny/224.png",
+    "exact": true
+  },
+  "delibird": {
+    "normal": "225.png",
+    "shiny": "shiny/225.png",
+    "exact": true
+  },
+  "mantine": {
+    "normal": "226.png",
+    "shiny": "shiny/226.png",
+    "exact": true
+  },
+  "skarmory": {
+    "normal": "227.png",
+    "shiny": "shiny/227.png",
+    "exact": true
+  },
+  "houndour": {
+    "normal": "228.png",
+    "shiny": "shiny/228.png",
+    "exact": true
+  },
+  "houndoom": {
+    "normal": "229.png",
+    "shiny": "shiny/229.png",
+    "exact": true
+  },
+  "kingdra": {
+    "normal": "230.png",
+    "shiny": "shiny/230.png",
+    "exact": true
+  },
+  "phanpy": {
+    "normal": "231.png",
+    "shiny": "shiny/231.png",
+    "exact": true
+  },
+  "donphan": {
+    "normal": "232.png",
+    "shiny": "shiny/232.png",
+    "exact": true
+  },
+  "porygon2": {
+    "normal": "233.png",
+    "shiny": "shiny/233.png",
+    "exact": true
+  },
+  "stantler": {
+    "normal": "234.png",
+    "shiny": "shiny/234.png",
+    "exact": true
+  },
+  "smeargle": {
+    "normal": "235.png",
+    "shiny": "shiny/235.png",
+    "exact": true
+  },
+  "tyrogue": {
+    "normal": "236.png",
+    "shiny": "shiny/236.png",
+    "exact": true
+  },
+  "hitmontop": {
+    "normal": "237.png",
+    "shiny": "shiny/237.png",
+    "exact": true
+  },
+  "smoochum": {
+    "normal": "238.png",
+    "shiny": "shiny/238.png",
+    "exact": true
+  },
+  "elekid": {
+    "normal": "239.png",
+    "shiny": "shiny/239.png",
+    "exact": true
+  },
+  "magby": {
+    "normal": "240.png",
+    "shiny": "shiny/240.png",
+    "exact": true
+  },
+  "miltank": {
+    "normal": "241.png",
+    "shiny": "shiny/241.png",
+    "exact": true
+  },
+  "blissey": {
+    "normal": "242.png",
+    "shiny": "shiny/242.png",
+    "exact": true
+  },
+  "raikou": {
+    "normal": "243.png",
+    "shiny": "shiny/243.png",
+    "exact": true
+  },
+  "entei": {
+    "normal": "244.png",
+    "shiny": "shiny/244.png",
+    "exact": true
+  },
+  "suicune": {
+    "normal": "245.png",
+    "shiny": "shiny/245.png",
+    "exact": true
+  },
+  "larvitar": {
+    "normal": "246.png",
+    "shiny": "shiny/246.png",
+    "exact": true
+  },
+  "pupitar": {
+    "normal": "247.png",
+    "shiny": "shiny/247.png",
+    "exact": true
+  },
+  "tyranitar": {
+    "normal": "248.png",
+    "shiny": "shiny/248.png",
+    "exact": true
+  },
+  "lugia": {
+    "normal": "249.png",
+    "shiny": "shiny/249.png",
+    "exact": true
+  },
+  "ho-oh": {
+    "normal": "250.png",
+    "shiny": "shiny/250.png",
+    "exact": true
+  },
+  "celebi": {
+    "normal": "251.png",
+    "shiny": "shiny/251.png",
+    "exact": true
+  },
+  "treecko": {
+    "normal": "252.png",
+    "shiny": "shiny/252.png",
+    "exact": true
+  },
+  "grovyle": {
+    "normal": "253.png",
+    "shiny": "shiny/253.png",
+    "exact": true
+  },
+  "sceptile": {
+    "normal": "254.png",
+    "shiny": "shiny/254.png",
+    "exact": true
+  },
+  "torchic": {
+    "normal": "255.png",
+    "shiny": "shiny/255.png",
+    "exact": true
+  },
+  "combusken": {
+    "normal": "256.png",
+    "shiny": "shiny/256.png",
+    "exact": true
+  },
+  "blaziken": {
+    "normal": "257.png",
+    "shiny": "shiny/257.png",
+    "exact": true
+  },
+  "mudkip": {
+    "normal": "258.png",
+    "shiny": "shiny/258.png",
+    "exact": true
+  },
+  "marshtomp": {
+    "normal": "259.png",
+    "shiny": "shiny/259.png",
+    "exact": true
+  },
+  "swampert": {
+    "normal": "260.png",
+    "shiny": "shiny/260.png",
+    "exact": true
+  },
+  "poochyena": {
+    "normal": "261.png",
+    "shiny": "shiny/261.png",
+    "exact": true
+  },
+  "mightyena": {
+    "normal": "262.png",
+    "shiny": "shiny/262.png",
+    "exact": true
+  },
+  "zigzagoon": {
+    "normal": "263.png",
+    "shiny": "shiny/263.png",
+    "exact": true
+  },
+  "linoone": {
+    "normal": "264.png",
+    "shiny": "shiny/264.png",
+    "exact": true
+  },
+  "wurmple": {
+    "normal": "265.png",
+    "shiny": "shiny/265.png",
+    "exact": true
+  },
+  "silcoon": {
+    "normal": "266.png",
+    "shiny": "shiny/266.png",
+    "exact": true
+  },
+  "beautifly": {
+    "normal": "267.png",
+    "shiny": "shiny/267.png",
+    "exact": true
+  },
+  "cascoon": {
+    "normal": "268.png",
+    "shiny": "shiny/268.png",
+    "exact": true
+  },
+  "dustox": {
+    "normal": "269.png",
+    "shiny": "shiny/269.png",
+    "exact": true
+  },
+  "lotad": {
+    "normal": "270.png",
+    "shiny": "shiny/270.png",
+    "exact": true
+  },
+  "lombre": {
+    "normal": "271.png",
+    "shiny": "shiny/271.png",
+    "exact": true
+  },
+  "ludicolo": {
+    "normal": "272.png",
+    "shiny": "shiny/272.png",
+    "exact": true
+  },
+  "seedot": {
+    "normal": "273.png",
+    "shiny": "shiny/273.png",
+    "exact": true
+  },
+  "nuzleaf": {
+    "normal": "274.png",
+    "shiny": "shiny/274.png",
+    "exact": true
+  },
+  "shiftry": {
+    "normal": "275.png",
+    "shiny": "shiny/275.png",
+    "exact": true
+  },
+  "taillow": {
+    "normal": "276.png",
+    "shiny": "shiny/276.png",
+    "exact": true
+  },
+  "swellow": {
+    "normal": "277.png",
+    "shiny": "shiny/277.png",
+    "exact": true
+  },
+  "wingull": {
+    "normal": "278.png",
+    "shiny": "shiny/278.png",
+    "exact": true
+  },
+  "pelipper": {
+    "normal": "279.png",
+    "shiny": "shiny/279.png",
+    "exact": true
+  },
+  "ralts": {
+    "normal": "280.png",
+    "shiny": "shiny/280.png",
+    "exact": true
+  },
+  "kirlia": {
+    "normal": "281.png",
+    "shiny": "shiny/281.png",
+    "exact": true
+  },
+  "gardevoir": {
+    "normal": "282.png",
+    "shiny": "shiny/282.png",
+    "exact": true
+  },
+  "surskit": {
+    "normal": "283.png",
+    "shiny": "shiny/283.png",
+    "exact": true
+  },
+  "masquerain": {
+    "normal": "284.png",
+    "shiny": "shiny/284.png",
+    "exact": true
+  },
+  "shroomish": {
+    "normal": "285.png",
+    "shiny": "shiny/285.png",
+    "exact": true
+  },
+  "breloom": {
+    "normal": "286.png",
+    "shiny": "shiny/286.png",
+    "exact": true
+  },
+  "slakoth": {
+    "normal": "287.png",
+    "shiny": "shiny/287.png",
+    "exact": true
+  },
+  "vigoroth": {
+    "normal": "288.png",
+    "shiny": "shiny/288.png",
+    "exact": true
+  },
+  "slaking": {
+    "normal": "289.png",
+    "shiny": "shiny/289.png",
+    "exact": true
+  },
+  "nincada": {
+    "normal": "290.png",
+    "shiny": "shiny/290.png",
+    "exact": true
+  },
+  "ninjask": {
+    "normal": "291.png",
+    "shiny": "shiny/291.png",
+    "exact": true
+  },
+  "shedinja": {
+    "normal": "292.png",
+    "shiny": "shiny/292.png",
+    "exact": true
+  },
+  "whismur": {
+    "normal": "293.png",
+    "shiny": "shiny/293.png",
+    "exact": true
+  },
+  "loudred": {
+    "normal": "294.png",
+    "shiny": "shiny/294.png",
+    "exact": true
+  },
+  "exploud": {
+    "normal": "295.png",
+    "shiny": "shiny/295.png",
+    "exact": true
+  },
+  "makuhita": {
+    "normal": "296.png",
+    "shiny": "shiny/296.png",
+    "exact": true
+  },
+  "hariyama": {
+    "normal": "297.png",
+    "shiny": "shiny/297.png",
+    "exact": true
+  },
+  "azurill": {
+    "normal": "298.png",
+    "shiny": "shiny/298.png",
+    "exact": true
+  },
+  "nosepass": {
+    "normal": "299.png",
+    "shiny": "shiny/299.png",
+    "exact": true
+  },
+  "skitty": {
+    "normal": "300.png",
+    "shiny": "shiny/300.png",
+    "exact": true
+  },
+  "delcatty": {
+    "normal": "301.png",
+    "shiny": "shiny/301.png",
+    "exact": true
+  },
+  "sableye": {
+    "normal": "302.png",
+    "shiny": "shiny/302.png",
+    "exact": true
+  },
+  "mawile": {
+    "normal": "303.png",
+    "shiny": "shiny/303.png",
+    "exact": true
+  },
+  "aron": {
+    "normal": "304.png",
+    "shiny": "shiny/304.png",
+    "exact": true
+  },
+  "lairon": {
+    "normal": "305.png",
+    "shiny": "shiny/305.png",
+    "exact": true
+  },
+  "aggron": {
+    "normal": "306.png",
+    "shiny": "shiny/306.png",
+    "exact": true
+  },
+  "meditite": {
+    "normal": "307.png",
+    "shiny": "shiny/307.png",
+    "exact": true
+  },
+  "medicham": {
+    "normal": "308.png",
+    "shiny": "shiny/308.png",
+    "exact": true
+  },
+  "electrike": {
+    "normal": "309.png",
+    "shiny": "shiny/309.png",
+    "exact": true
+  },
+  "manectric": {
+    "normal": "310.png",
+    "shiny": "shiny/310.png",
+    "exact": true
+  },
+  "plusle": {
+    "normal": "311.png",
+    "shiny": "shiny/311.png",
+    "exact": true
+  },
+  "minun": {
+    "normal": "312.png",
+    "shiny": "shiny/312.png",
+    "exact": true
+  },
+  "volbeat": {
+    "normal": "313.png",
+    "shiny": "shiny/313.png",
+    "exact": true
+  },
+  "illumise": {
+    "normal": "314.png",
+    "shiny": "shiny/314.png",
+    "exact": true
+  },
+  "roselia": {
+    "normal": "315.png",
+    "shiny": "shiny/315.png",
+    "exact": true
+  },
+  "gulpin": {
+    "normal": "316.png",
+    "shiny": "shiny/316.png",
+    "exact": true
+  },
+  "swalot": {
+    "normal": "317.png",
+    "shiny": "shiny/317.png",
+    "exact": true
+  },
+  "carvanha": {
+    "normal": "318.png",
+    "shiny": "shiny/318.png",
+    "exact": true
+  },
+  "sharpedo": {
+    "normal": "319.png",
+    "shiny": "shiny/319.png",
+    "exact": true
+  },
+  "wailmer": {
+    "normal": "320.png",
+    "shiny": "shiny/320.png",
+    "exact": true
+  },
+  "wailord": {
+    "normal": "321.png",
+    "shiny": "shiny/321.png",
+    "exact": true
+  },
+  "numel": {
+    "normal": "322.png",
+    "shiny": "shiny/322.png",
+    "exact": true
+  },
+  "camerupt": {
+    "normal": "323.png",
+    "shiny": "shiny/323.png",
+    "exact": true
+  },
+  "torkoal": {
+    "normal": "324.png",
+    "shiny": "shiny/324.png",
+    "exact": true
+  },
+  "spoink": {
+    "normal": "325.png",
+    "shiny": "shiny/325.png",
+    "exact": true
+  },
+  "grumpig": {
+    "normal": "326.png",
+    "shiny": "shiny/326.png",
+    "exact": true
+  },
+  "spinda": {
+    "normal": "327.png",
+    "shiny": "shiny/327.png",
+    "exact": true
+  },
+  "trapinch": {
+    "normal": "328.png",
+    "shiny": "shiny/328.png",
+    "exact": true
+  },
+  "vibrava": {
+    "normal": "329.png",
+    "shiny": "shiny/329.png",
+    "exact": true
+  },
+  "flygon": {
+    "normal": "330.png",
+    "shiny": "shiny/330.png",
+    "exact": true
+  },
+  "cacnea": {
+    "normal": "331.png",
+    "shiny": "shiny/331.png",
+    "exact": true
+  },
+  "cacturne": {
+    "normal": "332.png",
+    "shiny": "shiny/332.png",
+    "exact": true
+  },
+  "swablu": {
+    "normal": "333.png",
+    "shiny": "shiny/333.png",
+    "exact": true
+  },
+  "altaria": {
+    "normal": "334.png",
+    "shiny": "shiny/334.png",
+    "exact": true
+  },
+  "zangoose": {
+    "normal": "335.png",
+    "shiny": "shiny/335.png",
+    "exact": true
+  },
+  "seviper": {
+    "normal": "336.png",
+    "shiny": "shiny/336.png",
+    "exact": true
+  },
+  "lunatone": {
+    "normal": "337.png",
+    "shiny": "shiny/337.png",
+    "exact": true
+  },
+  "solrock": {
+    "normal": "338.png",
+    "shiny": "shiny/338.png",
+    "exact": true
+  },
+  "barboach": {
+    "normal": "339.png",
+    "shiny": "shiny/339.png",
+    "exact": true
+  },
+  "whiscash": {
+    "normal": "340.png",
+    "shiny": "shiny/340.png",
+    "exact": true
+  },
+  "corphish": {
+    "normal": "341.png",
+    "shiny": "shiny/341.png",
+    "exact": true
+  },
+  "crawdaunt": {
+    "normal": "342.png",
+    "shiny": "shiny/342.png",
+    "exact": true
+  },
+  "baltoy": {
+    "normal": "343.png",
+    "shiny": "shiny/343.png",
+    "exact": true
+  },
+  "claydol": {
+    "normal": "344.png",
+    "shiny": "shiny/344.png",
+    "exact": true
+  },
+  "lileep": {
+    "normal": "345.png",
+    "shiny": "shiny/345.png",
+    "exact": true
+  },
+  "cradily": {
+    "normal": "346.png",
+    "shiny": "shiny/346.png",
+    "exact": true
+  },
+  "anorith": {
+    "normal": "347.png",
+    "shiny": "shiny/347.png",
+    "exact": true
+  },
+  "armaldo": {
+    "normal": "348.png",
+    "shiny": "shiny/348.png",
+    "exact": true
+  },
+  "feebas": {
+    "normal": "349.png",
+    "shiny": "shiny/349.png",
+    "exact": true
+  },
+  "milotic": {
+    "normal": "350.png",
+    "shiny": "shiny/350.png",
+    "exact": true
+  },
+  "castform": {
+    "normal": "351.png",
+    "shiny": "shiny/351.png",
+    "exact": true
+  },
+  "kecleon": {
+    "normal": "352.png",
+    "shiny": "shiny/352.png",
+    "exact": true
+  },
+  "shuppet": {
+    "normal": "353.png",
+    "shiny": "shiny/353.png",
+    "exact": true
+  },
+  "banette": {
+    "normal": "354.png",
+    "shiny": "shiny/354.png",
+    "exact": true
+  },
+  "duskull": {
+    "normal": "355.png",
+    "shiny": "shiny/355.png",
+    "exact": true
+  },
+  "dusclops": {
+    "normal": "356.png",
+    "shiny": "shiny/356.png",
+    "exact": true
+  },
+  "tropius": {
+    "normal": "357.png",
+    "shiny": "shiny/357.png",
+    "exact": true
+  },
+  "chimecho": {
+    "normal": "358.png",
+    "shiny": "shiny/358.png",
+    "exact": true
+  },
+  "absol": {
+    "normal": "359.png",
+    "shiny": "shiny/359.png",
+    "exact": true
+  },
+  "wynaut": {
+    "normal": "360.png",
+    "shiny": "shiny/360.png",
+    "exact": true
+  },
+  "snorunt": {
+    "normal": "361.png",
+    "shiny": "shiny/361.png",
+    "exact": true
+  },
+  "glalie": {
+    "normal": "362.png",
+    "shiny": "shiny/362.png",
+    "exact": true
+  },
+  "spheal": {
+    "normal": "363.png",
+    "shiny": "shiny/363.png",
+    "exact": true
+  },
+  "sealeo": {
+    "normal": "364.png",
+    "shiny": "shiny/364.png",
+    "exact": true
+  },
+  "walrein": {
+    "normal": "365.png",
+    "shiny": "shiny/365.png",
+    "exact": true
+  },
+  "clamperl": {
+    "normal": "366.png",
+    "shiny": "shiny/366.png",
+    "exact": true
+  },
+  "huntail": {
+    "normal": "367.png",
+    "shiny": "shiny/367.png",
+    "exact": true
+  },
+  "gorebyss": {
+    "normal": "368.png",
+    "shiny": "shiny/368.png",
+    "exact": true
+  },
+  "relicanth": {
+    "normal": "369.png",
+    "shiny": "shiny/369.png",
+    "exact": true
+  },
+  "luvdisc": {
+    "normal": "370.png",
+    "shiny": "shiny/370.png",
+    "exact": true
+  },
+  "bagon": {
+    "normal": "371.png",
+    "shiny": "shiny/371.png",
+    "exact": true
+  },
+  "shelgon": {
+    "normal": "372.png",
+    "shiny": "shiny/372.png",
+    "exact": true
+  },
+  "salamence": {
+    "normal": "373.png",
+    "shiny": "shiny/373.png",
+    "exact": true
+  },
+  "beldum": {
+    "normal": "374.png",
+    "shiny": "shiny/374.png",
+    "exact": true
+  },
+  "metang": {
+    "normal": "375.png",
+    "shiny": "shiny/375.png",
+    "exact": true
+  },
+  "metagross": {
+    "normal": "376.png",
+    "shiny": "shiny/376.png",
+    "exact": true
+  },
+  "regirock": {
+    "normal": "377.png",
+    "shiny": "shiny/377.png",
+    "exact": true
+  },
+  "regice": {
+    "normal": "378.png",
+    "shiny": "shiny/378.png",
+    "exact": true
+  },
+  "registeel": {
+    "normal": "379.png",
+    "shiny": "shiny/379.png",
+    "exact": true
+  },
+  "latias": {
+    "normal": "380.png",
+    "shiny": "shiny/380.png",
+    "exact": true
+  },
+  "latios": {
+    "normal": "381.png",
+    "shiny": "shiny/381.png",
+    "exact": true
+  },
+  "kyogre": {
+    "normal": "382.png",
+    "shiny": "shiny/382.png",
+    "exact": true
+  },
+  "groudon": {
+    "normal": "383.png",
+    "shiny": "shiny/383.png",
+    "exact": true
+  },
+  "rayquaza": {
+    "normal": "384.png",
+    "shiny": "shiny/384.png",
+    "exact": true
+  },
+  "jirachi": {
+    "normal": "385.png",
+    "shiny": "shiny/385.png",
+    "exact": true
+  },
+  "deoxys-normal": {
+    "normal": "386.png",
+    "shiny": "shiny/386.png",
+    "exact": true
+  },
+  "turtwig": {
+    "normal": "387.png",
+    "shiny": "shiny/387.png",
+    "exact": true
+  },
+  "grotle": {
+    "normal": "388.png",
+    "shiny": "shiny/388.png",
+    "exact": true
+  },
+  "torterra": {
+    "normal": "389.png",
+    "shiny": "shiny/389.png",
+    "exact": true
+  },
+  "chimchar": {
+    "normal": "390.png",
+    "shiny": "shiny/390.png",
+    "exact": true
+  },
+  "monferno": {
+    "normal": "391.png",
+    "shiny": "shiny/391.png",
+    "exact": true
+  },
+  "infernape": {
+    "normal": "392.png",
+    "shiny": "shiny/392.png",
+    "exact": true
+  },
+  "piplup": {
+    "normal": "393.png",
+    "shiny": "shiny/393.png",
+    "exact": true
+  },
+  "prinplup": {
+    "normal": "394.png",
+    "shiny": "shiny/394.png",
+    "exact": true
+  },
+  "empoleon": {
+    "normal": "395.png",
+    "shiny": "shiny/395.png",
+    "exact": true
+  },
+  "starly": {
+    "normal": "396.png",
+    "shiny": "shiny/396.png",
+    "exact": true
+  },
+  "staravia": {
+    "normal": "397.png",
+    "shiny": "shiny/397.png",
+    "exact": true
+  },
+  "staraptor": {
+    "normal": "398.png",
+    "shiny": "shiny/398.png",
+    "exact": true
+  },
+  "bidoof": {
+    "normal": "399.png",
+    "shiny": "shiny/399.png",
+    "exact": true
+  },
+  "bibarel": {
+    "normal": "400.png",
+    "shiny": "shiny/400.png",
+    "exact": true
+  },
+  "kricketot": {
+    "normal": "401.png",
+    "shiny": "shiny/401.png",
+    "exact": true
+  },
+  "kricketune": {
+    "normal": "402.png",
+    "shiny": "shiny/402.png",
+    "exact": true
+  },
+  "shinx": {
+    "normal": "403.png",
+    "shiny": "shiny/403.png",
+    "exact": true
+  },
+  "luxio": {
+    "normal": "404.png",
+    "shiny": "shiny/404.png",
+    "exact": true
+  },
+  "luxray": {
+    "normal": "405.png",
+    "shiny": "shiny/405.png",
+    "exact": true
+  },
+  "budew": {
+    "normal": "406.png",
+    "shiny": "shiny/406.png",
+    "exact": true
+  },
+  "roserade": {
+    "normal": "407.png",
+    "shiny": "shiny/407.png",
+    "exact": true
+  },
+  "cranidos": {
+    "normal": "408.png",
+    "shiny": "shiny/408.png",
+    "exact": true
+  },
+  "rampardos": {
+    "normal": "409.png",
+    "shiny": "shiny/409.png",
+    "exact": true
+  },
+  "shieldon": {
+    "normal": "410.png",
+    "shiny": "shiny/410.png",
+    "exact": true
+  },
+  "bastiodon": {
+    "normal": "411.png",
+    "shiny": "shiny/411.png",
+    "exact": true
+  },
+  "burmy-plant": {
+    "normal": "412-plant.png",
+    "shiny": "shiny/412-plant.png",
+    "exact": true
+  },
+  "wormadam-plant": {
+    "normal": "413.png",
+    "shiny": "shiny/413.png",
+    "exact": true
+  },
+  "mothim-plant": {
+    "normal": "414.png",
+    "shiny": "shiny/414.png",
+    "exact": true
+  },
+  "combee": {
+    "normal": "415.png",
+    "shiny": "shiny/415.png",
+    "exact": true
+  },
+  "vespiquen": {
+    "normal": "416.png",
+    "shiny": "shiny/416.png",
+    "exact": true
+  },
+  "pachirisu": {
+    "normal": "417.png",
+    "shiny": "shiny/417.png",
+    "exact": true
+  },
+  "buizel": {
+    "normal": "418.png",
+    "shiny": "shiny/418.png",
+    "exact": true
+  },
+  "floatzel": {
+    "normal": "419.png",
+    "shiny": "shiny/419.png",
+    "exact": true
+  },
+  "cherubi": {
+    "normal": "420.png",
+    "shiny": "shiny/420.png",
+    "exact": true
+  },
+  "cherrim-overcast": {
+    "normal": "421-overcast.png",
+    "shiny": "shiny/421-overcast.png",
+    "exact": true
+  },
+  "shellos-west": {
+    "normal": "422-west.png",
+    "shiny": "shiny/422-west.png",
+    "exact": true
+  },
+  "gastrodon-west": {
+    "normal": "423-west.png",
+    "shiny": "shiny/423-west.png",
+    "exact": true
+  },
+  "ambipom": {
+    "normal": "424.png",
+    "shiny": "shiny/424.png",
+    "exact": true
+  },
+  "drifloon": {
+    "normal": "425.png",
+    "shiny": "shiny/425.png",
+    "exact": true
+  },
+  "drifblim": {
+    "normal": "426.png",
+    "shiny": "shiny/426.png",
+    "exact": true
+  },
+  "buneary": {
+    "normal": "427.png",
+    "shiny": "shiny/427.png",
+    "exact": true
+  },
+  "lopunny": {
+    "normal": "428.png",
+    "shiny": "shiny/428.png",
+    "exact": true
+  },
+  "mismagius": {
+    "normal": "429.png",
+    "shiny": "shiny/429.png",
+    "exact": true
+  },
+  "honchkrow": {
+    "normal": "430.png",
+    "shiny": "shiny/430.png",
+    "exact": true
+  },
+  "glameow": {
+    "normal": "431.png",
+    "shiny": "shiny/431.png",
+    "exact": true
+  },
+  "purugly": {
+    "normal": "432.png",
+    "shiny": "shiny/432.png",
+    "exact": true
+  },
+  "chingling": {
+    "normal": "433.png",
+    "shiny": "shiny/433.png",
+    "exact": true
+  },
+  "stunky": {
+    "normal": "434.png",
+    "shiny": "shiny/434.png",
+    "exact": true
+  },
+  "skuntank": {
+    "normal": "435.png",
+    "shiny": "shiny/435.png",
+    "exact": true
+  },
+  "bronzor": {
+    "normal": "436.png",
+    "shiny": "shiny/436.png",
+    "exact": true
+  },
+  "bronzong": {
+    "normal": "437.png",
+    "shiny": "shiny/437.png",
+    "exact": true
+  },
+  "bonsly": {
+    "normal": "438.png",
+    "shiny": "shiny/438.png",
+    "exact": true
+  },
+  "mime-jr": {
+    "normal": "439.png",
+    "shiny": "shiny/439.png",
+    "exact": true
+  },
+  "happiny": {
+    "normal": "440.png",
+    "shiny": "shiny/440.png",
+    "exact": true
+  },
+  "chatot": {
+    "normal": "441.png",
+    "shiny": "shiny/441.png",
+    "exact": true
+  },
+  "spiritomb": {
+    "normal": "442.png",
+    "shiny": "shiny/442.png",
+    "exact": true
+  },
+  "gible": {
+    "normal": "443.png",
+    "shiny": "shiny/443.png",
+    "exact": true
+  },
+  "gabite": {
+    "normal": "444.png",
+    "shiny": "shiny/444.png",
+    "exact": true
+  },
+  "garchomp": {
+    "normal": "445.png",
+    "shiny": "shiny/445.png",
+    "exact": true
+  },
+  "munchlax": {
+    "normal": "446.png",
+    "shiny": "shiny/446.png",
+    "exact": true
+  },
+  "riolu": {
+    "normal": "447.png",
+    "shiny": "shiny/447.png",
+    "exact": true
+  },
+  "lucario": {
+    "normal": "448.png",
+    "shiny": "shiny/448.png",
+    "exact": true
+  },
+  "hippopotas": {
+    "normal": "449.png",
+    "shiny": "shiny/449.png",
+    "exact": true
+  },
+  "hippowdon": {
+    "normal": "450.png",
+    "shiny": "shiny/450.png",
+    "exact": true
+  },
+  "skorupi": {
+    "normal": "451.png",
+    "shiny": "shiny/451.png",
+    "exact": true
+  },
+  "drapion": {
+    "normal": "452.png",
+    "shiny": "shiny/452.png",
+    "exact": true
+  },
+  "croagunk": {
+    "normal": "453.png",
+    "shiny": "shiny/453.png",
+    "exact": true
+  },
+  "toxicroak": {
+    "normal": "454.png",
+    "shiny": "shiny/454.png",
+    "exact": true
+  },
+  "carnivine": {
+    "normal": "455.png",
+    "shiny": "shiny/455.png",
+    "exact": true
+  },
+  "finneon": {
+    "normal": "456.png",
+    "shiny": "shiny/456.png",
+    "exact": true
+  },
+  "lumineon": {
+    "normal": "457.png",
+    "shiny": "shiny/457.png",
+    "exact": true
+  },
+  "mantyke": {
+    "normal": "458.png",
+    "shiny": "shiny/458.png",
+    "exact": true
+  },
+  "snover": {
+    "normal": "459.png",
+    "shiny": "shiny/459.png",
+    "exact": true
+  },
+  "abomasnow": {
+    "normal": "460.png",
+    "shiny": "shiny/460.png",
+    "exact": true
+  },
+  "weavile": {
+    "normal": "461.png",
+    "shiny": "shiny/461.png",
+    "exact": true
+  },
+  "magnezone": {
+    "normal": "462.png",
+    "shiny": "shiny/462.png",
+    "exact": true
+  },
+  "lickilicky": {
+    "normal": "463.png",
+    "shiny": "shiny/463.png",
+    "exact": true
+  },
+  "rhyperior": {
+    "normal": "464.png",
+    "shiny": "shiny/464.png",
+    "exact": true
+  },
+  "tangrowth": {
+    "normal": "465.png",
+    "shiny": "shiny/465.png",
+    "exact": true
+  },
+  "electivire": {
+    "normal": "466.png",
+    "shiny": "shiny/466.png",
+    "exact": true
+  },
+  "magmortar": {
+    "normal": "467.png",
+    "shiny": "shiny/467.png",
+    "exact": true
+  },
+  "togekiss": {
+    "normal": "468.png",
+    "shiny": "shiny/468.png",
+    "exact": true
+  },
+  "yanmega": {
+    "normal": "469.png",
+    "shiny": "shiny/469.png",
+    "exact": true
+  },
+  "leafeon": {
+    "normal": "470.png",
+    "shiny": "shiny/470.png",
+    "exact": true
+  },
+  "glaceon": {
+    "normal": "471.png",
+    "shiny": "shiny/471.png",
+    "exact": true
+  },
+  "gliscor": {
+    "normal": "472.png",
+    "shiny": "shiny/472.png",
+    "exact": true
+  },
+  "mamoswine": {
+    "normal": "473.png",
+    "shiny": "shiny/473.png",
+    "exact": true
+  },
+  "porygon-z": {
+    "normal": "474.png",
+    "shiny": "shiny/474.png",
+    "exact": true
+  },
+  "gallade": {
+    "normal": "475.png",
+    "shiny": "shiny/475.png",
+    "exact": true
+  },
+  "probopass": {
+    "normal": "476.png",
+    "shiny": "shiny/476.png",
+    "exact": true
+  },
+  "dusknoir": {
+    "normal": "477.png",
+    "shiny": "shiny/477.png",
+    "exact": true
+  },
+  "froslass": {
+    "normal": "478.png",
+    "shiny": "shiny/478.png",
+    "exact": true
+  },
+  "rotom": {
+    "normal": "479.png",
+    "shiny": "shiny/479.png",
+    "exact": true
+  },
+  "uxie": {
+    "normal": "480.png",
+    "shiny": "shiny/480.png",
+    "exact": true
+  },
+  "mesprit": {
+    "normal": "481.png",
+    "shiny": "shiny/481.png",
+    "exact": true
+  },
+  "azelf": {
+    "normal": "482.png",
+    "shiny": "shiny/482.png",
+    "exact": true
+  },
+  "dialga": {
+    "normal": "483.png",
+    "shiny": "shiny/483.png",
+    "exact": true
+  },
+  "palkia": {
+    "normal": "484.png",
+    "shiny": "shiny/484.png",
+    "exact": true
+  },
+  "heatran": {
+    "normal": "485.png",
+    "shiny": "shiny/485.png",
+    "exact": true
+  },
+  "regigigas": {
+    "normal": "486.png",
+    "shiny": "shiny/486.png",
+    "exact": true
+  },
+  "giratina-altered": {
+    "normal": "487.png",
+    "shiny": "shiny/487.png",
+    "exact": true
+  },
+  "cresselia": {
+    "normal": "488.png",
+    "shiny": "shiny/488.png",
+    "exact": true
+  },
+  "phione": {
+    "normal": "489.png",
+    "shiny": "shiny/489.png",
+    "exact": true
+  },
+  "manaphy": {
+    "normal": "490.png",
+    "shiny": "shiny/490.png",
+    "exact": true
+  },
+  "darkrai": {
+    "normal": "491.png",
+    "shiny": "shiny/491.png",
+    "exact": true
+  },
+  "shaymin-land": {
+    "normal": "492.png",
+    "shiny": "shiny/492.png",
+    "exact": true
+  },
+  "arceus-normal": {
+    "normal": "493.png",
+    "shiny": "shiny/493.png",
+    "exact": true
+  },
+  "victini": {
+    "normal": "494.png",
+    "shiny": "shiny/494.png",
+    "exact": true
+  },
+  "snivy": {
+    "normal": "495.png",
+    "shiny": "shiny/495.png",
+    "exact": true
+  },
+  "servine": {
+    "normal": "496.png",
+    "shiny": "shiny/496.png",
+    "exact": true
+  },
+  "serperior": {
+    "normal": "497.png",
+    "shiny": "shiny/497.png",
+    "exact": true
+  },
+  "tepig": {
+    "normal": "498.png",
+    "shiny": "shiny/498.png",
+    "exact": true
+  },
+  "pignite": {
+    "normal": "499.png",
+    "shiny": "shiny/499.png",
+    "exact": true
+  },
+  "emboar": {
+    "normal": "500.png",
+    "shiny": "shiny/500.png",
+    "exact": true
+  },
+  "oshawott": {
+    "normal": "501.png",
+    "shiny": "shiny/501.png",
+    "exact": true
+  },
+  "dewott": {
+    "normal": "502.png",
+    "shiny": "shiny/502.png",
+    "exact": true
+  },
+  "samurott": {
+    "normal": "503.png",
+    "shiny": "shiny/503.png",
+    "exact": true
+  },
+  "patrat": {
+    "normal": "504.png",
+    "shiny": "shiny/504.png",
+    "exact": true
+  },
+  "watchog": {
+    "normal": "505.png",
+    "shiny": "shiny/505.png",
+    "exact": true
+  },
+  "lillipup": {
+    "normal": "506.png",
+    "shiny": "shiny/506.png",
+    "exact": true
+  },
+  "herdier": {
+    "normal": "507.png",
+    "shiny": "shiny/507.png",
+    "exact": true
+  },
+  "stoutland": {
+    "normal": "508.png",
+    "shiny": "shiny/508.png",
+    "exact": true
+  },
+  "purrloin": {
+    "normal": "509.png",
+    "shiny": "shiny/509.png",
+    "exact": true
+  },
+  "liepard": {
+    "normal": "510.png",
+    "shiny": "shiny/510.png",
+    "exact": true
+  },
+  "pansage": {
+    "normal": "511.png",
+    "shiny": "shiny/511.png",
+    "exact": true
+  },
+  "simisage": {
+    "normal": "512.png",
+    "shiny": "shiny/512.png",
+    "exact": true
+  },
+  "pansear": {
+    "normal": "513.png",
+    "shiny": "shiny/513.png",
+    "exact": true
+  },
+  "simisear": {
+    "normal": "514.png",
+    "shiny": "shiny/514.png",
+    "exact": true
+  },
+  "panpour": {
+    "normal": "515.png",
+    "shiny": "shiny/515.png",
+    "exact": true
+  },
+  "simipour": {
+    "normal": "516.png",
+    "shiny": "shiny/516.png",
+    "exact": true
+  },
+  "munna": {
+    "normal": "517.png",
+    "shiny": "shiny/517.png",
+    "exact": true
+  },
+  "musharna": {
+    "normal": "518.png",
+    "shiny": "shiny/518.png",
+    "exact": true
+  },
+  "pidove": {
+    "normal": "519.png",
+    "shiny": "shiny/519.png",
+    "exact": true
+  },
+  "tranquill": {
+    "normal": "520.png",
+    "shiny": "shiny/520.png",
+    "exact": true
+  },
+  "unfezant": {
+    "normal": "521.png",
+    "shiny": "shiny/521.png",
+    "exact": true
+  },
+  "blitzle": {
+    "normal": "522.png",
+    "shiny": "shiny/522.png",
+    "exact": true
+  },
+  "zebstrika": {
+    "normal": "523.png",
+    "shiny": "shiny/523.png",
+    "exact": true
+  },
+  "roggenrola": {
+    "normal": "524.png",
+    "shiny": "shiny/524.png",
+    "exact": true
+  },
+  "boldore": {
+    "normal": "525.png",
+    "shiny": "shiny/525.png",
+    "exact": true
+  },
+  "gigalith": {
+    "normal": "526.png",
+    "shiny": "shiny/526.png",
+    "exact": true
+  },
+  "woobat": {
+    "normal": "527.png",
+    "shiny": "shiny/527.png",
+    "exact": true
+  },
+  "swoobat": {
+    "normal": "528.png",
+    "shiny": "shiny/528.png",
+    "exact": true
+  },
+  "drilbur": {
+    "normal": "529.png",
+    "shiny": "shiny/529.png",
+    "exact": true
+  },
+  "excadrill": {
+    "normal": "530.png",
+    "shiny": "shiny/530.png",
+    "exact": true
+  },
+  "audino": {
+    "normal": "531.png",
+    "shiny": "shiny/531.png",
+    "exact": true
+  },
+  "timburr": {
+    "normal": "532.png",
+    "shiny": "shiny/532.png",
+    "exact": true
+  },
+  "gurdurr": {
+    "normal": "533.png",
+    "shiny": "shiny/533.png",
+    "exact": true
+  },
+  "conkeldurr": {
+    "normal": "534.png",
+    "shiny": "shiny/534.png",
+    "exact": true
+  },
+  "tympole": {
+    "normal": "535.png",
+    "shiny": "shiny/535.png",
+    "exact": true
+  },
+  "palpitoad": {
+    "normal": "536.png",
+    "shiny": "shiny/536.png",
+    "exact": true
+  },
+  "seismitoad": {
+    "normal": "537.png",
+    "shiny": "shiny/537.png",
+    "exact": true
+  },
+  "throh": {
+    "normal": "538.png",
+    "shiny": "shiny/538.png",
+    "exact": true
+  },
+  "sawk": {
+    "normal": "539.png",
+    "shiny": "shiny/539.png",
+    "exact": true
+  },
+  "sewaddle": {
+    "normal": "540.png",
+    "shiny": "shiny/540.png",
+    "exact": true
+  },
+  "swadloon": {
+    "normal": "541.png",
+    "shiny": "shiny/541.png",
+    "exact": true
+  },
+  "leavanny": {
+    "normal": "542.png",
+    "shiny": "shiny/542.png",
+    "exact": true
+  },
+  "venipede": {
+    "normal": "543.png",
+    "shiny": "shiny/543.png",
+    "exact": true
+  },
+  "whirlipede": {
+    "normal": "544.png",
+    "shiny": "shiny/544.png",
+    "exact": true
+  },
+  "scolipede": {
+    "normal": "545.png",
+    "shiny": "shiny/545.png",
+    "exact": true
+  },
+  "cottonee": {
+    "normal": "546.png",
+    "shiny": "shiny/546.png",
+    "exact": true
+  },
+  "whimsicott": {
+    "normal": "547.png",
+    "shiny": "shiny/547.png",
+    "exact": true
+  },
+  "petilil": {
+    "normal": "548.png",
+    "shiny": "shiny/548.png",
+    "exact": true
+  },
+  "lilligant": {
+    "normal": "549.png",
+    "shiny": "shiny/549.png",
+    "exact": true
+  },
+  "basculin-red-striped": {
+    "normal": "550.png",
+    "shiny": "shiny/550.png",
+    "exact": true
+  },
+  "sandile": {
+    "normal": "551.png",
+    "shiny": "shiny/551.png",
+    "exact": true
+  },
+  "krokorok": {
+    "normal": "552.png",
+    "shiny": "shiny/552.png",
+    "exact": true
+  },
+  "krookodile": {
+    "normal": "553.png",
+    "shiny": "shiny/553.png",
+    "exact": true
+  },
+  "darumaka": {
+    "normal": "554.png",
+    "shiny": "shiny/554.png",
+    "exact": true
+  },
+  "darmanitan-standard": {
+    "normal": "555.png",
+    "shiny": "shiny/555.png",
+    "exact": true
+  },
+  "maractus": {
+    "normal": "556.png",
+    "shiny": "shiny/556.png",
+    "exact": true
+  },
+  "dwebble": {
+    "normal": "557.png",
+    "shiny": "shiny/557.png",
+    "exact": true
+  },
+  "crustle": {
+    "normal": "558.png",
+    "shiny": "shiny/558.png",
+    "exact": true
+  },
+  "scraggy": {
+    "normal": "559.png",
+    "shiny": "shiny/559.png",
+    "exact": true
+  },
+  "scrafty": {
+    "normal": "560.png",
+    "shiny": "shiny/560.png",
+    "exact": true
+  },
+  "sigilyph": {
+    "normal": "561.png",
+    "shiny": "shiny/561.png",
+    "exact": true
+  },
+  "yamask": {
+    "normal": "562.png",
+    "shiny": "shiny/562.png",
+    "exact": true
+  },
+  "cofagrigus": {
+    "normal": "563.png",
+    "shiny": "shiny/563.png",
+    "exact": true
+  },
+  "tirtouga": {
+    "normal": "564.png",
+    "shiny": "shiny/564.png",
+    "exact": true
+  },
+  "carracosta": {
+    "normal": "565.png",
+    "shiny": "shiny/565.png",
+    "exact": true
+  },
+  "archen": {
+    "normal": "566.png",
+    "shiny": "shiny/566.png",
+    "exact": true
+  },
+  "archeops": {
+    "normal": "567.png",
+    "shiny": "shiny/567.png",
+    "exact": true
+  },
+  "trubbish": {
+    "normal": "568.png",
+    "shiny": "shiny/568.png",
+    "exact": true
+  },
+  "garbodor": {
+    "normal": "569.png",
+    "shiny": "shiny/569.png",
+    "exact": true
+  },
+  "zorua": {
+    "normal": "570.png",
+    "shiny": "shiny/570.png",
+    "exact": true
+  },
+  "zoroark": {
+    "normal": "571.png",
+    "shiny": "shiny/571.png",
+    "exact": true
+  },
+  "minccino": {
+    "normal": "572.png",
+    "shiny": "shiny/572.png",
+    "exact": true
+  },
+  "cinccino": {
+    "normal": "573.png",
+    "shiny": "shiny/573.png",
+    "exact": true
+  },
+  "gothita": {
+    "normal": "574.png",
+    "shiny": "shiny/574.png",
+    "exact": true
+  },
+  "gothorita": {
+    "normal": "575.png",
+    "shiny": "shiny/575.png",
+    "exact": true
+  },
+  "gothitelle": {
+    "normal": "576.png",
+    "shiny": "shiny/576.png",
+    "exact": true
+  },
+  "solosis": {
+    "normal": "577.png",
+    "shiny": "shiny/577.png",
+    "exact": true
+  },
+  "duosion": {
+    "normal": "578.png",
+    "shiny": "shiny/578.png",
+    "exact": true
+  },
+  "reuniclus": {
+    "normal": "579.png",
+    "shiny": "shiny/579.png",
+    "exact": true
+  },
+  "ducklett": {
+    "normal": "580.png",
+    "shiny": "shiny/580.png",
+    "exact": true
+  },
+  "swanna": {
+    "normal": "581.png",
+    "shiny": "shiny/581.png",
+    "exact": true
+  },
+  "vanillite": {
+    "normal": "582.png",
+    "shiny": "shiny/582.png",
+    "exact": true
+  },
+  "vanillish": {
+    "normal": "583.png",
+    "shiny": "shiny/583.png",
+    "exact": true
+  },
+  "vanilluxe": {
+    "normal": "584.png",
+    "shiny": "shiny/584.png",
+    "exact": true
+  },
+  "deerling-spring": {
+    "normal": "585-spring.png",
+    "shiny": "shiny/585-spring.png",
+    "exact": true
+  },
+  "sawsbuck-spring": {
+    "normal": "586-spring.png",
+    "shiny": "shiny/586-spring.png",
+    "exact": true
+  },
+  "emolga": {
+    "normal": "587.png",
+    "shiny": "shiny/587.png",
+    "exact": true
+  },
+  "karrablast": {
+    "normal": "588.png",
+    "shiny": "shiny/588.png",
+    "exact": true
+  },
+  "escavalier": {
+    "normal": "589.png",
+    "shiny": "shiny/589.png",
+    "exact": true
+  },
+  "foongus": {
+    "normal": "590.png",
+    "shiny": "shiny/590.png",
+    "exact": true
+  },
+  "amoonguss": {
+    "normal": "591.png",
+    "shiny": "shiny/591.png",
+    "exact": true
+  },
+  "frillish-male": {
+    "normal": "592.png",
+    "shiny": "shiny/592.png",
+    "exact": true
+  },
+  "jellicent-male": {
+    "normal": "593.png",
+    "shiny": "shiny/593.png",
+    "exact": true
+  },
+  "alomomola": {
+    "normal": "594.png",
+    "shiny": "shiny/594.png",
+    "exact": true
+  },
+  "joltik": {
+    "normal": "595.png",
+    "shiny": "shiny/595.png",
+    "exact": true
+  },
+  "galvantula": {
+    "normal": "596.png",
+    "shiny": "shiny/596.png",
+    "exact": true
+  },
+  "ferroseed": {
+    "normal": "597.png",
+    "shiny": "shiny/597.png",
+    "exact": true
+  },
+  "ferrothorn": {
+    "normal": "598.png",
+    "shiny": "shiny/598.png",
+    "exact": true
+  },
+  "klink": {
+    "normal": "599.png",
+    "shiny": "shiny/599.png",
+    "exact": true
+  },
+  "klang": {
+    "normal": "600.png",
+    "shiny": "shiny/600.png",
+    "exact": true
+  },
+  "klinklang": {
+    "normal": "601.png",
+    "shiny": "shiny/601.png",
+    "exact": true
+  },
+  "tynamo": {
+    "normal": "602.png",
+    "shiny": "shiny/602.png",
+    "exact": true
+  },
+  "eelektrik": {
+    "normal": "603.png",
+    "shiny": "shiny/603.png",
+    "exact": true
+  },
+  "eelektross": {
+    "normal": "604.png",
+    "shiny": "shiny/604.png",
+    "exact": true
+  },
+  "elgyem": {
+    "normal": "605.png",
+    "shiny": "shiny/605.png",
+    "exact": true
+  },
+  "beheeyem": {
+    "normal": "606.png",
+    "shiny": "shiny/606.png",
+    "exact": true
+  },
+  "litwick": {
+    "normal": "607.png",
+    "shiny": "shiny/607.png",
+    "exact": true
+  },
+  "lampent": {
+    "normal": "608.png",
+    "shiny": "shiny/608.png",
+    "exact": true
+  },
+  "chandelure": {
+    "normal": "609.png",
+    "shiny": "shiny/609.png",
+    "exact": true
+  },
+  "axew": {
+    "normal": "610.png",
+    "shiny": "shiny/610.png",
+    "exact": true
+  },
+  "fraxure": {
+    "normal": "611.png",
+    "shiny": "shiny/611.png",
+    "exact": true
+  },
+  "haxorus": {
+    "normal": "612.png",
+    "shiny": "shiny/612.png",
+    "exact": true
+  },
+  "cubchoo": {
+    "normal": "613.png",
+    "shiny": "shiny/613.png",
+    "exact": true
+  },
+  "beartic": {
+    "normal": "614.png",
+    "shiny": "shiny/614.png",
+    "exact": true
+  },
+  "cryogonal": {
+    "normal": "615.png",
+    "shiny": "shiny/615.png",
+    "exact": true
+  },
+  "shelmet": {
+    "normal": "616.png",
+    "shiny": "shiny/616.png",
+    "exact": true
+  },
+  "accelgor": {
+    "normal": "617.png",
+    "shiny": "shiny/617.png",
+    "exact": true
+  },
+  "stunfisk": {
+    "normal": "618.png",
+    "shiny": "shiny/618.png",
+    "exact": true
+  },
+  "mienfoo": {
+    "normal": "619.png",
+    "shiny": "shiny/619.png",
+    "exact": true
+  },
+  "mienshao": {
+    "normal": "620.png",
+    "shiny": "shiny/620.png",
+    "exact": true
+  },
+  "druddigon": {
+    "normal": "621.png",
+    "shiny": "shiny/621.png",
+    "exact": true
+  },
+  "golett": {
+    "normal": "622.png",
+    "shiny": "shiny/622.png",
+    "exact": true
+  },
+  "golurk": {
+    "normal": "623.png",
+    "shiny": "shiny/623.png",
+    "exact": true
+  },
+  "pawniard": {
+    "normal": "624.png",
+    "shiny": "shiny/624.png",
+    "exact": true
+  },
+  "bisharp": {
+    "normal": "625.png",
+    "shiny": "shiny/625.png",
+    "exact": true
+  },
+  "bouffalant": {
+    "normal": "626.png",
+    "shiny": "shiny/626.png",
+    "exact": true
+  },
+  "rufflet": {
+    "normal": "627.png",
+    "shiny": "shiny/627.png",
+    "exact": true
+  },
+  "braviary": {
+    "normal": "628.png",
+    "shiny": "shiny/628.png",
+    "exact": true
+  },
+  "vullaby": {
+    "normal": "629.png",
+    "shiny": "shiny/629.png",
+    "exact": true
+  },
+  "mandibuzz": {
+    "normal": "630.png",
+    "shiny": "shiny/630.png",
+    "exact": true
+  },
+  "heatmor": {
+    "normal": "631.png",
+    "shiny": "shiny/631.png",
+    "exact": true
+  },
+  "durant": {
+    "normal": "632.png",
+    "shiny": "shiny/632.png",
+    "exact": true
+  },
+  "deino": {
+    "normal": "633.png",
+    "shiny": "shiny/633.png",
+    "exact": true
+  },
+  "zweilous": {
+    "normal": "634.png",
+    "shiny": "shiny/634.png",
+    "exact": true
+  },
+  "hydreigon": {
+    "normal": "635.png",
+    "shiny": "shiny/635.png",
+    "exact": true
+  },
+  "larvesta": {
+    "normal": "636.png",
+    "shiny": "shiny/636.png",
+    "exact": true
+  },
+  "volcarona": {
+    "normal": "637.png",
+    "shiny": "shiny/637.png",
+    "exact": true
+  },
+  "cobalion": {
+    "normal": "638.png",
+    "shiny": "shiny/638.png",
+    "exact": true
+  },
+  "terrakion": {
+    "normal": "639.png",
+    "shiny": "shiny/639.png",
+    "exact": true
+  },
+  "virizion": {
+    "normal": "640.png",
+    "shiny": "shiny/640.png",
+    "exact": true
+  },
+  "tornadus-incarnate": {
+    "normal": "641.png",
+    "shiny": "shiny/641.png",
+    "exact": true
+  },
+  "thundurus-incarnate": {
+    "normal": "642.png",
+    "shiny": "shiny/642.png",
+    "exact": true
+  },
+  "reshiram": {
+    "normal": "643.png",
+    "shiny": "shiny/643.png",
+    "exact": true
+  },
+  "zekrom": {
+    "normal": "644.png",
+    "shiny": "shiny/644.png",
+    "exact": true
+  },
+  "landorus-incarnate": {
+    "normal": "645.png",
+    "shiny": "shiny/645.png",
+    "exact": true
+  },
+  "kyurem": {
+    "normal": "646.png",
+    "shiny": "shiny/646.png",
+    "exact": true
+  },
+  "keldeo-ordinary": {
+    "normal": "647.png",
+    "shiny": "shiny/647.png",
+    "exact": true
+  },
+  "meloetta-aria": {
+    "normal": "648.png",
+    "shiny": "shiny/648.png",
+    "exact": true
+  },
+  "genesect": {
+    "normal": "649.png",
+    "shiny": "shiny/649.png",
+    "exact": true
+  },
+  "chespin": {
+    "normal": "650.png",
+    "shiny": "shiny/650.png",
+    "exact": true
+  },
+  "quilladin": {
+    "normal": "651.png",
+    "shiny": "shiny/651.png",
+    "exact": true
+  },
+  "chesnaught": {
+    "normal": "652.png",
+    "shiny": "shiny/652.png",
+    "exact": true
+  },
+  "fennekin": {
+    "normal": "653.png",
+    "shiny": "shiny/653.png",
+    "exact": true
+  },
+  "braixen": {
+    "normal": "654.png",
+    "shiny": "shiny/654.png",
+    "exact": true
+  },
+  "delphox": {
+    "normal": "655.png",
+    "shiny": "shiny/655.png",
+    "exact": true
+  },
+  "froakie": {
+    "normal": "656.png",
+    "shiny": "shiny/656.png",
+    "exact": true
+  },
+  "frogadier": {
+    "normal": "657.png",
+    "shiny": "shiny/657.png",
+    "exact": true
+  },
+  "greninja": {
+    "normal": "658.png",
+    "shiny": "shiny/658.png",
+    "exact": true
+  },
+  "bunnelby": {
+    "normal": "659.png",
+    "shiny": "shiny/659.png",
+    "exact": true
+  },
+  "diggersby": {
+    "normal": "660.png",
+    "shiny": "shiny/660.png",
+    "exact": true
+  },
+  "fletchling": {
+    "normal": "661.png",
+    "shiny": "shiny/661.png",
+    "exact": true
+  },
+  "fletchinder": {
+    "normal": "662.png",
+    "shiny": "shiny/662.png",
+    "exact": true
+  },
+  "talonflame": {
+    "normal": "663.png",
+    "shiny": "shiny/663.png",
+    "exact": true
+  },
+  "scatterbug-icy-snow": {
+    "normal": "664.png",
+    "shiny": "shiny/664.png",
+    "exact": true
+  },
+  "spewpa-icy-snow": {
+    "normal": "665.png",
+    "shiny": "shiny/665.png",
+    "exact": true
+  },
+  "vivillon-meadow": {
+    "normal": "666.png",
+    "shiny": "shiny/666.png",
+    "exact": true
+  },
+  "litleo": {
+    "normal": "667.png",
+    "shiny": "shiny/667.png",
+    "exact": true
+  },
+  "pyroar-male": {
+    "normal": "668.png",
+    "shiny": "shiny/668.png",
+    "exact": true
+  },
+  "flabebe-red": {
+    "normal": "669-red.png",
+    "shiny": "shiny/669-red.png",
+    "exact": true
+  },
+  "floette-red": {
+    "normal": "670-red.png",
+    "shiny": "shiny/670-red.png",
+    "exact": true
+  },
+  "florges-red": {
+    "normal": "671-red.png",
+    "shiny": "shiny/671-red.png",
+    "exact": true
+  },
+  "skiddo": {
+    "normal": "672.png",
+    "shiny": "shiny/672.png",
+    "exact": true
+  },
+  "gogoat": {
+    "normal": "673.png",
+    "shiny": "shiny/673.png",
+    "exact": true
+  },
+  "pancham": {
+    "normal": "674.png",
+    "shiny": "shiny/674.png",
+    "exact": true
+  },
+  "pangoro": {
+    "normal": "675.png",
+    "shiny": "shiny/675.png",
+    "exact": true
+  },
+  "furfrou-natural": {
+    "normal": "676-natural.png",
+    "shiny": "shiny/676-natural.png",
+    "exact": true
+  },
+  "espurr": {
+    "normal": "677.png",
+    "shiny": "shiny/677.png",
+    "exact": true
+  },
+  "meowstic-male": {
+    "normal": "678.png",
+    "shiny": "shiny/678.png",
+    "exact": true
+  },
+  "honedge": {
+    "normal": "679.png",
+    "shiny": "shiny/679.png",
+    "exact": true
+  },
+  "doublade": {
+    "normal": "680.png",
+    "shiny": "shiny/680.png",
+    "exact": true
+  },
+  "aegislash-shield": {
+    "normal": "681.png",
+    "shiny": "shiny/681.png",
+    "exact": true
+  },
+  "spritzee": {
+    "normal": "682.png",
+    "shiny": "shiny/682.png",
+    "exact": true
+  },
+  "aromatisse": {
+    "normal": "683.png",
+    "shiny": "shiny/683.png",
+    "exact": true
+  },
+  "swirlix": {
+    "normal": "684.png",
+    "shiny": "shiny/684.png",
+    "exact": true
+  },
+  "slurpuff": {
+    "normal": "685.png",
+    "shiny": "shiny/685.png",
+    "exact": true
+  },
+  "inkay": {
+    "normal": "686.png",
+    "shiny": "shiny/686.png",
+    "exact": true
+  },
+  "malamar": {
+    "normal": "687.png",
+    "shiny": "shiny/687.png",
+    "exact": true
+  },
+  "binacle": {
+    "normal": "688.png",
+    "shiny": "shiny/688.png",
+    "exact": true
+  },
+  "barbaracle": {
+    "normal": "689.png",
+    "shiny": "shiny/689.png",
+    "exact": true
+  },
+  "skrelp": {
+    "normal": "690.png",
+    "shiny": "shiny/690.png",
+    "exact": true
+  },
+  "dragalge": {
+    "normal": "691.png",
+    "shiny": "shiny/691.png",
+    "exact": true
+  },
+  "clauncher": {
+    "normal": "692.png",
+    "shiny": "shiny/692.png",
+    "exact": true
+  },
+  "clawitzer": {
+    "normal": "693.png",
+    "shiny": "shiny/693.png",
+    "exact": true
+  },
+  "helioptile": {
+    "normal": "694.png",
+    "shiny": "shiny/694.png",
+    "exact": true
+  },
+  "heliolisk": {
+    "normal": "695.png",
+    "shiny": "shiny/695.png",
+    "exact": true
+  },
+  "tyrunt": {
+    "normal": "696.png",
+    "shiny": "shiny/696.png",
+    "exact": true
+  },
+  "tyrantrum": {
+    "normal": "697.png",
+    "shiny": "shiny/697.png",
+    "exact": true
+  },
+  "amaura": {
+    "normal": "698.png",
+    "shiny": "shiny/698.png",
+    "exact": true
+  },
+  "aurorus": {
+    "normal": "699.png",
+    "shiny": "shiny/699.png",
+    "exact": true
+  },
+  "sylveon": {
+    "normal": "700.png",
+    "shiny": "shiny/700.png",
+    "exact": true
+  },
+  "hawlucha": {
+    "normal": "701.png",
+    "shiny": "shiny/701.png",
+    "exact": true
+  },
+  "dedenne": {
+    "normal": "702.png",
+    "shiny": "shiny/702.png",
+    "exact": true
+  },
+  "carbink": {
+    "normal": "703.png",
+    "shiny": "shiny/703.png",
+    "exact": true
+  },
+  "goomy": {
+    "normal": "704.png",
+    "shiny": "shiny/704.png",
+    "exact": true
+  },
+  "sliggoo": {
+    "normal": "705.png",
+    "shiny": "shiny/705.png",
+    "exact": true
+  },
+  "goodra": {
+    "normal": "706.png",
+    "shiny": "shiny/706.png",
+    "exact": true
+  },
+  "klefki": {
+    "normal": "707.png",
+    "shiny": "shiny/707.png",
+    "exact": true
+  },
+  "phantump": {
+    "normal": "708.png",
+    "shiny": "shiny/708.png",
+    "exact": true
+  },
+  "trevenant": {
+    "normal": "709.png",
+    "shiny": "shiny/709.png",
+    "exact": true
+  },
+  "pumpkaboo-average": {
+    "normal": "710.png",
+    "shiny": "shiny/710.png",
+    "exact": true
+  },
+  "gourgeist-average": {
+    "normal": "711.png",
+    "shiny": "shiny/711.png",
+    "exact": true
+  },
+  "bergmite": {
+    "normal": "712.png",
+    "shiny": "shiny/712.png",
+    "exact": true
+  },
+  "avalugg": {
+    "normal": "713.png",
+    "shiny": "shiny/713.png",
+    "exact": true
+  },
+  "noibat": {
+    "normal": "714.png",
+    "shiny": "shiny/714.png",
+    "exact": true
+  },
+  "noivern": {
+    "normal": "715.png",
+    "shiny": "shiny/715.png",
+    "exact": true
+  },
+  "xerneas-neutral": {
+    "normal": "716-neutral.png",
+    "shiny": "shiny/716-neutral.png",
+    "exact": true
+  },
+  "yveltal": {
+    "normal": "717.png",
+    "shiny": "shiny/717.png",
+    "exact": true
+  },
+  "zygarde-50": {
+    "normal": "718.png",
+    "shiny": "shiny/718.png",
+    "exact": true
+  },
+  "diancie": {
+    "normal": "719.png",
+    "shiny": "shiny/719.png",
+    "exact": true
+  },
+  "hoopa": {
+    "normal": "720.png",
+    "shiny": "shiny/720.png",
+    "exact": true
+  },
+  "volcanion": {
+    "normal": "721.png",
+    "shiny": "shiny/721.png",
+    "exact": true
+  },
+  "rowlet": {
+    "normal": "722.png",
+    "shiny": "shiny/722.png",
+    "exact": true
+  },
+  "dartrix": {
+    "normal": "723.png",
+    "shiny": "shiny/723.png",
+    "exact": true
+  },
+  "decidueye": {
+    "normal": "724.png",
+    "shiny": "shiny/724.png",
+    "exact": true
+  },
+  "litten": {
+    "normal": "725.png",
+    "shiny": "shiny/725.png",
+    "exact": true
+  },
+  "torracat": {
+    "normal": "726.png",
+    "shiny": "shiny/726.png",
+    "exact": true
+  },
+  "incineroar": {
+    "normal": "727.png",
+    "shiny": "shiny/727.png",
+    "exact": true
+  },
+  "popplio": {
+    "normal": "728.png",
+    "shiny": "shiny/728.png",
+    "exact": true
+  },
+  "brionne": {
+    "normal": "729.png",
+    "shiny": "shiny/729.png",
+    "exact": true
+  },
+  "primarina": {
+    "normal": "730.png",
+    "shiny": "shiny/730.png",
+    "exact": true
+  },
+  "pikipek": {
+    "normal": "731.png",
+    "shiny": "shiny/731.png",
+    "exact": true
+  },
+  "trumbeak": {
+    "normal": "732.png",
+    "shiny": "shiny/732.png",
+    "exact": true
+  },
+  "toucannon": {
+    "normal": "733.png",
+    "shiny": "shiny/733.png",
+    "exact": true
+  },
+  "yungoos": {
+    "normal": "734.png",
+    "shiny": "shiny/734.png",
+    "exact": true
+  },
+  "gumshoos": {
+    "normal": "735.png",
+    "shiny": "shiny/735.png",
+    "exact": true
+  },
+  "grubbin": {
+    "normal": "736.png",
+    "shiny": "shiny/736.png",
+    "exact": true
+  },
+  "charjabug": {
+    "normal": "737.png",
+    "shiny": "shiny/737.png",
+    "exact": true
+  },
+  "vikavolt": {
+    "normal": "738.png",
+    "shiny": "shiny/738.png",
+    "exact": true
+  },
+  "crabrawler": {
+    "normal": "739.png",
+    "shiny": "shiny/739.png",
+    "exact": true
+  },
+  "crabominable": {
+    "normal": "740.png",
+    "shiny": "shiny/740.png",
+    "exact": true
+  },
+  "oricorio-baile": {
+    "normal": "741.png",
+    "shiny": "shiny/741.png",
+    "exact": true
+  },
+  "cutiefly": {
+    "normal": "742.png",
+    "shiny": "shiny/742.png",
+    "exact": true
+  },
+  "ribombee": {
+    "normal": "743.png",
+    "shiny": "shiny/743.png",
+    "exact": true
+  },
+  "rockruff": {
+    "normal": "744.png",
+    "shiny": "shiny/744.png",
+    "exact": true
+  },
+  "lycanroc-midday": {
+    "normal": "745.png",
+    "shiny": "shiny/745.png",
+    "exact": true
+  },
+  "wishiwashi-solo": {
+    "normal": "746.png",
+    "shiny": "shiny/746.png",
+    "exact": true
+  },
+  "mareanie": {
+    "normal": "747.png",
+    "shiny": "shiny/747.png",
+    "exact": true
+  },
+  "toxapex": {
+    "normal": "748.png",
+    "shiny": "shiny/748.png",
+    "exact": true
+  },
+  "mudbray": {
+    "normal": "749.png",
+    "shiny": "shiny/749.png",
+    "exact": true
+  },
+  "mudsdale": {
+    "normal": "750.png",
+    "shiny": "shiny/750.png",
+    "exact": true
+  },
+  "dewpider": {
+    "normal": "751.png",
+    "shiny": "shiny/751.png",
+    "exact": true
+  },
+  "araquanid": {
+    "normal": "752.png",
+    "shiny": "shiny/752.png",
+    "exact": true
+  },
+  "fomantis": {
+    "normal": "753.png",
+    "shiny": "shiny/753.png",
+    "exact": true
+  },
+  "lurantis": {
+    "normal": "754.png",
+    "shiny": "shiny/754.png",
+    "exact": true
+  },
+  "morelull": {
+    "normal": "755.png",
+    "shiny": "shiny/755.png",
+    "exact": true
+  },
+  "shiinotic": {
+    "normal": "756.png",
+    "shiny": "shiny/756.png",
+    "exact": true
+  },
+  "salandit": {
+    "normal": "757.png",
+    "shiny": "shiny/757.png",
+    "exact": true
+  },
+  "salazzle": {
+    "normal": "758.png",
+    "shiny": "shiny/758.png",
+    "exact": true
+  },
+  "stufful": {
+    "normal": "759.png",
+    "shiny": "shiny/759.png",
+    "exact": true
+  },
+  "bewear": {
+    "normal": "760.png",
+    "shiny": "shiny/760.png",
+    "exact": true
+  },
+  "bounsweet": {
+    "normal": "761.png",
+    "shiny": "shiny/761.png",
+    "exact": true
+  },
+  "steenee": {
+    "normal": "762.png",
+    "shiny": "shiny/762.png",
+    "exact": true
+  },
+  "tsareena": {
+    "normal": "763.png",
+    "shiny": "shiny/763.png",
+    "exact": true
+  },
+  "comfey": {
+    "normal": "764.png",
+    "shiny": "shiny/764.png",
+    "exact": true
+  },
+  "oranguru": {
+    "normal": "765.png",
+    "shiny": "shiny/765.png",
+    "exact": true
+  },
+  "passimian": {
+    "normal": "766.png",
+    "shiny": "shiny/766.png",
+    "exact": true
+  },
+  "wimpod": {
+    "normal": "767.png",
+    "shiny": "shiny/767.png",
+    "exact": true
+  },
+  "golisopod": {
+    "normal": "768.png",
+    "shiny": "shiny/768.png",
+    "exact": true
+  },
+  "sandygast": {
+    "normal": "769.png",
+    "shiny": "shiny/769.png",
+    "exact": true
+  },
+  "palossand": {
+    "normal": "770.png",
+    "shiny": "shiny/770.png",
+    "exact": true
+  },
+  "pyukumuku": {
+    "normal": "771.png",
+    "shiny": "shiny/771.png",
+    "exact": true
+  },
+  "type-null": {
+    "normal": "772.png",
+    "shiny": "shiny/772.png",
+    "exact": true
+  },
+  "silvally-normal": {
+    "normal": "773-normal.png",
+    "shiny": "shiny/773-normal.png",
+    "exact": true
+  },
+  "minior-red": {
+    "normal": "10136.png",
+    "shiny": "shiny/10136.png",
+    "exact": true
+  },
+  "komala": {
+    "normal": "775.png",
+    "shiny": "shiny/775.png",
+    "exact": true
+  },
+  "turtonator": {
+    "normal": "776.png",
+    "shiny": "shiny/776.png",
+    "exact": true
+  },
+  "togedemaru": {
+    "normal": "777.png",
+    "shiny": "shiny/777.png",
+    "exact": true
+  },
+  "mimikyu-disguised": {
+    "normal": "778.png",
+    "shiny": "shiny/778.png",
+    "exact": true
+  },
+  "bruxish": {
+    "normal": "779.png",
+    "shiny": "shiny/779.png",
+    "exact": true
+  },
+  "drampa": {
+    "normal": "780.png",
+    "shiny": "shiny/780.png",
+    "exact": true
+  },
+  "dhelmise": {
+    "normal": "781.png",
+    "shiny": "shiny/781.png",
+    "exact": true
+  },
+  "jangmo-o": {
+    "normal": "782.png",
+    "shiny": "shiny/782.png",
+    "exact": true
+  },
+  "hakamo-o": {
+    "normal": "783.png",
+    "shiny": "shiny/783.png",
+    "exact": true
+  },
+  "kommo-o": {
+    "normal": "784.png",
+    "shiny": "shiny/784.png",
+    "exact": true
+  },
+  "tapu-koko": {
+    "normal": "785.png",
+    "shiny": "shiny/785.png",
+    "exact": true
+  },
+  "tapu-lele": {
+    "normal": "786.png",
+    "shiny": "shiny/786.png",
+    "exact": true
+  },
+  "tapu-bulu": {
+    "normal": "787.png",
+    "shiny": "shiny/787.png",
+    "exact": true
+  },
+  "tapu-fini": {
+    "normal": "788.png",
+    "shiny": "shiny/788.png",
+    "exact": true
+  },
+  "cosmog": {
+    "normal": "789.png",
+    "shiny": "shiny/789.png",
+    "exact": true
+  },
+  "cosmoem": {
+    "normal": "790.png",
+    "shiny": "shiny/790.png",
+    "exact": true
+  },
+  "solgaleo": {
+    "normal": "791.png",
+    "shiny": "shiny/791.png",
+    "exact": true
+  },
+  "lunala": {
+    "normal": "792.png",
+    "shiny": "shiny/792.png",
+    "exact": true
+  },
+  "nihilego": {
+    "normal": "793.png",
+    "shiny": "shiny/793.png",
+    "exact": true
+  },
+  "buzzwole": {
+    "normal": "794.png",
+    "shiny": "shiny/794.png",
+    "exact": true
+  },
+  "pheromosa": {
+    "normal": "795.png",
+    "shiny": "shiny/795.png",
+    "exact": true
+  },
+  "xurkitree": {
+    "normal": "796.png",
+    "shiny": "shiny/796.png",
+    "exact": true
+  },
+  "celesteela": {
+    "normal": "797.png",
+    "shiny": "shiny/797.png",
+    "exact": true
+  },
+  "kartana": {
+    "normal": "798.png",
+    "shiny": "shiny/798.png",
+    "exact": true
+  },
+  "guzzlord": {
+    "normal": "799.png",
+    "shiny": "shiny/799.png",
+    "exact": true
+  },
+  "necrozma": {
+    "normal": "800.png",
+    "shiny": "shiny/800.png",
+    "exact": true
+  },
+  "magearna": {
+    "normal": "801.png",
+    "shiny": "shiny/801.png",
+    "exact": true
+  },
+  "marshadow": {
+    "normal": "802.png",
+    "shiny": "shiny/802.png",
+    "exact": true
+  },
+  "poipole": {
+    "normal": "803.png",
+    "shiny": "shiny/803.png",
+    "exact": true
+  },
+  "naganadel": {
+    "normal": "804.png",
+    "shiny": "shiny/804.png",
+    "exact": true
+  },
+  "stakataka": {
+    "normal": "805.png",
+    "shiny": "shiny/805.png",
+    "exact": true
+  },
+  "blacephalon": {
+    "normal": "806.png",
+    "shiny": "shiny/806.png",
+    "exact": true
+  },
+  "zeraora": {
+    "normal": "807.png",
+    "shiny": "shiny/807.png",
+    "exact": true
+  },
+  "meltan": {
+    "normal": "808.png",
+    "shiny": "shiny/808.png",
+    "exact": true
+  },
+  "melmetal": {
+    "normal": "809.png",
+    "shiny": "shiny/809.png",
+    "exact": true
+  },
+  "grookey": {
+    "normal": "810.png",
+    "shiny": "shiny/810.png",
+    "exact": true
+  },
+  "thwackey": {
+    "normal": "811.png",
+    "shiny": "shiny/811.png",
+    "exact": true
+  },
+  "rillaboom": {
+    "normal": "812.png",
+    "shiny": "shiny/812.png",
+    "exact": true
+  },
+  "scorbunny": {
+    "normal": "813.png",
+    "shiny": "shiny/813.png",
+    "exact": true
+  },
+  "raboot": {
+    "normal": "814.png",
+    "shiny": "shiny/814.png",
+    "exact": true
+  },
+  "cinderace": {
+    "normal": "815.png",
+    "shiny": "shiny/815.png",
+    "exact": true
+  },
+  "sobble": {
+    "normal": "816.png",
+    "shiny": "shiny/816.png",
+    "exact": true
+  },
+  "drizzile": {
+    "normal": "817.png",
+    "shiny": "shiny/817.png",
+    "exact": true
+  },
+  "inteleon": {
+    "normal": "818.png",
+    "shiny": "shiny/818.png",
+    "exact": true
+  },
+  "skwovet": {
+    "normal": "819.png",
+    "shiny": "shiny/819.png",
+    "exact": true
+  },
+  "greedent": {
+    "normal": "820.png",
+    "shiny": "shiny/820.png",
+    "exact": true
+  },
+  "rookidee": {
+    "normal": "821.png",
+    "shiny": "shiny/821.png",
+    "exact": true
+  },
+  "corvisquire": {
+    "normal": "822.png",
+    "shiny": "shiny/822.png",
+    "exact": true
+  },
+  "corviknight": {
+    "normal": "823.png",
+    "shiny": "shiny/823.png",
+    "exact": true
+  },
+  "blipbug": {
+    "normal": "824.png",
+    "shiny": "shiny/824.png",
+    "exact": true
+  },
+  "dottler": {
+    "normal": "825.png",
+    "shiny": "shiny/825.png",
+    "exact": true
+  },
+  "orbeetle": {
+    "normal": "826.png",
+    "shiny": "shiny/826.png",
+    "exact": true
+  },
+  "nickit": {
+    "normal": "827.png",
+    "shiny": "shiny/827.png",
+    "exact": true
+  },
+  "thievul": {
+    "normal": "828.png",
+    "shiny": "shiny/828.png",
+    "exact": true
+  },
+  "gossifleur": {
+    "normal": "829.png",
+    "shiny": "shiny/829.png",
+    "exact": true
+  },
+  "eldegoss": {
+    "normal": "830.png",
+    "shiny": "shiny/830.png",
+    "exact": true
+  },
+  "wooloo": {
+    "normal": "831.png",
+    "shiny": "shiny/831.png",
+    "exact": true
+  },
+  "dubwool": {
+    "normal": "832.png",
+    "shiny": "shiny/832.png",
+    "exact": true
+  },
+  "chewtle": {
+    "normal": "833.png",
+    "shiny": "shiny/833.png",
+    "exact": true
+  },
+  "drednaw": {
+    "normal": "834.png",
+    "shiny": "shiny/834.png",
+    "exact": true
+  },
+  "yamper": {
+    "normal": "835.png",
+    "shiny": "shiny/835.png",
+    "exact": true
+  },
+  "boltund": {
+    "normal": "836.png",
+    "shiny": "shiny/836.png",
+    "exact": true
+  },
+  "rolycoly": {
+    "normal": "837.png",
+    "shiny": "shiny/837.png",
+    "exact": true
+  },
+  "carkol": {
+    "normal": "838.png",
+    "shiny": "shiny/838.png",
+    "exact": true
+  },
+  "coalossal": {
+    "normal": "839.png",
+    "shiny": "shiny/839.png",
+    "exact": true
+  },
+  "applin": {
+    "normal": "840.png",
+    "shiny": "shiny/840.png",
+    "exact": true
+  },
+  "flapple": {
+    "normal": "841.png",
+    "shiny": "shiny/841.png",
+    "exact": true
+  },
+  "appletun": {
+    "normal": "842.png",
+    "shiny": "shiny/842.png",
+    "exact": true
+  },
+  "silicobra": {
+    "normal": "843.png",
+    "shiny": "shiny/843.png",
+    "exact": true
+  },
+  "sandaconda": {
+    "normal": "844.png",
+    "shiny": "shiny/844.png",
+    "exact": true
+  },
+  "cramorant": {
+    "normal": "845.png",
+    "shiny": "shiny/845.png",
+    "exact": true
+  },
+  "arrokuda": {
+    "normal": "846.png",
+    "shiny": "shiny/846.png",
+    "exact": true
+  },
+  "barraskewda": {
+    "normal": "847.png",
+    "shiny": "shiny/847.png",
+    "exact": true
+  },
+  "toxel": {
+    "normal": "848.png",
+    "shiny": "shiny/848.png",
+    "exact": true
+  },
+  "toxtricity-amped": {
+    "normal": "849.png",
+    "shiny": "shiny/849.png",
+    "exact": true
+  },
+  "sizzlipede": {
+    "normal": "850.png",
+    "shiny": "shiny/850.png",
+    "exact": true
+  },
+  "centiskorch": {
+    "normal": "851.png",
+    "shiny": "shiny/851.png",
+    "exact": true
+  },
+  "clobbopus": {
+    "normal": "852.png",
+    "shiny": "shiny/852.png",
+    "exact": true
+  },
+  "grapploct": {
+    "normal": "853.png",
+    "shiny": "shiny/853.png",
+    "exact": true
+  },
+  "sinistea-phony": {
+    "normal": "854.png",
+    "shiny": "shiny/854.png",
+    "exact": true
+  },
+  "polteageist-phony": {
+    "normal": "855.png",
+    "shiny": "shiny/855.png",
+    "exact": true
+  },
+  "hatenna": {
+    "normal": "856.png",
+    "shiny": "shiny/856.png",
+    "exact": true
+  },
+  "hattrem": {
+    "normal": "857.png",
+    "shiny": "shiny/857.png",
+    "exact": true
+  },
+  "hatterene": {
+    "normal": "858.png",
+    "shiny": "shiny/858.png",
+    "exact": true
+  },
+  "impidimp": {
+    "normal": "859.png",
+    "shiny": "shiny/859.png",
+    "exact": true
+  },
+  "morgrem": {
+    "normal": "860.png",
+    "shiny": "shiny/860.png",
+    "exact": true
+  },
+  "grimmsnarl": {
+    "normal": "861.png",
+    "shiny": "shiny/861.png",
+    "exact": true
+  },
+  "obstagoon": {
+    "normal": "862.png",
+    "shiny": "shiny/862.png",
+    "exact": true
+  },
+  "perrserker": {
+    "normal": "863.png",
+    "shiny": "shiny/863.png",
+    "exact": true
+  },
+  "cursola": {
+    "normal": "864.png",
+    "shiny": "shiny/864.png",
+    "exact": true
+  },
+  "sirfetchd": {
+    "normal": "865.png",
+    "shiny": "shiny/865.png",
+    "exact": true
+  },
+  "mr-rime": {
+    "normal": "866.png",
+    "shiny": "shiny/866.png",
+    "exact": true
+  },
+  "runerigus": {
+    "normal": "867.png",
+    "shiny": "shiny/867.png",
+    "exact": true
+  },
+  "milcery": {
+    "normal": "868.png",
+    "shiny": "shiny/868.png",
+    "exact": true
+  },
+  "alcremie-vanilla-cream-strawberry-sweet": {
+    "normal": "869-vanilla-cream-strawberry-sweet.png",
+    "shiny": "shiny/869-vanilla-cream-strawberry-sweet.png",
+    "exact": true
+  },
+  "falinks": {
+    "normal": "870.png",
+    "shiny": "shiny/870.png",
+    "exact": true
+  },
+  "pincurchin": {
+    "normal": "871.png",
+    "shiny": "shiny/871.png",
+    "exact": true
+  },
+  "snom": {
+    "normal": "872.png",
+    "shiny": "shiny/872.png",
+    "exact": true
+  },
+  "frosmoth": {
+    "normal": "873.png",
+    "shiny": "shiny/873.png",
+    "exact": true
+  },
+  "stonjourner": {
+    "normal": "874.png",
+    "shiny": "shiny/874.png",
+    "exact": true
+  },
+  "eiscue-ice": {
+    "normal": "875.png",
+    "shiny": "shiny/875.png",
+    "exact": true
+  },
+  "indeedee-male": {
+    "normal": "876.png",
+    "shiny": "shiny/876.png",
+    "exact": true
+  },
+  "morpeko-full-belly": {
+    "normal": "877.png",
+    "shiny": "shiny/877.png",
+    "exact": true
+  },
+  "cufant": {
+    "normal": "878.png",
+    "shiny": "shiny/878.png",
+    "exact": true
+  },
+  "copperajah": {
+    "normal": "879.png",
+    "shiny": "shiny/879.png",
+    "exact": true
+  },
+  "dracozolt": {
+    "normal": "880.png",
+    "shiny": "shiny/880.png",
+    "exact": true
+  },
+  "arctozolt": {
+    "normal": "881.png",
+    "shiny": "shiny/881.png",
+    "exact": true
+  },
+  "dracovish": {
+    "normal": "882.png",
+    "shiny": "shiny/882.png",
+    "exact": true
+  },
+  "arctovish": {
+    "normal": "883.png",
+    "shiny": "shiny/883.png",
+    "exact": true
+  },
+  "duraludon": {
+    "normal": "884.png",
+    "shiny": "shiny/884.png",
+    "exact": true
+  },
+  "dreepy": {
+    "normal": "885.png",
+    "shiny": "shiny/885.png",
+    "exact": true
+  },
+  "drakloak": {
+    "normal": "886.png",
+    "shiny": "shiny/886.png",
+    "exact": true
+  },
+  "dragapult": {
+    "normal": "887.png",
+    "shiny": "shiny/887.png",
+    "exact": true
+  },
+  "zacian": {
+    "normal": "888.png",
+    "shiny": "shiny/888.png",
+    "exact": true
+  },
+  "zamazenta": {
+    "normal": "889.png",
+    "shiny": "shiny/889.png",
+    "exact": true
+  },
+  "eternatus": {
+    "normal": "890.png",
+    "shiny": "shiny/890.png",
+    "exact": true
+  },
+  "kubfu": {
+    "normal": "891.png",
+    "shiny": "shiny/891.png",
+    "exact": true
+  },
+  "urshifu-single-strike": {
+    "normal": "892.png",
+    "shiny": "shiny/892.png",
+    "exact": true
+  },
+  "zarude": {
+    "normal": "893.png",
+    "shiny": "shiny/893.png",
+    "exact": true
+  },
+  "regieleki": {
+    "normal": "894.png",
+    "shiny": "shiny/894.png",
+    "exact": true
+  },
+  "regidrago": {
+    "normal": "895.png",
+    "shiny": "shiny/895.png",
+    "exact": true
+  },
+  "glastrier": {
+    "normal": "896.png",
+    "shiny": "shiny/896.png",
+    "exact": true
+  },
+  "spectrier": {
+    "normal": "897.png",
+    "shiny": "shiny/897.png",
+    "exact": true
+  },
+  "calyrex": {
+    "normal": "898.png",
+    "shiny": "shiny/898.png",
+    "exact": true
+  },
+  "wyrdeer": {
+    "normal": "899.png",
+    "shiny": "shiny/899.png",
+    "exact": true
+  },
+  "kleavor": {
+    "normal": "900.png",
+    "shiny": "shiny/900.png",
+    "exact": true
+  },
+  "ursaluna": {
+    "normal": "901.png",
+    "shiny": "shiny/901.png",
+    "exact": true
+  },
+  "basculegion-male": {
+    "normal": "902.png",
+    "shiny": "shiny/902.png",
+    "exact": true
+  },
+  "sneasler": {
+    "normal": "903.png",
+    "shiny": "shiny/903.png",
+    "exact": true
+  },
+  "overqwil": {
+    "normal": "904.png",
+    "shiny": "shiny/904.png",
+    "exact": true
+  },
+  "enamorus-incarnate": {
+    "normal": "905.png",
+    "shiny": "shiny/905.png",
+    "exact": true
+  },
+  "sprigatito": {
+    "normal": "906.png",
+    "shiny": "shiny/906.png",
+    "exact": true
+  },
+  "floragato": {
+    "normal": "907.png",
+    "shiny": "shiny/907.png",
+    "exact": true
+  },
+  "meowscarada": {
+    "normal": "908.png",
+    "shiny": "shiny/908.png",
+    "exact": true
+  },
+  "fuecoco": {
+    "normal": "909.png",
+    "shiny": "shiny/909.png",
+    "exact": true
+  },
+  "crocalor": {
+    "normal": "910.png",
+    "shiny": "shiny/910.png",
+    "exact": true
+  },
+  "skeledirge": {
+    "normal": "911.png",
+    "shiny": "shiny/911.png",
+    "exact": true
+  },
+  "quaxly": {
+    "normal": "912.png",
+    "shiny": "shiny/912.png",
+    "exact": true
+  },
+  "quaxwell": {
+    "normal": "913.png",
+    "shiny": "shiny/913.png",
+    "exact": true
+  },
+  "quaquaval": {
+    "normal": "914.png",
+    "shiny": "shiny/914.png",
+    "exact": true
+  },
+  "lechonk": {
+    "normal": "915.png",
+    "shiny": "shiny/915.png",
+    "exact": true
+  },
+  "oinkologne-female": {
+    "normal": "10254.png",
+    "shiny": "shiny/10254.png",
+    "exact": true
+  },
+  "tarountula": {
+    "normal": "917.png",
+    "shiny": "shiny/917.png",
+    "exact": true
+  },
+  "spidops": {
+    "normal": "918.png",
+    "shiny": "shiny/918.png",
+    "exact": true
+  },
+  "nymble": {
+    "normal": "919.png",
+    "shiny": "shiny/919.png",
+    "exact": true
+  },
+  "lokix": {
+    "normal": "920.png",
+    "shiny": "shiny/920.png",
+    "exact": true
+  },
+  "pawmi": {
+    "normal": "921.png",
+    "shiny": "shiny/921.png",
+    "exact": true
+  },
+  "pawmo": {
+    "normal": "922.png",
+    "shiny": "shiny/922.png",
+    "exact": true
+  },
+  "pawmot": {
+    "normal": "923.png",
+    "shiny": "shiny/923.png",
+    "exact": true
+  },
+  "tandemaus": {
+    "normal": "924.png",
+    "shiny": "shiny/924.png",
+    "exact": true
+  },
+  "maushold-family-of-four": {
+    "normal": "925.png",
+    "shiny": "shiny/925.png",
+    "exact": true
+  },
+  "fidough": {
+    "normal": "926.png",
+    "shiny": "shiny/926.png",
+    "exact": true
+  },
+  "dachsbun": {
+    "normal": "927.png",
+    "shiny": "shiny/927.png",
+    "exact": true
+  },
+  "smoliv": {
+    "normal": "928.png",
+    "shiny": "shiny/928.png",
+    "exact": true
+  },
+  "dolliv": {
+    "normal": "929.png",
+    "shiny": "shiny/929.png",
+    "exact": true
+  },
+  "arboliva": {
+    "normal": "930.png",
+    "shiny": "shiny/930.png",
+    "exact": true
+  },
+  "squawkabilly-green-plumage": {
+    "normal": "931.png",
+    "shiny": "shiny/931.png",
+    "exact": true
+  },
+  "nacli": {
+    "normal": "932.png",
+    "shiny": "shiny/932.png",
+    "exact": true
+  },
+  "naclstack": {
+    "normal": "933.png",
+    "shiny": "shiny/933.png",
+    "exact": true
+  },
+  "garganacl": {
+    "normal": "934.png",
+    "shiny": "shiny/934.png",
+    "exact": true
+  },
+  "charcadet": {
+    "normal": "935.png",
+    "shiny": "shiny/935.png",
+    "exact": true
+  },
+  "armarouge": {
+    "normal": "936.png",
+    "shiny": "shiny/936.png",
+    "exact": true
+  },
+  "ceruledge": {
+    "normal": "937.png",
+    "shiny": "shiny/937.png",
+    "exact": true
+  },
+  "tadbulb": {
+    "normal": "938.png",
+    "shiny": "shiny/938.png",
+    "exact": true
+  },
+  "bellibolt": {
+    "normal": "939.png",
+    "shiny": "shiny/939.png",
+    "exact": true
+  },
+  "wattrel": {
+    "normal": "940.png",
+    "shiny": "shiny/940.png",
+    "exact": true
+  },
+  "kilowattrel": {
+    "normal": "941.png",
+    "shiny": "shiny/941.png",
+    "exact": true
+  },
+  "maschiff": {
+    "normal": "942.png",
+    "shiny": "shiny/942.png",
+    "exact": true
+  },
+  "mabosstiff": {
+    "normal": "943.png",
+    "shiny": "shiny/943.png",
+    "exact": true
+  },
+  "shroodle": {
+    "normal": "944.png",
+    "shiny": "shiny/944.png",
+    "exact": true
+  },
+  "grafaiai": {
+    "normal": "945.png",
+    "shiny": "shiny/945.png",
+    "exact": true
+  },
+  "bramblin": {
+    "normal": "946.png",
+    "shiny": "shiny/946.png",
+    "exact": true
+  },
+  "brambleghast": {
+    "normal": "947.png",
+    "shiny": "shiny/947.png",
+    "exact": true
+  },
+  "toedscool": {
+    "normal": "948.png",
+    "shiny": "shiny/948.png",
+    "exact": true
+  },
+  "toedscruel": {
+    "normal": "949.png",
+    "shiny": "shiny/949.png",
+    "exact": true
+  },
+  "klawf": {
+    "normal": "950.png",
+    "shiny": "shiny/950.png",
+    "exact": true
+  },
+  "capsakid": {
+    "normal": "951.png",
+    "shiny": "shiny/951.png",
+    "exact": true
+  },
+  "scovillain": {
+    "normal": "952.png",
+    "shiny": "shiny/952.png",
+    "exact": true
+  },
+  "rellor": {
+    "normal": "953.png",
+    "shiny": "shiny/953.png",
+    "exact": true
+  },
+  "rabsca": {
+    "normal": "954.png",
+    "shiny": "shiny/954.png",
+    "exact": true
+  },
+  "flittle": {
+    "normal": "955.png",
+    "shiny": "shiny/955.png",
+    "exact": true
+  },
+  "espathra": {
+    "normal": "956.png",
+    "shiny": "shiny/956.png",
+    "exact": true
+  },
+  "tinkatink": {
+    "normal": "957.png",
+    "shiny": "shiny/957.png",
+    "exact": true
+  },
+  "tinkatuff": {
+    "normal": "958.png",
+    "shiny": "shiny/958.png",
+    "exact": true
+  },
+  "tinkaton": {
+    "normal": "959.png",
+    "shiny": "shiny/959.png",
+    "exact": true
+  },
+  "wiglett": {
+    "normal": "960.png",
+    "shiny": "shiny/960.png",
+    "exact": true
+  },
+  "wugtrio": {
+    "normal": "961.png",
+    "shiny": "shiny/961.png",
+    "exact": true
+  },
+  "bombirdier": {
+    "normal": "962.png",
+    "shiny": "shiny/962.png",
+    "exact": true
+  },
+  "finizen": {
+    "normal": "963.png",
+    "shiny": "shiny/963.png",
+    "exact": true
+  },
+  "palafin-zero": {
+    "normal": "964.png",
+    "shiny": "shiny/964.png",
+    "exact": true
+  },
+  "varoom": {
+    "normal": "965.png",
+    "shiny": "shiny/965.png",
+    "exact": true
+  },
+  "revavroom": {
+    "normal": "966.png",
+    "shiny": "shiny/966.png",
+    "exact": true
+  },
+  "cyclizar": {
+    "normal": "967.png",
+    "shiny": "shiny/967.png",
+    "exact": true
+  },
+  "orthworm": {
+    "normal": "968.png",
+    "shiny": "shiny/968.png",
+    "exact": true
+  },
+  "glimmet": {
+    "normal": "969.png",
+    "shiny": "shiny/969.png",
+    "exact": true
+  },
+  "glimmora": {
+    "normal": "970.png",
+    "shiny": "shiny/970.png",
+    "exact": true
+  },
+  "greavard": {
+    "normal": "971.png",
+    "shiny": "shiny/971.png",
+    "exact": true
+  },
+  "houndstone": {
+    "normal": "972.png",
+    "shiny": "shiny/972.png",
+    "exact": true
+  },
+  "flamigo": {
+    "normal": "973.png",
+    "shiny": "shiny/973.png",
+    "exact": true
+  },
+  "cetoddle": {
+    "normal": "974.png",
+    "shiny": "shiny/974.png",
+    "exact": true
+  },
+  "cetitan": {
+    "normal": "975.png",
+    "shiny": "shiny/975.png",
+    "exact": true
+  },
+  "veluza": {
+    "normal": "976.png",
+    "shiny": "shiny/976.png",
+    "exact": true
+  },
+  "dondozo": {
+    "normal": "977.png",
+    "shiny": "shiny/977.png",
+    "exact": true
+  },
+  "tatsugiri-curly": {
+    "normal": "978.png",
+    "shiny": "shiny/978.png",
+    "exact": true
+  },
+  "annihilape": {
+    "normal": "979.png",
+    "shiny": "shiny/979.png",
+    "exact": true
+  },
+  "clodsire": {
+    "normal": "980.png",
+    "shiny": "shiny/980.png",
+    "exact": true
+  },
+  "farigiraf": {
+    "normal": "981.png",
+    "shiny": "shiny/981.png",
+    "exact": true
+  },
+  "dudunsparce-two-segment": {
+    "normal": "982.png",
+    "shiny": "shiny/982.png",
+    "exact": true
+  },
+  "kingambit": {
+    "normal": "983.png",
+    "shiny": "shiny/983.png",
+    "exact": true
+  },
+  "great-tusk": {
+    "normal": "984.png",
+    "shiny": "shiny/984.png",
+    "exact": true
+  },
+  "scream-tail": {
+    "normal": "985.png",
+    "shiny": "shiny/985.png",
+    "exact": true
+  },
+  "brute-bonnet": {
+    "normal": "986.png",
+    "shiny": "shiny/986.png",
+    "exact": true
+  },
+  "flutter-mane": {
+    "normal": "987.png",
+    "shiny": "shiny/987.png",
+    "exact": true
+  },
+  "slither-wing": {
+    "normal": "988.png",
+    "shiny": "shiny/988.png",
+    "exact": true
+  },
+  "sandy-shocks": {
+    "normal": "989.png",
+    "shiny": "shiny/989.png",
+    "exact": true
+  },
+  "iron-treads": {
+    "normal": "990.png",
+    "shiny": "shiny/990.png",
+    "exact": true
+  },
+  "iron-bundle": {
+    "normal": "991.png",
+    "shiny": "shiny/991.png",
+    "exact": true
+  },
+  "iron-hands": {
+    "normal": "992.png",
+    "shiny": "shiny/992.png",
+    "exact": true
+  },
+  "iron-jugulis": {
+    "normal": "993.png",
+    "shiny": "shiny/993.png",
+    "exact": true
+  },
+  "iron-moth": {
+    "normal": "994.png",
+    "shiny": "shiny/994.png",
+    "exact": true
+  },
+  "iron-thorns": {
+    "normal": "995.png",
+    "shiny": "shiny/995.png",
+    "exact": true
+  },
+  "frigibax": {
+    "normal": "996.png",
+    "shiny": "shiny/996.png",
+    "exact": true
+  },
+  "arctibax": {
+    "normal": "997.png",
+    "shiny": "shiny/997.png",
+    "exact": true
+  },
+  "baxcalibur": {
+    "normal": "998.png",
+    "shiny": "shiny/998.png",
+    "exact": true
+  },
+  "gimmighoul-chest": {
+    "normal": "999.png",
+    "shiny": "shiny/999.png",
+    "exact": true
+  },
+  "gholdengo": {
+    "normal": "1000.png",
+    "shiny": "shiny/1000.png",
+    "exact": true
+  },
+  "wo-chien": {
+    "normal": "1001.png",
+    "shiny": "shiny/1001.png",
+    "exact": true
+  },
+  "chien-pao": {
+    "normal": "1002.png",
+    "shiny": "shiny/1002.png",
+    "exact": true
+  },
+  "ting-lu": {
+    "normal": "1003.png",
+    "shiny": "shiny/1003.png",
+    "exact": true
+  },
+  "chi-yu": {
+    "normal": "1004.png",
+    "shiny": "shiny/1004.png",
+    "exact": true
+  },
+  "roaring-moon": {
+    "normal": "1005.png",
+    "shiny": "shiny/1005.png",
+    "exact": true
+  },
+  "iron-valiant": {
+    "normal": "1006.png",
+    "shiny": "shiny/1006.png",
+    "exact": true
+  },
+  "koraidon-apex-build": {
+    "normal": "1007.png",
+    "shiny": "shiny/1007.png",
+    "exact": true
+  },
+  "miraidon-ultimate-mode": {
+    "normal": "1008.png",
+    "shiny": "shiny/1008.png",
+    "exact": true
+  },
+  "walking-wake": {
+    "normal": "1009.png",
+    "shiny": "shiny/1009.png",
+    "exact": true
+  },
+  "iron-leaves": {
+    "normal": "1010.png",
+    "shiny": "shiny/1010.png",
+    "exact": true
+  },
+  "dipplin": {
+    "normal": "1011.png",
+    "shiny": "shiny/1011.png",
+    "exact": true
+  },
+  "poltchageist-counterfeit": {
+    "normal": "1012.png",
+    "shiny": "shiny/1012.png",
+    "exact": true
+  },
+  "sinistcha-unremarkable": {
+    "normal": "1013.png",
+    "shiny": "shiny/1013.png",
+    "exact": true
+  },
+  "okidogi": {
+    "normal": "1014.png",
+    "shiny": "shiny/1014.png",
+    "exact": true
+  },
+  "munkidori": {
+    "normal": "1015.png",
+    "shiny": "shiny/1015.png",
+    "exact": true
+  },
+  "fezandipiti": {
+    "normal": "1016.png",
+    "shiny": "shiny/1016.png",
+    "exact": true
+  },
+  "ogerpon": {
+    "normal": "1017.png",
+    "shiny": "shiny/1017.png",
+    "exact": true
+  },
+  "archaludon": {
+    "normal": "1018.png",
+    "shiny": "shiny/1018.png",
+    "exact": true
+  },
+  "hydrapple": {
+    "normal": "1019.png",
+    "shiny": "shiny/1019.png",
+    "exact": true
+  },
+  "gouging-fire": {
+    "normal": "1020.png",
+    "shiny": "shiny/1020.png",
+    "exact": true
+  },
+  "raging-bolt": {
+    "normal": "1021.png",
+    "shiny": "shiny/1021.png",
+    "exact": true
+  },
+  "iron-boulder": {
+    "normal": "1022.png",
+    "shiny": "shiny/1022.png",
+    "exact": true
+  },
+  "iron-crown": {
+    "normal": "1023.png",
+    "shiny": "shiny/1023.png",
+    "exact": true
+  },
+  "terapagos": {
+    "normal": "1024.png",
+    "shiny": "shiny/1024.png",
+    "exact": true
+  },
+  "pecharunt": {
+    "normal": "1025.png",
+    "shiny": "shiny/1025.png",
+    "exact": true
+  },
+  "unown-b": {
+    "normal": "201-b.png",
+    "shiny": "shiny/201-b.png",
+    "exact": true
+  },
+  "unown-c": {
+    "normal": "201-c.png",
+    "shiny": "shiny/201-c.png",
+    "exact": true
+  },
+  "unown-d": {
+    "normal": "201-d.png",
+    "shiny": "shiny/201-d.png",
+    "exact": true
+  },
+  "unown-e": {
+    "normal": "201-e.png",
+    "shiny": "shiny/201-e.png",
+    "exact": true
+  },
+  "unown-f": {
+    "normal": "201-f.png",
+    "shiny": "shiny/201-f.png",
+    "exact": true
+  },
+  "unown-g": {
+    "normal": "201-g.png",
+    "shiny": "shiny/201-g.png",
+    "exact": true
+  },
+  "unown-h": {
+    "normal": "201-h.png",
+    "shiny": "shiny/201-h.png",
+    "exact": true
+  },
+  "unown-i": {
+    "normal": "201-i.png",
+    "shiny": "shiny/201-i.png",
+    "exact": true
+  },
+  "unown-j": {
+    "normal": "201-j.png",
+    "shiny": "shiny/201-j.png",
+    "exact": true
+  },
+  "unown-k": {
+    "normal": "201-k.png",
+    "shiny": "shiny/201-k.png",
+    "exact": true
+  },
+  "unown-l": {
+    "normal": "201-l.png",
+    "shiny": "shiny/201-l.png",
+    "exact": true
+  },
+  "unown-m": {
+    "normal": "201-m.png",
+    "shiny": "shiny/201-m.png",
+    "exact": true
+  },
+  "unown-n": {
+    "normal": "201-n.png",
+    "shiny": "shiny/201-n.png",
+    "exact": true
+  },
+  "unown-o": {
+    "normal": "201-o.png",
+    "shiny": "shiny/201-o.png",
+    "exact": true
+  },
+  "unown-p": {
+    "normal": "201-p.png",
+    "shiny": "shiny/201-p.png",
+    "exact": true
+  },
+  "unown-q": {
+    "normal": "201-q.png",
+    "shiny": "shiny/201-q.png",
+    "exact": true
+  },
+  "unown-r": {
+    "normal": "201-r.png",
+    "shiny": "shiny/201-r.png",
+    "exact": true
+  },
+  "unown-s": {
+    "normal": "201-s.png",
+    "shiny": "shiny/201-s.png",
+    "exact": true
+  },
+  "unown-t": {
+    "normal": "201-t.png",
+    "shiny": "shiny/201-t.png",
+    "exact": true
+  },
+  "unown-u": {
+    "normal": "201-u.png",
+    "shiny": "shiny/201-u.png",
+    "exact": true
+  },
+  "unown-v": {
+    "normal": "201-v.png",
+    "shiny": "shiny/201-v.png",
+    "exact": true
+  },
+  "unown-w": {
+    "normal": "201-w.png",
+    "shiny": "shiny/201-w.png",
+    "exact": true
+  },
+  "unown-x": {
+    "normal": "201-x.png",
+    "shiny": "shiny/201-x.png",
+    "exact": true
+  },
+  "unown-y": {
+    "normal": "201-y.png",
+    "shiny": "shiny/201-y.png",
+    "exact": true
+  },
+  "unown-z": {
+    "normal": "201-z.png",
+    "shiny": "shiny/201-z.png",
+    "exact": true
+  },
+  "unown-exclamation": {
+    "normal": "201-exclamation.png",
+    "shiny": "shiny/201-exclamation.png",
+    "exact": true
+  },
+  "unown-question": {
+    "normal": "201-question.png",
+    "shiny": "shiny/201-question.png",
+    "exact": true
+  },
+  "rattata-alola": {
+    "normal": "10091.png",
+    "shiny": "shiny/10091.png",
+    "exact": true
+  },
+  "raticate-alola": {
+    "normal": "10092.png",
+    "shiny": "shiny/10092.png",
+    "exact": true
+  },
+  "raichu-alola": {
+    "normal": "10100.png",
+    "shiny": "shiny/10100.png",
+    "exact": true
+  },
+  "sandshrew-alola": {
+    "normal": "10101.png",
+    "shiny": "shiny/10101.png",
+    "exact": true
+  },
+  "sandslash-alola": {
+    "normal": "10102.png",
+    "shiny": "shiny/10102.png",
+    "exact": true
+  },
+  "vulpix-alola": {
+    "normal": "10103.png",
+    "shiny": "shiny/10103.png",
+    "exact": true
+  },
+  "ninetales-alola": {
+    "normal": "10104.png",
+    "shiny": "shiny/10104.png",
+    "exact": true
+  },
+  "diglett-alola": {
+    "normal": "10105.png",
+    "shiny": "shiny/10105.png",
+    "exact": true
+  },
+  "dugtrio-alola": {
+    "normal": "10106.png",
+    "shiny": "shiny/10106.png",
+    "exact": true
+  },
+  "meowth-alola": {
+    "normal": "10107.png",
+    "shiny": "shiny/10107.png",
+    "exact": true
+  },
+  "persian-alola": {
+    "normal": "10108.png",
+    "shiny": "shiny/10108.png",
+    "exact": true
+  },
+  "geodude-alola": {
+    "normal": "10109.png",
+    "shiny": "shiny/10109.png",
+    "exact": true
+  },
+  "graveler-alola": {
+    "normal": "10110.png",
+    "shiny": "shiny/10110.png",
+    "exact": true
+  },
+  "golem-alola": {
+    "normal": "10111.png",
+    "shiny": "shiny/10111.png",
+    "exact": true
+  },
+  "grimer-alola": {
+    "normal": "10112.png",
+    "shiny": "shiny/10112.png",
+    "exact": true
+  },
+  "muk-alola": {
+    "normal": "10113.png",
+    "shiny": "shiny/10113.png",
+    "exact": true
+  },
+  "exeggutor-alola": {
+    "normal": "10114.png",
+    "shiny": "shiny/10114.png",
+    "exact": true
+  },
+  "marowak-alola": {
+    "normal": "10115.png",
+    "shiny": "shiny/10115.png",
+    "exact": true
+  },
+  "meowth-galar": {
+    "normal": "10161.png",
+    "shiny": "shiny/10161.png",
+    "exact": true
+  },
+  "ponyta-galar": {
+    "normal": "10162.png",
+    "shiny": "shiny/10162.png",
+    "exact": true
+  },
+  "rapidash-galar": {
+    "normal": "10163.png",
+    "shiny": "shiny/10163.png",
+    "exact": true
+  },
+  "slowpoke-galar": {
+    "normal": "10164.png",
+    "shiny": "shiny/10164.png",
+    "exact": true
+  },
+  "slowbro-galar": {
+    "normal": "10165.png",
+    "shiny": "shiny/10165.png",
+    "exact": true
+  },
+  "farfetchd-galar": {
+    "normal": "10166.png",
+    "shiny": "shiny/10166.png",
+    "exact": true
+  },
+  "weezing-galar": {
+    "normal": "10167.png",
+    "shiny": "shiny/10167.png",
+    "exact": true
+  },
+  "mr-mime-galar": {
+    "normal": "10168.png",
+    "shiny": "shiny/10168.png",
+    "exact": true
+  },
+  "articuno-galar": {
+    "normal": "10169.png",
+    "shiny": "shiny/10169.png",
+    "exact": true
+  },
+  "zapdos-galar": {
+    "normal": "10170.png",
+    "shiny": "shiny/10170.png",
+    "exact": true
+  },
+  "moltres-galar": {
+    "normal": "10171.png",
+    "shiny": "shiny/10171.png",
+    "exact": true
+  },
+  "slowking-galar": {
+    "normal": "10172.png",
+    "shiny": "shiny/10172.png",
+    "exact": true
+  },
+  "corsola-galar": {
+    "normal": "10173.png",
+    "shiny": "shiny/10173.png",
+    "exact": true
+  },
+  "zigzagoon-galar": {
+    "normal": "10174.png",
+    "shiny": "shiny/10174.png",
+    "exact": true
+  },
+  "linoone-galar": {
+    "normal": "10175.png",
+    "shiny": "shiny/10175.png",
+    "exact": true
+  },
+  "darumaka-galar": {
+    "normal": "10176.png",
+    "shiny": "shiny/10176.png",
+    "exact": true
+  },
+  "darmanitan-galar-standard": {
+    "normal": "10177.png",
+    "shiny": "shiny/10177.png",
+    "exact": true
+  },
+  "yamask-galar": {
+    "normal": "10179.png",
+    "shiny": "shiny/10179.png",
+    "exact": true
+  },
+  "stunfisk-galar": {
+    "normal": "10180.png",
+    "shiny": "shiny/10180.png",
+    "exact": true
+  },
+  "growlithe-hisui": {
+    "normal": "10229.png",
+    "shiny": "shiny/10229.png",
+    "exact": true
+  },
+  "arcanine-hisui": {
+    "normal": "10230.png",
+    "shiny": "shiny/10230.png",
+    "exact": true
+  },
+  "voltorb-hisui": {
+    "normal": "10231.png",
+    "shiny": "shiny/10231.png",
+    "exact": true
+  },
+  "electrode-hisui": {
+    "normal": "10232.png",
+    "shiny": "shiny/10232.png",
+    "exact": true
+  },
+  "typhlosion-hisui": {
+    "normal": "10233.png",
+    "shiny": "shiny/10233.png",
+    "exact": true
+  },
+  "qwilfish-hisui": {
+    "normal": "10234.png",
+    "shiny": "shiny/10234.png",
+    "exact": true
+  },
+  "sneasel-hisui": {
+    "normal": "10235.png",
+    "shiny": "shiny/10235.png",
+    "exact": true
+  },
+  "samurott-hisui": {
+    "normal": "10236.png",
+    "shiny": "shiny/10236.png",
+    "exact": true
+  },
+  "lilligant-hisui": {
+    "normal": "10237.png",
+    "shiny": "shiny/10237.png",
+    "exact": true
+  },
+  "zorua-hisui": {
+    "normal": "10238.png",
+    "shiny": "shiny/10238.png",
+    "exact": true
+  },
+  "zoroark-hisui": {
+    "normal": "10239.png",
+    "shiny": "shiny/10239.png",
+    "exact": true
+  },
+  "braviary-hisui": {
+    "normal": "10240.png",
+    "shiny": "shiny/10240.png",
+    "exact": true
+  },
+  "sliggoo-hisui": {
+    "normal": "10241.png",
+    "shiny": "shiny/10241.png",
+    "exact": true
+  },
+  "goodra-hisui": {
+    "normal": "10242.png",
+    "shiny": "shiny/10242.png",
+    "exact": true
+  },
+  "avalugg-hisui": {
+    "normal": "10243.png",
+    "shiny": "shiny/10243.png",
+    "exact": true
+  },
+  "decidueye-hisui": {
+    "normal": "10244.png",
+    "shiny": "shiny/10244.png",
+    "exact": true
+  },
+  "wooper-paldea": {
+    "normal": "10253.png",
+    "shiny": "shiny/10253.png",
+    "exact": true
+  },
+  "tauros-paldea-combat-breed": {
+    "normal": "10250.png",
+    "shiny": "shiny/10250.png",
+    "exact": true
+  },
+  "tauros-paldea-blaze-breed": {
+    "normal": "10251.png",
+    "shiny": "shiny/10251.png",
+    "exact": true
+  },
+  "tauros-paldea-aqua-breed": {
+    "normal": "10252.png",
+    "shiny": "shiny/10252.png",
+    "exact": true
+  },
+  "burmy-sandy": {
+    "normal": "412-sandy.png",
+    "shiny": "shiny/412-sandy.png",
+    "exact": true
+  },
+  "burmy-trash": {
+    "normal": "412-trash.png",
+    "shiny": "shiny/412-trash.png",
+    "exact": true
+  },
+  "wormadam-sandy": {
+    "normal": "10004.png",
+    "shiny": "shiny/10004.png",
+    "exact": true
+  },
+  "wormadam-trash": {
+    "normal": "10005.png",
+    "shiny": "shiny/10005.png",
+    "exact": true
+  },
+  "combee-female": {
+    "normal": "female/415.png",
+    "shiny": "shiny/female/415.png",
+    "exact": true
+  },
+  "shellos-east": {
+    "normal": "422-east.png",
+    "shiny": "shiny/422-east.png",
+    "exact": true
+  },
+  "gastrodon-east": {
+    "normal": "423-east.png",
+    "shiny": "shiny/423-east.png",
+    "exact": true
+  },
+  "hippopotas-female": {
+    "normal": "female/449.png",
+    "shiny": "shiny/female/449.png",
+    "exact": true
+  },
+  "hippowdon-female": {
+    "normal": "female/450.png",
+    "shiny": "shiny/female/450.png",
+    "exact": true
+  },
+  "rotom-heat": {
+    "normal": "10008.png",
+    "shiny": "shiny/10008.png",
+    "exact": true
+  },
+  "rotom-wash": {
+    "normal": "10009.png",
+    "shiny": "shiny/10009.png",
+    "exact": true
+  },
+  "rotom-frost": {
+    "normal": "10010.png",
+    "shiny": "shiny/10010.png",
+    "exact": true
+  },
+  "rotom-fan": {
+    "normal": "10011.png",
+    "shiny": "shiny/10011.png",
+    "exact": true
+  },
+  "rotom-mow": {
+    "normal": "10012.png",
+    "shiny": "shiny/10012.png",
+    "exact": true
+  },
+  "unfezant-female": {
+    "normal": "female/521.png",
+    "shiny": "shiny/female/521.png",
+    "exact": true
+  },
+  "basculin-blue-striped": {
+    "normal": "10016.png",
+    "shiny": "shiny/10016.png",
+    "exact": true
+  },
+  "basculin-white-striped": {
+    "normal": "10247.png",
+    "shiny": "shiny/10247.png",
+    "exact": true
+  },
+  "deerling-summer": {
+    "normal": "585-summer.png",
+    "shiny": "shiny/585-summer.png",
+    "exact": true
+  },
+  "deerling-autumn": {
+    "normal": "585-autumn.png",
+    "shiny": "shiny/585-autumn.png",
+    "exact": true
+  },
+  "deerling-winter": {
+    "normal": "585-winter.png",
+    "shiny": "shiny/585-winter.png",
+    "exact": true
+  },
+  "sawsbuck-summer": {
+    "normal": "586-summer.png",
+    "shiny": "shiny/586-summer.png",
+    "exact": true
+  },
+  "sawsbuck-autumn": {
+    "normal": "586-autumn.png",
+    "shiny": "shiny/586-autumn.png",
+    "exact": true
+  },
+  "sawsbuck-winter": {
+    "normal": "586-winter.png",
+    "shiny": "shiny/586-winter.png",
+    "exact": true
+  },
+  "frillish-female": {
+    "normal": "female/592.png",
+    "shiny": "shiny/female/592.png",
+    "exact": true
+  },
+  "jellicent-female": {
+    "normal": "female/593.png",
+    "shiny": "shiny/female/593.png",
+    "exact": true
+  },
+  "vivillon-icy-snow": {
+    "normal": "666-icy-snow.png",
+    "shiny": "shiny/666-icy-snow.png",
+    "exact": true
+  },
+  "vivillon-polar": {
+    "normal": "666-polar.png",
+    "shiny": "shiny/666-polar.png",
+    "exact": true
+  },
+  "vivillon-tundra": {
+    "normal": "666-tundra.png",
+    "shiny": "shiny/666-tundra.png",
+    "exact": true
+  },
+  "vivillon-continental": {
+    "normal": "666-continental.png",
+    "shiny": "shiny/666-continental.png",
+    "exact": true
+  },
+  "vivillon-garden": {
+    "normal": "666-garden.png",
+    "shiny": "shiny/666-garden.png",
+    "exact": true
+  },
+  "vivillon-elegant": {
+    "normal": "666-elegant.png",
+    "shiny": "shiny/666-elegant.png",
+    "exact": true
+  },
+  "vivillon-fancy": {
+    "normal": "666-fancy.png",
+    "shiny": "shiny/666-fancy.png",
+    "exact": true
+  },
+  "vivillon-modern": {
+    "normal": "666-modern.png",
+    "shiny": "shiny/666-modern.png",
+    "exact": true
+  },
+  "vivillon-marine": {
+    "normal": "666-marine.png",
+    "shiny": "shiny/666-marine.png",
+    "exact": true
+  },
+  "vivillon-archipelago": {
+    "normal": "666-archipelago.png",
+    "shiny": "shiny/666-archipelago.png",
+    "exact": true
+  },
+  "vivillon-high-plains": {
+    "normal": "666-high-plains.png",
+    "shiny": "shiny/666-high-plains.png",
+    "exact": true
+  },
+  "vivillon-sandstorm": {
+    "normal": "666-sandstorm.png",
+    "shiny": "shiny/666-sandstorm.png",
+    "exact": true
+  },
+  "vivillon-river": {
+    "normal": "666-river.png",
+    "shiny": "shiny/666-river.png",
+    "exact": true
+  },
+  "vivillon-monsoon": {
+    "normal": "666-monsoon.png",
+    "shiny": "shiny/666-monsoon.png",
+    "exact": true
+  },
+  "vivillon-savanna": {
+    "normal": "666-savanna.png",
+    "shiny": "shiny/666-savanna.png",
+    "exact": true
+  },
+  "vivillon-sun": {
+    "normal": "666-sun.png",
+    "shiny": "shiny/666-sun.png",
+    "exact": true
+  },
+  "vivillon-ocean": {
+    "normal": "666-ocean.png",
+    "shiny": "shiny/666-ocean.png",
+    "exact": true
+  },
+  "vivillon-jungle": {
+    "normal": "666-jungle.png",
+    "shiny": "shiny/666-jungle.png",
+    "exact": true
+  },
+  "vivillon-poke-ball": {
+    "normal": "666-poke-ball.png",
+    "shiny": "shiny/666-poke-ball.png",
+    "exact": true
+  },
+  "pyroar-female": {
+    "normal": "female/668.png",
+    "shiny": "shiny/female/668.png",
+    "exact": true
+  },
+  "flabebe-yellow": {
+    "normal": "669-yellow.png",
+    "shiny": "shiny/669-yellow.png",
+    "exact": true
+  },
+  "flabebe-white": {
+    "normal": "669-white.png",
+    "shiny": "shiny/669-white.png",
+    "exact": true
+  },
+  "flabebe-blue": {
+    "normal": "669-blue.png",
+    "shiny": "shiny/669-blue.png",
+    "exact": true
+  },
+  "flabebe-orange": {
+    "normal": "669-orange.png",
+    "shiny": "shiny/669-orange.png",
+    "exact": true
+  },
+  "floette-yellow": {
+    "normal": "670-yellow.png",
+    "shiny": "shiny/670-yellow.png",
+    "exact": true
+  },
+  "floette-white": {
+    "normal": "670-white.png",
+    "shiny": "shiny/670-white.png",
+    "exact": true
+  },
+  "floette-blue": {
+    "normal": "670-blue.png",
+    "shiny": "shiny/670-blue.png",
+    "exact": true
+  },
+  "floette-orange": {
+    "normal": "670-orange.png",
+    "shiny": "shiny/670-orange.png",
+    "exact": true
+  },
+  "floette-eternal": {
+    "normal": "10061.png",
+    "shiny": "shiny/10061.png",
+    "exact": true
+  },
+  "florges-yellow": {
+    "normal": "671-yellow.png",
+    "shiny": "shiny/671-yellow.png",
+    "exact": true
+  },
+  "florges-white": {
+    "normal": "671-white.png",
+    "shiny": "shiny/671-white.png",
+    "exact": true
+  },
+  "florges-blue": {
+    "normal": "671-blue.png",
+    "shiny": "shiny/671-blue.png",
+    "exact": true
+  },
+  "florges-orange": {
+    "normal": "671-orange.png",
+    "shiny": "shiny/671-orange.png",
+    "exact": true
+  },
+  "furfrou-heart": {
+    "normal": "676-heart.png",
+    "shiny": "shiny/676-heart.png",
+    "exact": true
+  },
+  "furfrou-star": {
+    "normal": "676-star.png",
+    "shiny": "shiny/676-star.png",
+    "exact": true
+  },
+  "furfrou-diamond": {
+    "normal": "676-diamond.png",
+    "shiny": "shiny/676-diamond.png",
+    "exact": true
+  },
+  "furfrou-debutante": {
+    "normal": "676-debutante.png",
+    "shiny": "shiny/676-debutante.png",
+    "exact": true
+  },
+  "furfrou-matron": {
+    "normal": "676-matron.png",
+    "shiny": "shiny/676-matron.png",
+    "exact": true
+  },
+  "furfrou-dandy": {
+    "normal": "676-dandy.png",
+    "shiny": "shiny/676-dandy.png",
+    "exact": true
+  },
+  "furfrou-la-reine": {
+    "normal": "676-la-reine.png",
+    "shiny": "shiny/676-la-reine.png",
+    "exact": true
+  },
+  "furfrou-kabuki": {
+    "normal": "676-kabuki.png",
+    "shiny": "shiny/676-kabuki.png",
+    "exact": true
+  },
+  "furfrou-pharaoh": {
+    "normal": "676-pharaoh.png",
+    "shiny": "shiny/676-pharaoh.png",
+    "exact": true
+  },
+  "meowstic-female": {
+    "normal": "10025.png",
+    "shiny": "shiny/10025.png",
+    "exact": true
+  },
+  "pumpkaboo-small": {
+    "normal": "10027.png",
+    "shiny": "shiny/10027.png",
+    "exact": true
+  },
+  "pumpkaboo-large": {
+    "normal": "10028.png",
+    "shiny": "shiny/10028.png",
+    "exact": true
+  },
+  "pumpkaboo-super": {
+    "normal": "10029.png",
+    "shiny": "shiny/10029.png",
+    "exact": true
+  },
+  "gourgeist-small": {
+    "normal": "10030.png",
+    "shiny": "shiny/10030.png",
+    "exact": true
+  },
+  "gourgeist-large": {
+    "normal": "10031.png",
+    "shiny": "shiny/10031.png",
+    "exact": true
+  },
+  "gourgeist-super": {
+    "normal": "10032.png",
+    "shiny": "shiny/10032.png",
+    "exact": true
+  },
+  "oricorio-pom-pom": {
+    "normal": "10123.png",
+    "shiny": "shiny/10123.png",
+    "exact": true
+  },
+  "oricorio-pau": {
+    "normal": "10124.png",
+    "shiny": "shiny/10124.png",
+    "exact": true
+  },
+  "oricorio-sensu": {
+    "normal": "10125.png",
+    "shiny": "shiny/10125.png",
+    "exact": true
+  },
+  "lycanroc-midnight": {
+    "normal": "10126.png",
+    "shiny": "shiny/10126.png",
+    "exact": true
+  },
+  "lycanroc-dusk": {
+    "normal": "10152.png",
+    "shiny": "shiny/10152.png",
+    "exact": true
+  },
+  "minior-orange": {
+    "normal": "10137.png",
+    "shiny": "shiny/10137.png",
+    "exact": true
+  },
+  "minior-yellow": {
+    "normal": "10138.png",
+    "shiny": "shiny/10138.png",
+    "exact": true
+  },
+  "minior-green": {
+    "normal": "10139.png",
+    "shiny": "shiny/10139.png",
+    "exact": true
+  },
+  "minior-blue": {
+    "normal": "10140.png",
+    "shiny": "shiny/10140.png",
+    "exact": true
+  },
+  "minior-indigo": {
+    "normal": "10141.png",
+    "shiny": "shiny/10141.png",
+    "exact": true
+  },
+  "minior-violet": {
+    "normal": "10142.png",
+    "shiny": "shiny/10142.png",
+    "exact": true
+  },
+  "magearna-original": {
+    "normal": "10147.png",
+    "shiny": "shiny/10147.png",
+    "exact": true
+  },
+  "toxtricity-low-key": {
+    "normal": "10184.png",
+    "shiny": "shiny/10184.png",
+    "exact": true
+  },
+  "sinistea-antique": {
+    "normal": "854.png",
+    "shiny": "shiny/854.png",
+    "exact": true
+  },
+  "polteageist-antique": {
+    "normal": "855.png",
+    "shiny": "shiny/855.png",
+    "exact": true
+  },
+  "alcremie-vanilla-cream-flower-sweet": {
+    "normal": "869-vanilla-cream-flower-sweet.png",
+    "shiny": "shiny/869-vanilla-cream-flower-sweet.png",
+    "exact": true
+  },
+  "alcremie-vanilla-cream-star-sweet": {
+    "normal": "869-vanilla-cream-star-sweet.png",
+    "shiny": "shiny/869-vanilla-cream-star-sweet.png",
+    "exact": true
+  },
+  "alcremie-vanilla-cream-clover-sweet": {
+    "normal": "869-vanilla-cream-clover-sweet.png",
+    "shiny": "shiny/869-vanilla-cream-clover-sweet.png",
+    "exact": true
+  },
+  "alcremie-vanilla-cream-berry-sweet": {
+    "normal": "869-vanilla-cream-berry-sweet.png",
+    "shiny": "shiny/869-vanilla-cream-berry-sweet.png",
+    "exact": true
+  },
+  "alcremie-vanilla-cream-ribbon-sweet": {
+    "normal": "869-vanilla-cream-ribbon-sweet.png",
+    "shiny": "shiny/869-vanilla-cream-ribbon-sweet.png",
+    "exact": true
+  },
+  "alcremie-vanilla-cream-love-sweet": {
+    "normal": "869-vanilla-cream-love-sweet.png",
+    "shiny": "shiny/869-vanilla-cream-love-sweet.png",
+    "exact": true
+  },
+  "indeedee-female": {
+    "normal": "10186.png",
+    "shiny": "shiny/10186.png",
+    "exact": true
+  },
+  "urshifu-rapid-strike": {
+    "normal": "10191.png",
+    "shiny": "shiny/10191.png",
+    "exact": true
+  },
+  "zarude-dada": {
+    "normal": "10192.png",
+    "shiny": "shiny/10192.png",
+    "exact": true
+  },
+  "ursaluna-bloodmoon": {
+    "normal": "10272.png",
+    "shiny": "shiny/10272.png",
+    "exact": true
+  },
+  "basculegion-female": {
+    "normal": "10248.png",
+    "shiny": "shiny/10248.png",
+    "exact": true
+  },
+  "oinkologne-male": {
+    "normal": "916.png",
+    "shiny": "shiny/916.png",
+    "exact": true
+  },
+  "maushold-family-of-three": {
+    "normal": "10257.png",
+    "shiny": "shiny/10257.png",
+    "exact": true
+  },
+  "squawkabilly-blue-plumage": {
+    "normal": "10260.png",
+    "shiny": "shiny/10260.png",
+    "exact": true
+  },
+  "squawkabilly-yellow-plumage": {
+    "normal": "10261.png",
+    "shiny": "shiny/10261.png",
+    "exact": true
+  },
+  "squawkabilly-white-plumage": {
+    "normal": "10262.png",
+    "shiny": "shiny/10262.png",
+    "exact": true
+  },
+  "tatsugiri-droopy": {
+    "normal": "10258.png",
+    "shiny": "shiny/10258.png",
+    "exact": true
+  },
+  "tatsugiri-stretchy": {
+    "normal": "10259.png",
+    "shiny": "shiny/10259.png",
+    "exact": true
+  },
+  "dudunsparce-three-segment": {
+    "normal": "10255.png",
+    "shiny": "shiny/10255.png",
+    "exact": true
+  },
+  "gimmighoul-roaming": {
+    "normal": "10263.png",
+    "shiny": "shiny/10263.png",
+    "exact": true
+  },
+  "poltchageist-artisan": {
+    "normal": "1012.png",
+    "shiny": "shiny/1012.png",
+    "exact": true
+  },
+  "sinistcha-masterpiece": {
+    "normal": "1013.png",
+    "shiny": "shiny/1013.png",
+    "exact": true
+  }
+}

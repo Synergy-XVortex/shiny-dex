@@ -1,0 +1,21 @@
+{
+  "source": "Onglet « Avancement Pokedex » du Google Sheet, relevé le 2026-10-31. Sert de contrôle : l'import doit retrouver exactement ces totaux.",
+  "tabs": {
+    "Première Génération": { "obtained": 151, "toFarm": 0, "locked": 0 },
+    "Deuxième Génération": { "obtained": 93, "toFarm": 7, "locked": 0 },
+    "Troisième Génération": { "obtained": 115, "toFarm": 20, "locked": 0 },
+    "Quatrième Génération": { "obtained": 96, "toFarm": 11, "locked": 0 },
+    "Cinquième Génération": { "obtained": 117, "toFarm": 38, "locked": 1 },
+    "Sixième Génération": { "obtained": 69, "toFarm": 2, "locked": 1 },
+    "Septième Génération": { "obtained": 68, "toFarm": 16, "locked": 4 },
+    "Huitième Génération": { "obtained": 76, "toFarm": 14, "locked": 6 },
+    "Neuvième Génération": { "obtained": 108, "toFarm": 0, "locked": 12 },
+    "Formes Zarbi": { "obtained": 9, "toFarm": 18, "locked": 0 },
+    "Formes Alola": { "obtained": 15, "toFarm": 3, "locked": 0 },
+    "Formes de Galar": { "obtained": 14, "toFarm": 5, "locked": 0 },
+    "Formes Hisui": { "obtained": 16, "toFarm": 0, "locked": 0 },
+    "Formes de Paldea": { "obtained": 4, "toFarm": 0, "locked": 0 },
+    "Formes Alternatives": { "obtained": 82, "toFarm": 28, "locked": 1 }
+  },
+  "total": { "obtained": 1033, "toFarm": 162, "locked": 25 }
+}
