@@ -1,7 +1,8 @@
 import { useMemo, type CSSProperties } from 'react';
 import { BottomSheet } from '../../../components/BottomSheet';
-import { ENTRIES, countStatuses } from '../catalog';
-import { DEXES, type DexId } from '../listQuery';
+import { countStatuses } from '../catalog';
+import { useCatalog } from '../catalogContext';
+import type { DexId } from '../listQuery';
 import type { ShinyStatus } from '../model';
 
 interface DexSelectorProps {
@@ -16,15 +17,16 @@ interface DexSelectorProps {
 const GENERATION_HUES = [8, 45, 150, 220, 240, 270, 25, 185, 330];
 
 export function DexSelector({ open, onClose, selected, onSelect, statuses }: DexSelectorProps) {
+  const { entries, dexes } = useCatalog();
   const progress = useMemo(
     () =>
       new Map(
-        DEXES.map((dex) => {
-          const counts = countStatuses(ENTRIES.filter(dex.includes), statuses);
+        dexes.map((dex) => {
+          const counts = countStatuses(entries.filter(dex.includes), statuses);
           return [dex.id, { ...counts, percent: Math.round((counts.obtained / Math.max(counts.total, 1)) * 100) }];
         }),
       ),
-    [statuses],
+    [entries, dexes, statuses],
   );
 
   const choose = (id: DexId) => {
@@ -32,7 +34,7 @@ export function DexSelector({ open, onClose, selected, onSelect, statuses }: Dex
     onClose();
   };
 
-  const [global, ...rest] = DEXES;
+  const [global, ...rest] = dexes;
   const generations = rest.filter((dex) => dex.id.startsWith('gen-'));
   const forms = rest.filter((dex) => !dex.id.startsWith('gen-'));
   const globalProgress = progress.get(global.id);
@@ -62,7 +64,7 @@ export function DexSelector({ open, onClose, selected, onSelect, statuses }: Dex
           <div className="grid grid-cols-3 gap-2">
             {generations.map((dex, index) => {
               const counts = progress.get(dex.id);
-              const hue = GENERATION_HUES[index];
+              const hue = GENERATION_HUES[index % GENERATION_HUES.length];
               return (
                 <button
                   key={dex.id}

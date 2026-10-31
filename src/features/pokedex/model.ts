@@ -59,11 +59,20 @@ export interface PokedexEntry {
   nameEn: string;
   /** French species category, e.g. "Pokémon Graine". Empty when PokéAPI has none yet. */
   genusFr: string;
-  /** Generation that introduced the species (1–9). */
+  /** Generation that introduced the species (1–9 in the bundled data, higher for later additions). */
   generation: number;
   category: EntryCategory;
   /** One or two types, primary first. */
   types: PokemonType[];
+}
+
+/**
+ * A species released after the bundled data was generated, added from
+ * PokéAPI from within the app. Its sprites are remote HOME images rather than
+ * bundled files; null while PokéAPI has none yet.
+ */
+export interface AddedEntry extends PokedexEntry {
+  spriteUrls: { normal: string | null; shiny: string | null };
 }
 
 export type StatusMap = Record<string, ShinyStatus>;

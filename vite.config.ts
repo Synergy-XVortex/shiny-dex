@@ -4,7 +4,12 @@ import react from '@vitejs/plugin-react';
 import { readFileSync } from 'node:fs';
 import { defineConfig } from 'vite';
 import { VitePWA } from 'vite-plugin-pwa';
-import { SPRITE_CACHE_NAME, SPRITE_URL_PATTERN } from './src/features/offline/spriteCacheConfig.ts';
+import {
+  REMOTE_SPRITE_CACHE_NAME,
+  REMOTE_SPRITE_URL_PATTERN,
+  SPRITE_CACHE_NAME,
+  SPRITE_URL_PATTERN,
+} from './src/features/offline/spriteCacheConfig.ts';
 
 const packageJson = JSON.parse(readFileSync(new URL('./package.json', import.meta.url), 'utf-8')) as {
   version: string;
@@ -56,6 +61,17 @@ export default defineConfig({
             options: {
               cacheName: SPRITE_CACHE_NAME,
               cacheableResponse: { statuses: [200] },
+            },
+          },
+          {
+            // Sprites of species added from PokéAPI, kept once seen so they
+            // also show offline. Status 0: <img> fetches them without CORS.
+            urlPattern: REMOTE_SPRITE_URL_PATTERN,
+            handler: 'CacheFirst',
+            options: {
+              cacheName: REMOTE_SPRITE_CACHE_NAME,
+              cacheableResponse: { statuses: [0, 200] },
+              expiration: { maxEntries: 500 },
             },
           },
         ],

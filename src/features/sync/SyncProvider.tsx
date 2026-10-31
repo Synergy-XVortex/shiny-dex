@@ -1,6 +1,8 @@
 import type { Session, SupabaseClient } from '@supabase/supabase-js';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
+import { createSupabaseAddedEntriesStore } from '../newPokemon/addedEntriesStore';
+import { pullAddedEntries } from '../newPokemon/newSpecies';
 import { db as defaultDatabase, type ShinyDexDatabase } from '../pokedex/statusDb';
 import { NotAllowedToWriteError, createSupabaseStatusStore } from './remoteStore';
 import { SyncContext, type SyncContextValue, type SyncPhase } from './syncContext';
@@ -32,6 +34,7 @@ export function SyncProvider({ children, client = defaultClient, database = defa
   const running = useRef<Promise<void> | null>(null);
 
   const remote = useMemo(() => (client ? createSupabaseStatusStore(client) : null), [client]);
+  const addedEntriesStore = useMemo(() => (client ? createSupabaseAddedEntriesStore(client) : null), [client]);
   const pendingCount = useLiveQuery(() => database.pendingChanges.count(), [database]) ?? 0;
   const lastSyncedAt = useLiveQuery(
     async () => ((await database.meta.get(META_LAST_SYNCED_AT))?.value as number | undefined) ?? null,
@@ -48,7 +51,7 @@ export function SyncProvider({ children, client = defaultClient, database = defa
   const signedIn = session !== null;
 
   const syncNow = useCallback(async () => {
-    if (!remote || !signedIn) return;
+    if (!remote || !addedEntriesStore || !signedIn) return;
     if (!navigator.onLine) {
       setActivity('offline');
       return;
@@ -57,6 +60,8 @@ export function SyncProvider({ children, client = defaultClient, database = defa
     if (running.current) return running.current;
     setActivity('syncing');
     running.current = syncOnce(database, remote)
+      // Species added from another device: small table, read whole each round.
+      .then(() => pullAddedEntries(database, addedEntriesStore))
       .then(() => {
         setActivity('idle');
         setErrorMessage(null);
@@ -74,7 +79,7 @@ export function SyncProvider({ children, client = defaultClient, database = defa
         running.current = null;
       });
     return running.current;
-  }, [database, remote, signedIn]);
+  }, [database, remote, addedEntriesStore, signedIn]);
 
   // Signing in (or opening the app signed in) triggers a first sync.
   useEffect(() => {

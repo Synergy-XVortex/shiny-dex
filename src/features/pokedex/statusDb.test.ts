@@ -1,5 +1,5 @@
 import { afterEach, describe, expect, it } from 'vitest';
-import { ENTRIES, INITIAL_STATUSES, countStatuses } from './catalog';
+import { BUNDLED_ENTRIES, INITIAL_STATUSES, countStatuses } from './catalog';
 import { ShinyDexDatabase, seedMissingStatuses, writeStatus } from './statusDb';
 
 let database: ShinyDexDatabase;
@@ -11,11 +11,11 @@ afterEach(async () => {
 describe('reference data', () => {
   it('matches the Google Sheet totals', () => {
     const statuses = new Map(Object.entries(INITIAL_STATUSES));
-    expect(countStatuses(ENTRIES, statuses)).toEqual({ total: 1220, obtained: 1033, toFarm: 162, locked: 25 });
+    expect(countStatuses(BUNDLED_ENTRIES, statuses)).toEqual({ total: 1220, obtained: 1033, toFarm: 162, locked: 25 });
   });
 
   it('has unique ids', () => {
-    expect(new Set(ENTRIES.map((entry) => entry.id)).size).toBe(ENTRIES.length);
+    expect(new Set(BUNDLED_ENTRIES.map((entry) => entry.id)).size).toBe(BUNDLED_ENTRIES.length);
   });
 });
 

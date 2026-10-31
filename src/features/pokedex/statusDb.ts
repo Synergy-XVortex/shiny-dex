@@ -1,5 +1,5 @@
 import Dexie, { type EntityTable } from 'dexie';
-import type { ShinyStatus, StatusMap } from './model';
+import type { AddedEntry, ShinyStatus, StatusMap } from './model';
 
 /**
  * Local source of truth for statuses, kept in IndexedDB so the app works
@@ -26,6 +26,8 @@ export class ShinyDexDatabase extends Dexie {
   statuses!: EntityTable<StatusRecord, 'id'>;
   pendingChanges!: EntityTable<PendingChange, 'id'>;
   meta!: EntityTable<MetaRecord, 'key'>;
+  /** Species added from PokéAPI after the bundled data; copy of public.added_entries. */
+  addedEntries!: EntityTable<AddedEntry, 'id'>;
 
   constructor(name = 'shiny-dex') {
     super(name);
@@ -44,6 +46,12 @@ export class ShinyDexDatabase extends Dexie {
         const touched = await transaction.table<StatusRecord>('statuses').where('id').notEqual('').toArray();
         await transaction.table<PendingChange>('pendingChanges').bulkPut(touched.filter((record) => record.updatedAt > 0));
       });
+    this.version(3).stores({
+      statuses: 'id',
+      pendingChanges: 'id',
+      meta: 'key',
+      addedEntries: 'id',
+    });
   }
 }
 

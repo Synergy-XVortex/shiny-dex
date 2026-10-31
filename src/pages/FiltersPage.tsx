@@ -3,7 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import { PageHeader } from '../components/PageHeader';
 import { STATUS_LABELS } from '../features/pokedex/catalog';
 import { TypeIcon } from '../features/pokedex/components/TypeIcon';
-import { GENERATION_NUMBERS, getDex, romanGeneration, type ListFilters, type TypeMatchMode } from '../features/pokedex/listQuery';
+import { useCatalog } from '../features/pokedex/catalogContext';
+import { romanGeneration, type ListFilters, type TypeMatchMode } from '../features/pokedex/listQuery';
 import { useListQuery } from '../features/pokedex/listQueryContext';
 import { ENTRY_CATEGORIES, SHINY_STATUSES, type EntryCategory, type PokemonType } from '../features/pokedex/model';
 import { TYPE_DEFINITIONS, entryPaletteStyle } from '../features/pokedex/typePalette';
@@ -42,6 +43,7 @@ export function FiltersPage() {
   const navigate = useNavigate();
   const { dexId, filters, setFilters, resetFilters } = useListQuery();
   const { visibleEntries } = useListEntries();
+  const { generations, getDex } = useCatalog();
   const update = (patch: Partial<ListFilters>) => setFilters({ ...filters, ...patch });
 
   const typeHelp =
@@ -127,11 +129,11 @@ export function FiltersPage() {
 
         <FilterSection title="Générations" help={generationHelp}>
           <SelectAllButtons
-            onSelectAll={() => update({ generations: new Set(GENERATION_NUMBERS) })}
+            onSelectAll={() => update({ generations: new Set(generations) })}
             onClear={() => update({ generations: new Set() })}
           />
           <div className="grid grid-cols-5 gap-2">
-            {GENERATION_NUMBERS.map((generation) => (
+            {generations.map((generation) => (
               <Chip
                 key={generation}
                 label={romanGeneration(generation)}

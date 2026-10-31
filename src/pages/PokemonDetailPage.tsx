@@ -1,19 +1,19 @@
 import { useState } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import { ChevronLeftIcon, ChevronRightIcon, SparkleMark } from '../components/icons';
-import { STATUS_LABELS, formatDexNumber, getEntry, getNeighbours } from '../features/pokedex/catalog';
+import { STATUS_LABELS, formatDexNumber } from '../features/pokedex/catalog';
+import { useCatalog } from '../features/pokedex/catalogContext';
+import { romanGeneration } from '../features/pokedex/listQuery';
 import { CategoryBadge, TypePill } from '../features/pokedex/components/Badges';
 import { Sprite } from '../features/pokedex/components/Sprite';
 import { SHINY_STATUSES, type PokedexEntry, type ShinyStatus } from '../features/pokedex/model';
 import { useStatuses } from '../features/pokedex/statusContext';
 import { entryPaletteStyle } from '../features/pokedex/typePalette';
-import { NotFoundPage } from './PlaceholderPages';
-
-const GENERATION_LABELS = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII'];
+import { NotFoundPage } from './NotFoundPage';
 
 export function PokemonDetailPage() {
   const { id = '' } = useParams();
-  const entry = getEntry(id);
+  const entry = useCatalog().getEntry(id);
   // Keyed by id so the sprite toggle resets when moving to the next Pokémon.
   return entry ? <PokemonDetail key={entry.id} entry={entry} /> : <NotFoundPage />;
 }
@@ -24,7 +24,7 @@ function PokemonDetail({ entry }: { entry: PokedexEntry }) {
   const status: ShinyStatus = statuses?.get(entry.id) ?? 'to-farm';
   const [variantChoice, setVariantChoice] = useState<'normal' | 'shiny' | null>(null);
   const variant = variantChoice ?? (status === 'obtained' ? 'shiny' : 'normal');
-  const { previous, next } = getNeighbours(entry.id);
+  const { previous, next } = useCatalog().getNeighbours(entry.id);
 
   // Back to wherever the user came from (keeps the list's scroll position);
   // straight to the list when the page was opened directly.
@@ -74,7 +74,7 @@ function PokemonDetail({ entry }: { entry: PokedexEntry }) {
           <h1 className="text-[32px] leading-tight font-extrabold tracking-tight">{entry.nameFr}</h1>
         </div>
         <p className="text-ink-muted text-sm font-medium">
-          {[entry.genusFr, entry.nameEn, `Génération ${GENERATION_LABELS[entry.generation - 1] ?? entry.generation}`]
+          {[entry.genusFr, entry.nameEn, `Génération ${romanGeneration(entry.generation)}`]
             .filter(Boolean)
             .join(' · ')}
         </p>
