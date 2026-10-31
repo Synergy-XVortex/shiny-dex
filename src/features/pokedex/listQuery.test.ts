@@ -7,7 +7,8 @@ import {
   isDexId,
   matchesSearch,
   pickRandomToFarm,
-  searchEntries,
+  longPressFilter,
+  tapFilter,
   type ListFilters,
 } from './listQuery';
 import type { AddedEntry, PokedexEntry, ShinyStatus } from './model';
@@ -15,6 +16,10 @@ import type { AddedEntry, PokedexEntry, ShinyStatus } from './model';
 const statuses = new Map(Object.entries(INITIAL_STATUSES)) as Map<string, ShinyStatus>;
 const byId = (id: string) => BUNDLED_ENTRIES.find((entry) => entry.id === id) as PokedexEntry;
 const filters = (patch: Partial<ListFilters>): ListFilters => ({ ...EMPTY_FILTERS, ...patch });
+/** A filter group keeping only the given values. */
+const only = <T,>(...values: T[]) => ({ included: new Set(values), excluded: new Set<T>() });
+/** A filter group hiding the given values. */
+const hide = <T,>(...values: T[]) => ({ included: new Set<T>(), excluded: new Set(values) });
 
 describe('dexes', () => {
   it('reproduce the totals of the Sheet tabs', () => {
@@ -75,11 +80,11 @@ describe('applyFilters', () => {
   });
 
   it('filters by status', () => {
-    expect(applyFilters(BUNDLED_ENTRIES, statuses, filters({ statuses: new Set(['locked']) }))).toHaveLength(25);
+    expect(applyFilters(BUNDLED_ENTRIES, statuses, filters({ statuses: only('locked') }))).toHaveLength(25);
   });
 
   it('applies the three type modes', () => {
-    const fireOrFlying = new Set(['fire', 'flying'] as const);
+    const fireOrFlying = only<'fire' | 'flying'>('fire', 'flying');
     const ids = (mode: ListFilters['typeMode']) =>
       new Set(applyFilters(BUNDLED_ENTRIES, statuses, filters({ types: fireOrFlying, typeMode: mode })).map((entry) => entry.id));
 
@@ -95,10 +100,45 @@ describe('applyFilters', () => {
     const result = applyFilters(
       BUNDLED_ENTRIES,
       statuses,
-      filters({ statuses: new Set(['to-farm']), generations: new Set([3]), categories: new Set(['national']) }),
+      filters({ statuses: only('to-farm'), generations: only(3), categories: only('national') }),
     );
     expect(result).toHaveLength(20);
-    expect(countActiveFilters(filters({ statuses: new Set(['to-farm']), generations: new Set([3]) }))).toBe(2);
+    expect(countActiveFilters(filters({ statuses: only('to-farm'), generations: hide(3) }))).toBe(2);
+  });
+
+  it('hides excluded values, including entries whose second type is excluded', () => {
+    expect(applyFilters(BUNDLED_ENTRIES, statuses, filters({ statuses: hide('obtained') }))).toHaveLength(187);
+    const withoutFlying = applyFilters(BUNDLED_ENTRIES, statuses, filters({ types: hide('flying') })).map((entry) => entry.id);
+    expect(withoutFlying).toContain('charmander');
+    expect(withoutFlying).not.toContain('charizard'); // Fire/Flying
+    const gen1WithoutRegional = applyFilters(
+      BUNDLED_ENTRIES,
+      statuses,
+      filters({ generations: only(1), categories: hide('alola', 'galar') }),
+    );
+    expect(gen1WithoutRegional.some((entry) => entry.category === 'alola')).toBe(false);
+  });
+
+  it('narrows the list with the search text, keeping the Pokédex order', () => {
+    const results = applyFilters(BUNDLED_ENTRIES, statuses, EMPTY_FILTERS, 'eau').map((entry) => entry.dex);
+    expect(results.length).toBeGreaterThan(1);
+    expect(results).toEqual([...results].sort((a, b) => a - b));
+    expect(applyFilters(BUNDLED_ENTRIES, statuses, filters({ generations: only(1) }), '25').map((entry) => entry.id)).toEqual(['pikachu']);
+  });
+});
+
+describe('filter taps', () => {
+  it('cycle between kept, neutral and hidden', () => {
+    const empty = only<string>();
+    const kept = tapFilter(empty, 'fire');
+    expect([...kept.included]).toEqual(['fire']);
+    expect(tapFilter(kept, 'fire').included.size).toBe(0);
+
+    const hidden = longPressFilter(kept, 'fire');
+    expect([...hidden.excluded]).toEqual(['fire']);
+    expect(hidden.included.size).toBe(0);
+    expect(tapFilter(hidden, 'fire').excluded.size).toBe(0);
+    expect(longPressFilter(hidden, 'fire').excluded.size).toBe(0);
   });
 });
 
@@ -113,19 +153,6 @@ describe('matchesSearch', () => {
     expect(matchesSearch(byId('pikachu'), '25')).toBe(true);
     expect(matchesSearch(byId('pikachu'), '#025')).toBe(true);
     expect(matchesSearch(byId('raichu'), '25')).toBe(false);
-  });
-});
-
-describe('searchEntries', () => {
-  it('lists names starting with the query before names containing it', () => {
-    const results = searchEntries(BUNDLED_ENTRIES, 'sabl');
-    const names = results.map((entry) => entry.nameFr);
-    // Names starting with the query come first; names only containing it ("Tauros (Eau)") follow.
-    expect(names[0]).toBe('Sablaireau');
-    const firstContaining = searchEntries(BUNDLED_ENTRIES, 'eau').findIndex((entry) => !entry.nameFr.toLowerCase().startsWith('eau'));
-    const lastStarting = searchEntries(BUNDLED_ENTRIES, 'eau').findLastIndex((entry) => entry.nameFr.toLowerCase().startsWith('eau'));
-    expect(lastStarting).toBeLessThan(firstContaining);
-    expect(searchEntries(BUNDLED_ENTRIES, '  ')).toEqual([]);
   });
 });
 

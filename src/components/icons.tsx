@@ -27,16 +27,6 @@ function StrokeIcon({ children, ...props }: IconProps & { children: ReactNode })
   );
 }
 
-export function PokedexIcon(props: IconProps) {
-  return (
-    <StrokeIcon {...props}>
-      <circle cx="12" cy="12" r="9" />
-      <path d="M3 12h6M15 12h6" />
-      <circle cx="12" cy="12" r="3" />
-    </StrokeIcon>
-  );
-}
-
 export function StatsIcon(props: IconProps) {
   return (
     <StrokeIcon {...props}>
@@ -138,6 +128,25 @@ export function ChevronRightIcon(props: IconProps) {
   return (
     <StrokeIcon {...props}>
       <path d="M9 6l6 6-6 6" />
+    </StrokeIcon>
+  );
+}
+
+export function CloseIcon(props: IconProps) {
+  return (
+    <StrokeIcon {...props}>
+      <path d="M6 6l12 12M18 6L6 18" />
+    </StrokeIcon>
+  );
+}
+
+/** Crossed-out eye: marks a filter that hides entries instead of keeping them. */
+export function EyeOffIcon(props: IconProps) {
+  return (
+    <StrokeIcon {...props}>
+      <path d="M10.6 5.1A10 10 0 0 1 12 5c6 0 9.5 7 9.5 7a17 17 0 0 1-2.7 3.6M6.6 6.6C3.9 8.4 2.5 12 2.5 12s3.5 7 9.5 7a9.7 9.7 0 0 0 5.4-1.6" />
+      <path d="M9.9 9.9a3 3 0 0 0 4.2 4.2" />
+      <path d="M3 3l18 18" />
     </StrokeIcon>
   );
 }

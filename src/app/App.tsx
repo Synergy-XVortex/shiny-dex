@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import { NewSpeciesProvider } from '../features/newPokemon/NewSpeciesProvider';
 import { useSpriteCacheWarmup } from '../features/offline/useSpriteCache';
 import { LocalCatalogProvider } from '../features/pokedex/CatalogProvider';
@@ -6,15 +6,13 @@ import { ListQueryProvider } from '../features/pokedex/ListQueryProvider';
 import { StatusProvider } from '../features/pokedex/StatusProvider';
 import { SyncProvider } from '../features/sync/SyncProvider';
 import { ThemeProvider } from '../features/theme/ThemeProvider';
-import { FiltersPage } from '../pages/FiltersPage';
 import { NotFoundPage } from '../pages/NotFoundPage';
 import { PokedexPage } from '../pages/PokedexPage';
 import { PokemonDetailPage } from '../pages/PokemonDetailPage';
-import { SearchPage } from '../pages/SearchPage';
 import { SettingsPage } from '../pages/SettingsPage';
 import { ShowcasePage } from '../pages/ShowcasePage';
 import { StatsPage } from '../pages/StatsPage';
-import { AppLayout } from './AppLayout';
+import { SecondaryLayout } from './SecondaryLayout';
 
 export function App() {
   return (
@@ -41,13 +39,14 @@ function PrivateApp() {
           <NewSpeciesProvider>
             <ListQueryProvider>
               <Routes>
-                <Route element={<AppLayout />}>
-                  <Route index element={<PokedexPage />} />
+                <Route index element={<PokedexPage />} />
+                <Route element={<SecondaryLayout />}>
                   <Route path="stats" element={<StatsPage />} />
-                  <Route path="recherche" element={<SearchPage />} />
-                  <Route path="filtres" element={<FiltersPage />} />
                   <Route path="reglages" element={<SettingsPage />} />
                 </Route>
+                {/* Former screens, now part of the Pokédex; kept for installed apps and bookmarks. */}
+                <Route path="recherche" element={<Navigate to="/" replace />} />
+                <Route path="filtres" element={<Navigate to="/" replace />} />
                 <Route path="pokemon/:id" element={<PokemonDetailPage />} />
                 <Route path="*" element={<NotFoundPage />} />
               </Routes>

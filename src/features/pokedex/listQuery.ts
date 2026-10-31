@@ -76,28 +76,78 @@ export function isDexId(value: unknown): value is DexId {
  */
 export type TypeMatchMode = 'unique' | 'double' | 'multiple';
 
-export interface ListFilters {
-  statuses: ReadonlySet<ShinyStatus>;
-  types: ReadonlySet<PokemonType>;
-  typeMode: TypeMatchMode;
-  generations: ReadonlySet<number>;
-  categories: ReadonlySet<EntryCategory>;
+/**
+ * One filter group. `included` keeps only matching entries (empty: no
+ * constraint); `excluded` hides matching entries. A value is in at most one
+ * of the two sets.
+ */
+export interface FilterGroup<T> {
+  included: ReadonlySet<T>;
+  excluded: ReadonlySet<T>;
 }
+
+export interface ListFilters {
+  statuses: FilterGroup<ShinyStatus>;
+  types: FilterGroup<PokemonType>;
+  /** How included types are matched; excluded types hide any entry having one of them. */
+  typeMode: TypeMatchMode;
+  generations: FilterGroup<number>;
+  categories: FilterGroup<EntryCategory>;
+}
+
+export type FilterGroupKey = 'statuses' | 'types' | 'generations' | 'categories';
+
+const EMPTY_GROUP: FilterGroup<never> = { included: new Set(), excluded: new Set() };
 
 export const EMPTY_FILTERS: ListFilters = {
-  statuses: new Set(),
-  types: new Set(),
+  statuses: EMPTY_GROUP,
+  types: EMPTY_GROUP,
   typeMode: 'multiple',
-  generations: new Set(),
-  categories: new Set(),
+  generations: EMPTY_GROUP,
+  categories: EMPTY_GROUP,
 };
 
-/** Number of filter groups in use, for the badge on the list. */
-export function countActiveFilters(filters: ListFilters): number {
-  return [filters.statuses, filters.types, filters.generations, filters.categories].filter((set) => set.size > 0).length;
+export const FILTER_GROUP_KEYS: readonly FilterGroupKey[] = ['statuses', 'types', 'generations', 'categories'];
+
+export type FilterState = 'neutral' | 'included' | 'excluded';
+
+export function filterState<T>(group: FilterGroup<T>, value: T): FilterState {
+  if (group.included.has(value)) return 'included';
+  if (group.excluded.has(value)) return 'excluded';
+  return 'neutral';
 }
 
-function matchesTypes(entry: PokedexEntry, selected: ReadonlySet<PokemonType>, mode: TypeMatchMode): boolean {
+/** Moves a value to the given state, removing it from the other set. */
+export function withFilterState<T>(group: FilterGroup<T>, value: T, state: FilterState): FilterGroup<T> {
+  const included = new Set(group.included);
+  const excluded = new Set(group.excluded);
+  included.delete(value);
+  excluded.delete(value);
+  if (state === 'included') included.add(value);
+  if (state === 'excluded') excluded.add(value);
+  return { included, excluded };
+}
+
+/** Tap: keep only these (or stop filtering on it). */
+export function tapFilter<T>(group: FilterGroup<T>, value: T): FilterGroup<T> {
+  return withFilterState(group, value, filterState(group, value) === 'neutral' ? 'included' : 'neutral');
+}
+
+/** Long press: hide these (or stop hiding them). */
+export function longPressFilter<T>(group: FilterGroup<T>, value: T): FilterGroup<T> {
+  return withFilterState(group, value, filterState(group, value) === 'excluded' ? 'neutral' : 'excluded');
+}
+
+function isGroupActive(group: FilterGroup<unknown>): boolean {
+  return group.included.size > 0 || group.excluded.size > 0;
+}
+
+/** Number of filter groups in use, for the badge on the filter button. */
+export function countActiveFilters(filters: ListFilters): number {
+  return FILTER_GROUP_KEYS.filter((key) => isGroupActive(filters[key])).length;
+}
+
+function matchesIncludedTypes(entry: PokedexEntry, selected: ReadonlySet<PokemonType>, mode: TypeMatchMode): boolean {
   if (selected.size === 0) return true;
   switch (mode) {
     case 'unique':
@@ -132,30 +182,26 @@ export function matchesSearch(entry: PokedexEntry, rawQuery: string): boolean {
   return normalizeSearchText(entry.nameFr).includes(query) || normalizeSearchText(entry.nameEn).includes(query);
 }
 
-/**
- * Search results, best matches first: names starting with the query, then
- * names containing it. Within each group the Pokédex order is kept.
- */
-export function searchEntries(entries: readonly PokedexEntry[], rawQuery: string): PokedexEntry[] {
-  const query = normalizeSearchText(rawQuery);
-  if (query === '') return [];
-  const matches = entries.filter((entry) => matchesSearch(entry, query));
-  const startsWithQuery = (entry: PokedexEntry) =>
-    normalizeSearchText(entry.nameFr).startsWith(query) || normalizeSearchText(entry.nameEn).startsWith(query);
-  return [...matches.filter(startsWithQuery), ...matches.filter((entry) => !startsWithQuery(entry))];
+function matchesGroup<T>(group: FilterGroup<T>, value: T): boolean {
+  return (group.included.size === 0 || group.included.has(value)) && !group.excluded.has(value);
 }
 
+/** Entries matching every filter group and the search text, in Pokédex order. */
 export function applyFilters(
   entries: readonly PokedexEntry[],
   statuses: ReadonlyMap<string, ShinyStatus>,
   filters: ListFilters,
+  search = '',
 ): PokedexEntry[] {
+  const query = normalizeSearchText(search);
   return entries.filter(
     (entry) =>
-      (filters.statuses.size === 0 || filters.statuses.has(statuses.get(entry.id) ?? 'to-farm')) &&
-      matchesTypes(entry, filters.types, filters.typeMode) &&
-      (filters.generations.size === 0 || filters.generations.has(entry.generation)) &&
-      (filters.categories.size === 0 || filters.categories.has(entry.category)),
+      matchesGroup(filters.statuses, statuses.get(entry.id) ?? 'to-farm') &&
+      matchesIncludedTypes(entry, filters.types.included, filters.typeMode) &&
+      !entry.types.some((type) => filters.types.excluded.has(type)) &&
+      matchesGroup(filters.generations, entry.generation) &&
+      matchesGroup(filters.categories, entry.category) &&
+      matchesSearch(entry, query),
   );
 }
 
